@@ -1,0 +1,44 @@
+body
+	background-color: #c7c7c7
+	display: flex
+	align-items: center
+	justify-content: center
+	height: 100vh
+
+#integration
+	display: flex
+	justify-content: center
+	align-items: center
+	width: 300px
+	height: 300px
+	border-radius: 15px
+	background: #c7c7c7
+	box-shadow: 10px 10px 20px #a9a9a9, -10px -10px 20px #e5e5e5
+svg
+	width: 100px
+	height: 100px
+	polygon
+		opacity: 0
+	@for $i from 2 through 7
+		polygon:nth-child(#{$i})
+			animation: integration 0.75s forwards infinite
+			animation-delay: $i * 0.125s
+
+	polygon:nth-child(odd)
+		fill: url(#Gradient01)
+
+	polygon:nth-child(2)
+		fill: url(#Gradient02)
+
+	polygon:nth-child(4), polygon:nth-child(6)
+		fill: url(#Gradient03)
+
+@keyframes integration
+	0%
+		opacity: 0
+
+	50%
+		opacity: 1
+
+	100%
+		opacity: 0

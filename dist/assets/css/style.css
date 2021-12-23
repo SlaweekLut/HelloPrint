@@ -1,0 +1,123 @@
+body {
+  background-color: #c7c7c7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+#integration {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 300px;
+  height: 300px;
+  border-radius: 15px;
+  background: #c7c7c7;
+  -webkit-box-shadow: 10px 10px 20px #a9a9a9, -10px -10px 20px #e5e5e5;
+  box-shadow: 10px 10px 20px #a9a9a9, -10px -10px 20px #e5e5e5;
+}
+
+svg {
+  width: 100px;
+  height: 100px;
+}
+
+svg polygon {
+  opacity: 0;
+}
+
+svg polygon:nth-child(2) {
+  -webkit-animation: integration 0.75s forwards infinite;
+  animation: integration 0.75s forwards infinite;
+  -webkit-animation-delay: 0.25s;
+  animation-delay: 0.25s;
+}
+
+svg polygon:nth-child(3) {
+  -webkit-animation: integration 0.75s forwards infinite;
+  animation: integration 0.75s forwards infinite;
+  -webkit-animation-delay: 0.375s;
+  animation-delay: 0.375s;
+}
+
+svg polygon:nth-child(4) {
+  -webkit-animation: integration 0.75s forwards infinite;
+  animation: integration 0.75s forwards infinite;
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+
+svg polygon:nth-child(5) {
+  -webkit-animation: integration 0.75s forwards infinite;
+  animation: integration 0.75s forwards infinite;
+  -webkit-animation-delay: 0.625s;
+  animation-delay: 0.625s;
+}
+
+svg polygon:nth-child(6) {
+  -webkit-animation: integration 0.75s forwards infinite;
+  animation: integration 0.75s forwards infinite;
+  -webkit-animation-delay: 0.75s;
+  animation-delay: 0.75s;
+}
+
+svg polygon:nth-child(7) {
+  -webkit-animation: integration 0.75s forwards infinite;
+  animation: integration 0.75s forwards infinite;
+  -webkit-animation-delay: 0.875s;
+  animation-delay: 0.875s;
+}
+
+svg polygon:nth-child(odd) {
+  fill: url(#Gradient01);
+}
+
+svg polygon:nth-child(2) {
+  fill: url(#Gradient02);
+}
+
+svg polygon:nth-child(4),
+svg polygon:nth-child(6) {
+  fill: url(#Gradient03);
+}
+
+@-webkit-keyframes integration {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes integration {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}

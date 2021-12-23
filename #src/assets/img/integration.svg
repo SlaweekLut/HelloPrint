@@ -1,0 +1,42 @@
+<svg viewbox="0 0 82 82" id="integration" preserveAspectRatio="none">
+	<defs>
+		<radialGradient id="Gradient01" cy="0%">
+			<stop offset="0%" stop-color="#fff"></stop>
+			<stop offset="100%" stop-color="#A5E7E8"></stop>
+		</radialGradient>
+		<linearGradient id="Gradient02">
+			<stop offset="0%" stop-color="#7528E8"></stop>
+			<stop offset="100%" stop-color="#F693FF"></stop>
+		</linearGradient>
+		<linearGradient id="Gradient03" x1="0%" y1="0%" x2="100%" y2="100%">
+			<stop offset="0%" stop-color="#01E0E2"></stop>
+			<stop offset="100%" stop-color="#3583F8"></stop>
+		</linearGradient>
+	</defs>
+	<polygon points="21,82 42,42 61,82"></polygon>
+	<polygon points="0,42 21,82 42,42"></polygon>
+	<polygon points="0,42 21,0 42,42"></polygon>
+	<polygon points="21,0 42,42 61,0"></polygon>
+	<polygon points="42,42 61,0 82,42"></polygon>
+	<polygon points="42,42 61,82 82,42"></polygon>
+</svg>
+<!-- PUG SVG
+	svg(viewbox='0 0 82 82' id='integration' preserveAspectRatio="none")
+			defs
+				radialGradient(id="Gradient01" cy='0%')
+					stop(offset="0%" stop-color="#fff")
+					stop(offset="100%" stop-color="#A5E7E8")
+				linearGradient(id="Gradient02")
+					stop(offset="0%" stop-color="#7528E8")
+					stop(offset="100%" stop-color="#F693FF")
+				linearGradient(id="Gradient03" x1='0%' y1='0%' x2='100%' y2='100%')
+					stop(offset="0%" stop-color="#01E0E2")
+					stop(offset="100%" stop-color="#3583F8")
+			
+			polygon(points='21,82 42,42 61,82')
+			polygon(points='0,42 21,82 42,42')
+			polygon(points='0,42 21,0 42,42')
+			polygon(points='21,0 42,42 61,0')
+			polygon(points='42,42 61,0 82,42')
+			polygon(points='42,42 61,82 82,42')
+-->
