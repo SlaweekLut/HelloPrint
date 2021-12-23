@@ -63,7 +63,7 @@ import mozjpeg from "imagemin-mozjpeg";
 import optipng from "imagemin-optipng";
 import svgo from "imagemin-svgo";
 import pug from 'gulp-pug';
-
+import pugbem from 'gulp-pugbem';
 // import gulpts from "gulp-typescript";
 
 const sass = gulpSass(simpleSass)
@@ -83,7 +83,8 @@ export const html = () => {
 	return gulp.src(path.src.html)
 		.pipe(
 			pug({
-				// Your options in here.
+				plugins: [pugbem],
+				pretty: true
 			})
 		)
 		.pipe(fileinclude())
