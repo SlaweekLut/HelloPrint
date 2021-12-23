@@ -101,6 +101,10 @@ body {
   outline: none;
 }
 
+.c-wrapper {
+  width: 100%;
+}
+
 /** Шапка сайта **/
 
 .header {
@@ -117,7 +121,7 @@ body {
 
 .header__logo {
   width: 100%;
-  max-width: 112px;
+  max-width: clamp(89px, 10%, 112px);
   max-height: 45px;
   height: 100%;
 }
@@ -173,6 +177,24 @@ body {
   color: #FFFFFF;
 }
 
+.header__button--menu {
+  display: none;
+  width: 42px;
+}
+
+.header__button--menu:hover,
+.header__button--menu:focus {
+  color: #0085FF;
+  border-color: #0085FF;
+}
+
+.header__button--phone {
+  display: none;
+  width: 42px;
+  color: #0085FF;
+  border-color: #0085FF;
+}
+
 .header__contact {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -192,12 +214,18 @@ body {
 
 .header__text--number {
   color: #252525;
-  font-size: 22px;
+}
+
+.header__text--number {
+  font-size: 18px;
 }
 
 .header__text--mail {
   color: #0085FF;
-  font-size: 16px;
+}
+
+.header__text--mail {
+  font-size: 12px;
 }
 
 .header-nav {
@@ -215,9 +243,23 @@ body {
   transition: 0.2s;
 }
 
+.header-nav__item {
+  font-size: 14px;
+}
+
 .header-nav__item:hover,
 .header-nav__item:focus {
   color: #0085FF;
+}
+
+.header-nav--desktop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header-nav--mobile {
+  display: none;
 }
 
 /** Баннер **/
@@ -236,7 +278,7 @@ body {
 }
 
 .hero__title {
-  font-size: 50px;
+  font-size: 48px;
 }
 
 .hero__subtitle {
@@ -310,19 +352,43 @@ body {
   opacity: 0;
 }
 
-@media screen and (min-width: 650px) {
+@media screen and (min-width: 880px) {
+  .header__text--number {
+    font-size: calc(18px + 4 * ((100vw - 880px) / 316));
+  }
+
+  .header__text--mail {
+    font-size: calc(12px + 4 * ((100vw - 880px) / 316));
+  }
+
+  .header-nav__item {
+    font-size: calc(14px + 4 * ((100vw - 880px) / 316));
+  }
+
   .hero__title {
-    font-size: calc(50px + -2 * ((100vw - 650px) / 546));
+    font-size: calc(48px + 2 * ((100vw - 880px) / 316));
   }
 
   .hero__subtitle {
-    font-size: calc(22px + 0 * ((100vw - 650px) / 546));
+    font-size: calc(22px + 0 * ((100vw - 880px) / 316));
   }
 }
 
 @media screen and (min-width: 1196px) {
+  .header__text--number {
+    font-size: 22px;
+  }
+
+  .header__text--mail {
+    font-size: 16px;
+  }
+
+  .header-nav__item {
+    font-size: 18px;
+  }
+
   .hero__title {
-    font-size: 48px;
+    font-size: 50px;
   }
 
   .hero__subtitle {
@@ -330,15 +396,104 @@ body {
   }
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 880px) {
   .container {
-    max-width: 682px;
+    max-width: 912px;
     padding: 0px 16px;
+  }
+
+  .c-wrapper--hero {
+    background: -webkit-gradient(linear, left top, right top, color-stop(-1%, #6712E4), color-stop(60%, #814BC9), color-stop(78%, #8c4dd600)), #9566DD;
+    background: -o-linear-gradient(left, #6712E4 -1%, #814BC9 60%, #8c4dd600 78%), #9566DD;
+    background: linear-gradient(90deg, #6712E4 -1%, #814BC9 60%, #8c4dd600 78%), #9566DD;
+  }
+
+  .header__button--menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .header__contact {
+    margin-left: auto;
+    margin-right: 23px;
+  }
+
+  .header__buttons {
+    margin: 0 auto;
+  }
+
+  .header-nav--desktop {
+    display: none;
+  }
+
+  .header-nav--mobile.active {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .hero {
+    padding: 58px min(10%, 54px) 70px;
+  }
+
+  .hero__title {
+    font-size: 36px;
+  }
+
+  .hero__subtitle {
+    font-size: 18px;
   }
 }
 
-@media screen and (max-width: 343px) {
+@media screen and (max-width: 568px) {
   .container {
-    max-width: 375px;
+    max-width: 600px;
+  }
+
+  .header__buttons {
+    display: none;
+  }
+
+  .header__button--phone {
+    display: block;
+    margin-right: 11px;
+    margin-left: auto;
+  }
+
+  .header__contact {
+    display: none;
+  }
+
+  .hero {
+    text-align: center;
+  }
+
+  .hero__subtitle {
+    max-width: 100%;
+  }
+
+  .hero__button {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 880px) and (min-width: 568px) {
+  .hero__title {
+    font-size: calc(36px + 12 * ((100vw - 568px) / 312));
+  }
+
+  .hero__subtitle {
+    font-size: calc(18px + 4 * ((100vw - 568px) / 312));
+  }
+}
+
+@media screen and (max-width: 880px) and (min-width: 880px) {
+  .hero__title {
+    font-size: 48px;
+  }
+
+  .hero__subtitle {
+    font-size: 22px;
   }
 }

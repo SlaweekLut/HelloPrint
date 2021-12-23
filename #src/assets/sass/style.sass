@@ -17,6 +17,7 @@ body
 	padding: 0px 20px
 	&--header
 		margin: 30px auto 36px
+
 	@include adaptiveWidth($Container-M)
 		max-width: calc($Container-M + 32px)
 		padding: 0px 16px
@@ -32,6 +33,11 @@ body
 	background: transparent
 	outline: none
 
+.c-wrapper
+	width: 100%
+	@include adaptiveWidth($Container-M)
+		&--hero
+			background: linear-gradient(90deg, #6712E4 -1%, #814BC9 60%, #8c4dd600 78%) ,#9566DD
 /** Шапка сайта **/
 
 .header
@@ -40,13 +46,15 @@ body
 	justify-content: space-between
 	&__logo
 		width: 100%
-		max-width: 112px
+		max-width: clamp(89px, 10%,112px)
 		max-height: 45px
 		height: 100%
+
 	&__buttons
 		display: flex
 		align-items: center
 		gap: 15px
+
 	&__button
 		display: flex
 		align-items: center
@@ -71,6 +79,19 @@ body
 				background-color: $Color-Blue
 				color: $Color-White
 
+		&--menu
+			display: none
+			width: 42px
+			&:hover, &:focus
+				color: $Color-Blue
+				border-color: $Color-Blue
+
+		&--phone
+			display: none
+			width: 42px
+			color: $Color-Blue
+			border-color: $Color-Blue
+
 	&__contact
 		display: flex
 		flex-direction: column
@@ -80,20 +101,60 @@ body
 		font-weight: 700
 		&--number
 			color: $Color-Black25
-			font-size: 22px
+			@include fluid-type($Container-M, $Container-L, 18px, 22px)
+
 		&--mail
 			color: $Color-Blue
-			font-size: 16px
+			@include fluid-type($Container-M, $Container-L, 12px, 16px)
+
+	@include adaptiveWidth($Container-M)
+		&__button
+			&--menu
+				display: flex
+
+		&__contact
+			margin-left: auto
+			margin-right: 23px
+
+		&__buttons
+			margin: 0 auto
+
+	@include adaptiveWidth($Container-S)
+		&__buttons
+			display: none
+
+		&__button
+			&--phone
+				display: block
+				margin-right: 11px
+				margin-left: auto
+		&__contact
+			display: none
 
 .header-nav
 	display: flex
 	gap: min(15px, 35px)
+
 	&__item
 		color: $Color-Black22
 		font-weight: 500
 		transition: .2s
+		@include fluid-type($Container-M, $Container-L, 14px, 18px)
+
 		&:hover, &:focus
 			color: $Color-Blue
+
+	&--desktop
+		display: flex
+
+	&--mobile
+		display: none
+
+	@include adaptiveWidth($Container-M)
+		&--desktop
+			display: none
+		&--mobile.active
+			display: flex
 
 /** Баннер **/
 
@@ -105,7 +166,7 @@ body
 	&__title
 		color: $Color-White
 		font-weight: 700
-		@include fluid-type($Container-M, $Container-L, 50px, 48px )
+		@include fluid-type($Container-M, $Container-L, 48px, 50px )
 
 	&__subtitle
 		margin: 11px 0px 34px
@@ -151,3 +212,16 @@ body
 				transform: scale(1)
 			&::after
 				opacity: 0
+
+	@include adaptiveWidth($Container-M)
+		padding: 58px min(10% ,54px) 70px
+		&__title
+			@include fluid-type($Container-S, $Container-M, 36px, 48px )
+		&__subtitle
+			@include fluid-type($Container-S, $Container-M, 18px, 22px )
+	@include adaptiveWidth($Container-S)
+		text-align: center
+		&__subtitle
+			max-width: 100%
+		&__button
+			width: 100%
