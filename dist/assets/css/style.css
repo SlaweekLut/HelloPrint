@@ -4,64 +4,64 @@
 
 @font-face {
   font-family: "Greenwich";
-  src: url("/assets/fonts/Greenwich-Light.eot");
-  src: url("/assets/fonts/Greenwich-Light.woff") format("woff"), url("/assets/fonts/Greenwich-Light.woff2") format("woff2"), url("/assets/fonts/Greenwich-Light.ttf") format("truetype");
+  src: url("../fonts/Greenwich-Light.eot");
+  src: url("../fonts/Greenwich-Light.woff") format("woff"), url("../fonts/Greenwich-Light.woff2") format("woff2"), url("../fonts/Greenwich-Light.ttf") format("truetype");
   font-style: normal;
   font-weight: 300;
 }
 
 @font-face {
   font-family: "Greenwich";
-  src: url("/assets/fonts/Greenwich-Regular.eot");
-  src: url("/assets/fonts/Greenwich-Regular.woff") format("woff"), url("/assets/fonts/Greenwich-Regular.woff2") format("woff2"), url("/assets/fonts/Greenwich-Regular.ttf") format("truetype");
+  src: url("../fonts/Greenwich-Regular.eot");
+  src: url("../fonts/Greenwich-Regular.woff") format("woff"), url("../fonts/Greenwich-Regular.woff2") format("woff2"), url("../fonts/Greenwich-Regular.ttf") format("truetype");
   font-style: normal;
   font-weight: 400;
 }
 
 @font-face {
   font-family: "Greenwich";
-  src: url("/assets/fonts/Greenwich-Medium.eot");
-  src: url("/assets/fonts/Greenwich-Medium.woff") format("woff"), url("/assets/fonts/Greenwich-Medium.woff2") format("woff2"), url("/assets/fonts/Greenwich-Medium.ttf") format("truetype");
+  src: url("../fonts/Greenwich-Medium.eot");
+  src: url("../fonts/Greenwich-Medium.woff") format("woff"), url("../fonts/Greenwich-Medium.woff2") format("woff2"), url("../fonts/Greenwich-Medium.ttf") format("truetype");
   font-style: normal;
   font-weight: 500;
 }
 
 @font-face {
   font-family: "Greenwich";
-  src: url("/assets/fonts/Greenwich-SemiBold.eot");
-  src: url("/assets/fonts/Greenwich-SemiBold.woff") format("woff"), url("/assets/fonts/Greenwich-SemiBold.woff2") format("woff2"), url("/assets/fonts/Greenwich-SemiBold.ttf") format("truetype");
+  src: url("../fonts/Greenwich-SemiBold.eot");
+  src: url("../fonts/Greenwich-SemiBold.woff") format("woff"), url("../fonts/Greenwich-SemiBold.woff2") format("woff2"), url("../fonts/Greenwich-SemiBold.ttf") format("truetype");
   font-style: normal;
   font-weight: 600;
 }
 
 @font-face {
   font-family: "Greenwich";
-  src: url("/assets/fonts/Greenwich-Bold.eot");
-  src: url("/assets/fonts/Greenwich-Bold.woff") format("woff"), url("/assets/fonts/Greenwich-Bold.woff2") format("woff2"), url("/assets/fonts/Greenwich-Bold.ttf") format("truetype");
+  src: url("../fonts/Greenwich-Bold.eot");
+  src: url("../fonts/Greenwich-Bold.woff") format("woff"), url("../fonts/Greenwich-Bold.woff2") format("woff2"), url("../fonts/Greenwich-Bold.ttf") format("truetype");
   font-style: normal;
   font-weight: 700;
 }
 
 @font-face {
   font-family: "Utily";
-  src: url("/assets/fonts/Utily-Regular.eot");
-  src: url("/assets/fonts/Utily-Regular.woff") format("woff"), url("/assets/fonts/Utily-Regular.woff2") format("woff2"), url("/assets/fonts/Utily-Regular.ttf") format("truetype");
+  src: url("../fonts/Utily-Regular.eot");
+  src: url("../fonts/Utily-Regular.woff") format("woff"), url("../fonts/Utily-Regular.woff2") format("woff2"), url("../fonts/Utily-Regular.ttf") format("truetype");
   font-style: normal;
   font-weight: 400;
 }
 
 @font-face {
   font-family: "Utily";
-  src: url("/assets/fonts/Utily-Medium.eot");
-  src: url("/assets/fonts/Utily-Medium.woff") format("woff"), url("/assets/fonts/Utily-Medium.woff2") format("woff2"), url("/assets/fonts/Utily-Medium.ttf") format("truetype");
+  src: url("../fonts/Utily-Medium.eot");
+  src: url("../fonts/Utily-Medium.woff") format("woff"), url("../fonts/Utily-Medium.woff2") format("woff2"), url("../fonts/Utily-Medium.ttf") format("truetype");
   font-style: normal;
   font-weight: 500;
 }
 
 @font-face {
   font-family: "Utily";
-  src: url("/assets/fonts/Utily-Bold.eot");
-  src: url("/assets/fonts/Utily-Bold.woff") format("woff"), url("/assets/fonts/Utily-Bold.woff2") format("woff2"), url("/assets/fonts/Utily-Bold.ttf") format("truetype");
+  src: url("../fonts/Utily-Bold.eot");
+  src: url("../fonts/Utily-Bold.woff") format("woff"), url("../fonts/Utily-Bold.woff2") format("woff2"), url("../fonts/Utily-Bold.ttf") format("truetype");
   font-style: normal;
   font-weight: 700;
 }
@@ -90,6 +90,10 @@ body {
 
 .container--header {
   margin: 30px auto 36px;
+}
+
+.container--info {
+  margin-bottom: 113px;
 }
 
 .c-button {
@@ -352,6 +356,184 @@ body {
   opacity: 0;
 }
 
+/** Информация **/
+
+.info__suptitle {
+  font-size: 20px;
+  font-weight: 700;
+  color: #7528E8;
+  text-align: center;
+  margin-bottom: 6px;
+}
+
+.info__suptitle {
+  font-size: 14px;
+}
+
+.info__title {
+  text-align: center;
+  font-family: Greenwich;
+  color: #252525;
+}
+
+.info__title--h2 {
+  font-weight: 700;
+}
+
+.info__title--h2 {
+  font-size: 26px;
+}
+
+.info__title--h2 {
+  font-size: 20px;
+}
+
+.info__title--h3 {
+  margin-bottom: 44px;
+  font-weight: 600;
+}
+
+.info__title--h3 {
+  font-size: 18px;
+}
+
+.info__title--h3 {
+  font-size: 12px;
+}
+
+.info__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  gap: 15px;
+  margin: 32px auto 36px;
+}
+
+.info__button {
+  border: 1px solid #B7CEEC;
+  color: #0085FF;
+  height: 40px;
+  padding: 0px 20px;
+  font-weight: 700;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.info__button {
+  font-size: 12px;
+}
+
+.info__button.active,
+.info__button:hover,
+.info__button:focus {
+  background-color: #0085FF;
+  border-color: #0085FF;
+  color: #FFFFFF;
+}
+
+.info__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 64px;
+  height: 392px;
+}
+
+.info__img {
+  max-width: 588px;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #B7CEEC;
+  border-radius: 30px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center center;
+  object-position: center center;
+}
+
+.info__column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 544px;
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.info__text {
+  font-size: 18px;
+  line-height: 160%;
+  color: #252525;
+}
+
+.info__button-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-weight: 700;
+  width: 160px;
+  height: 50px;
+  color: #0085FF;
+  border: 1px solid #0085FF;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.info__button-link {
+  font-size: 14px;
+}
+
+.info__button-link:hover,
+.info__button-link:focus {
+  background-color: #0085FF;
+  border-color: #0085FF;
+  color: #FFFFFF;
+}
+
+@media screen and (min-width: 568px) {
+  .info__suptitle {
+    font-size: calc(14px + 6 * ((100vw - 568px) / 312));
+  }
+
+  .info__title--h2 {
+    font-size: calc(20px + 6 * ((100vw - 568px) / 312));
+  }
+
+  .info__title--h3 {
+    font-size: calc(12px + 6 * ((100vw - 568px) / 312));
+  }
+
+  .info__button {
+    font-size: calc(12px + 4 * ((100vw - 568px) / 312));
+  }
+
+  .info__button-link {
+    font-size: calc(14px + 2 * ((100vw - 568px) / 312));
+  }
+}
+
 @media screen and (min-width: 880px) {
   .header__text--number {
     font-size: calc(18px + 4 * ((100vw - 880px) / 316));
@@ -371,6 +553,34 @@ body {
 
   .hero__subtitle {
     font-size: calc(22px + 0 * ((100vw - 880px) / 316));
+  }
+
+  .info__suptitle {
+    font-size: 20px;
+  }
+
+  .info__title--h2 {
+    font-size: calc(26px + 7 * ((100vw - 880px) / 316));
+  }
+
+  .info__title--h2 {
+    font-size: 26px;
+  }
+
+  .info__title--h3 {
+    font-size: calc(18px + 6 * ((100vw - 880px) / 316));
+  }
+
+  .info__title--h3 {
+    font-size: 18px;
+  }
+
+  .info__button {
+    font-size: 16px;
+  }
+
+  .info__button-link {
+    font-size: 16px;
   }
 }
 
@@ -393,6 +603,14 @@ body {
 
   .hero__subtitle {
     font-size: 22px;
+  }
+
+  .info__title--h2 {
+    font-size: 33px;
+  }
+
+  .info__title--h3 {
+    font-size: 24px;
   }
 }
 
@@ -444,6 +662,36 @@ body {
   .hero__subtitle {
     font-size: 18px;
   }
+
+  .info__title--h3 {
+    margin-bottom: 30px;
+  }
+
+  .info__content {
+    gap: 40px;
+    height: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .info__img {
+    max-width: 100%;
+    height: 401px;
+  }
+
+  .info__column {
+    max-width: 100%;
+  }
+
+  .info__text {
+    margin-bottom: 23px;
+  }
+
+  .info__buttons {
+    margin: 23px auto;
+  }
 }
 
 @media screen and (max-width: 568px) {
@@ -475,6 +723,40 @@ body {
 
   .hero__button {
     width: 100%;
+  }
+
+  .info__title--h3 {
+    margin-bottom: 27px;
+  }
+
+  .info__content {
+    gap: 23px;
+  }
+
+  .info__buttons {
+    margin: 18px auto;
+    gap: 7px;
+  }
+
+  .info__button {
+    padding: 0px 13px;
+    height: 26px;
+    border-radius: 8px;
+  }
+
+  .info__img {
+    max-height: 243px;
+  }
+
+  .info__text {
+    font-size: 14px;
+    line-height: 140%;
+  }
+
+  .info__button-link {
+    height: 45px;
+    width: 128px;
+    margin: 0 auto;
   }
 }
 

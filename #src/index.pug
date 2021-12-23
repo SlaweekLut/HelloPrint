@@ -43,3 +43,118 @@ html(lang='ru')
 						p._subtitle Самая удобная система по управлению полиграфическим бизнесом
 						button.c-button._button 
 							span Заявка на подключение
+			
+			section.container.-info
+				.info 
+					p._suptitle Поднимите продажи на новый уровень
+					h2._title.-h2 Обрабатывайте заявки в удобной CRM системе
+					._buttons
+						- 
+							let CRM = ['Заявки', 'Реестр заказов']
+
+						each buttonText, index in CRM
+							if index === 0
+								button.c-button._button.active= buttonText
+							else
+								button.c-button._button= buttonText
+
+					h3._title.-h3 Контролируйте продажи в реальном времени
+					._content 
+						img._img(src='https://picsum.photos/600/600')
+						._column 
+							p._text 
+								|	Интерфейс в виде канбан-доски поможет не упустить ни одну заявку и довести клиента до заказа. Процесс работы отдела продаж станет для вас максимально прозрачным. Все заявки распределены по соответствующим этапам. Вы настраиваете какие статусы соответствуют вашему бизнес-процессу. 
+								br
+								br
+								|	На одном экране вы видите: удобный фильтр заявок с шаблонами, поисковую строку, канбан-доску с этапами заявок, карточки заявок, сумму заявок на каждом этапе.
+							a.c-button._button-link(href='#') Подробнее
+
+			section.container.-info
+				.info 
+					p._suptitle Вы больше не упустите ни одного клиента
+					h2._title.-h2 Централизованное хранение данных о клиентах
+					._buttons
+						- 
+							let DATA = ['Контрагенты', 'Представители', 'Юридические лица', 'Адреса', 'Заказы контрагента']
+
+						each buttonText, index in DATA
+							if index === 0
+								button.c-button._button.active= buttonText
+							else
+								button.c-button._button= buttonText
+
+					h3._title.-h3 Ведите единую клиентскую базу
+					._content 
+						img._img(src='https://picsum.photos/600/600')
+						._column 
+							p._text 
+								|	Контрагент — физическое или юридическое лицо, которое выступает одной из сторон сделки. Контрагентом называют клиента, поставщика, подрядчика и партнера. 
+								br
+								br
+								|	У каждого контрагента есть своя карточка, которая объединяет список представителей, юридических лиц и адресов контрагента. Заполните данные о контрагенте один раз и подставляйте данные в других местах системы: оформление заказа или заявки на доставку.
+							a.c-button._button-link(href='#') Подробнее
+
+			section.container.-info
+				.info 
+					p._suptitle Теперь все проще
+					h2._title.-h2 Рассчитывайте заказ в удобных калькуляторах
+					._buttons
+						- 
+							let CALCULATOR = ['Контрагенты', 'Представители', 'Юридические лица', 'Адреса', 'Заказы контрагента']
+
+						each buttonText, index in CALCULATOR
+							if index === 0
+								button.c-button._button.active= buttonText
+							else
+								button.c-button._button= buttonText
+
+					h3._title.-h3 Настройте калькулятор из любой таблицы с ценами
+					._content 
+						img._img(src='https://picsum.photos/600/600')
+						._column 
+							p._text 
+								|	Преобразуйте абсолютно любую таблицу с ценами в калькулятор с удобным интерфейсом для использования.
+								br
+								br
+								|	C помощью "стандартного" типа калькулятора можно настроить расчёт бесконечного числа разнообразных полиграфических продуктов, услуг и технологий: визитки, кружки, дизайн, шелкография, тампопечать и многое другое.
+							a.c-button._button-link(href='#') Подробнее
+
+			section.container.-info
+				.info 
+					p._suptitle Все, что нужно, всегда под рукой
+					h2._title.-h2 Храните всю информацию по заказу в карточке заказа
+					._buttons
+						- 
+							let INFORMATION = ['Инфо', 'КП', 'Спецификация', 'Маршрут', 'Оплаты', 'Логистика', 'Задачи', 'История', 'Затраты']
+
+						each buttonText, index in INFORMATION
+							if index === 0
+								button.c-button._button.active= buttonText
+							else
+								button.c-button._button= buttonText
+
+					h3._title.-h3 Вся информация в одном месте
+					._content 
+						img._img(src='https://picsum.photos/600/600')
+						._column 
+							p._text 
+								|	Преобразуйте абсолютно любую таблицу с ценами в калькулятор с удобным интерфейсом для использования.
+								br
+								br
+								|	C помощью "стандартного" типа калькулятора можно настроить расчёт бесконечного числа разнообразных полиграфических продуктов, услуг и технологий: визитки, кружки, дизайн, шелкография, тампопечать и многое другое.
+							a.c-button._button-link(href='#') Подробнее
+	
+		script.
+			const tabGroups = document.querySelectorAll('.info__buttons')
+			tabGroups.forEach(tabGroup => {
+				const tabs = tabGroup.querySelectorAll('.info__button')
+				tabs.forEach((tab, index) => {
+					tab.addEventListener('click', () => {
+						tabs.forEach(remove => {
+							remove.classList.remove('active')
+						})
+						tab.classList.add('active')
+						console.log('123')
+					})
+				})
+			})

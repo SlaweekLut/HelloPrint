@@ -17,7 +17,8 @@ body
 	padding: 0px 20px
 	&--header
 		margin: 30px auto 36px
-
+	&--info
+		margin-bottom: 113px
 	@include adaptiveWidth($Container-M)
 		max-width: calc($Container-M + 32px)
 		padding: 0px 16px
@@ -225,3 +226,125 @@ body
 			max-width: 100%
 		&__button
 			width: 100%
+
+/** Информация **/
+
+.info
+	&__suptitle
+		font-size: 20px
+		font-weight: 700
+		color: $Color-Purple
+		text-align: center
+		margin-bottom: 6px
+		@include fluid-type($Container-S, $Container-M, 14px, 20px)
+	&__title
+		text-align: center
+		font-family: $Font-Greenwich
+		color: $Color-Black25
+		&--h2
+			font-weight: 700
+			@include fluid-type($Container-M, $Container-L, 26px, 33px)
+			@include fluid-type($Container-S, $Container-M, 20px, 26px)
+
+		&--h3
+			margin-bottom: 44px
+			font-weight: 600
+			@include fluid-type($Container-M, $Container-L, 18px, 24px)
+			@include fluid-type($Container-S, $Container-M, 12px, 18px)
+
+	&__buttons
+		display: flex
+		align-items: center
+		flex-wrap: wrap
+		justify-content: center
+		gap: 15px
+		margin: 32px auto 36px
+	&__button
+		border: 1px solid $Color-PaleBlue
+		color: $Color-Blue
+		height: 40px
+		padding: 0px 20px
+		font-weight: 700
+		transition: 0.3s
+		@include fluid-type($Container-S, $Container-M, 12px, 16px)
+		&.active, &:hover, &:focus
+			background-color: $Color-Blue
+			border-color: $Color-Blue
+			color: $Color-White
+	&__content
+		display: flex
+		gap: 64px
+		height: 392px
+	&__img
+		max-width: 588px
+		width: 100%
+		height: 100%
+		border: 1px solid $Color-PaleBlue
+		border-radius: 30px
+		object-fit: cover
+		object-position: center center
+	&__column
+		display: flex
+		max-width: 544px
+		width: 100%
+		flex-direction: column
+		justify-content: space-between
+	&__text
+		font-size: 18px
+		line-height: 160%
+		color: $Color-Black25
+	&__button-link
+		display: flex
+		align-items: center
+		justify-content: center
+		font-weight: 700
+		width: 160px
+		height: 50px
+		color: $Color-Blue
+		border: 1px solid $Color-Blue
+		transition: 0.3s
+		@include fluid-type($Container-S, $Container-M, 14px, 16px)
+		&:hover, &:focus
+			background-color: $Color-Blue
+			border-color: $Color-Blue
+			color: $Color-White
+
+	@include adaptiveWidth($Container-M)
+		&__title
+			&--h3
+				margin-bottom: 30px
+		&__content
+			gap: 40px
+			height: auto
+			flex-direction: column
+		&__img
+			max-width: 100%
+			height: 401px
+		&__column
+			max-width: 100%
+		&__text
+			margin-bottom: 23px
+		&__buttons
+			margin: 23px auto
+	@include adaptiveWidth($Container-S)
+		&__title
+			&--h3
+				margin-bottom: 27px
+		&__content
+			gap: 23px
+		&__buttons
+			margin: 18px auto
+			gap: 7px
+		&__button
+			padding: 0px 13px
+			height: 26px
+			border-radius: 8px
+		&__img
+			max-height: 243px
+		&__text
+			font-size: 14px
+			line-height: 140%
+		&__button-link
+			height: 45px
+			width: 128px
+			margin: 0 auto
