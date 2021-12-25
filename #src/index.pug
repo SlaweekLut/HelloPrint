@@ -1,284 +1,190 @@
-doctype
-html(lang='ru')
-	head
-		meta(charset='utf-8')
-		title Hello Print
-		link(rel="apple-touch-icon" sizes="180x180" href="assets/helpers/apple-touch-icon.png")
-		link(rel="icon" type="image/png" sizes="32x32" href="assets/helpers/favicon-32x32.png")
-		link(rel="icon" type="image/png" sizes="16x16" href="assets/helpers/favicon-16x16.png")
-		link(rel="manifest" href="assets/helpers/site.webmanifest")
-		link(rel="mask-icon" href="assets/helpers/safari-pinned-tab.svg" color="#5bbad5")
-		meta(name="msapplication-TileColor" content="#2d89ef")
-		meta(name="theme-color" content="#ffffff")
-		meta(name="viewport", content="width=device-width, initial-scale=1.0")
-		link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css")
-		link(rel="stylesheet", href="assets/css/style.min.css")
+include assets/includes/head.pug
+body
+	include assets/includes/header.pug
 
-	body
-		.header-nav.-mobile
+	main
+		section.c-wrapper.-hero 
+			.container.-hero
+				.hero
+					h1._title Hello Print
+					p._subtitle Самая удобная система по управлению полиграфическим бизнесом
+					button.c-button._button 
+						span Заявка на подключение
+					._video
+						video(src="assets/helpers/0001-0195.mp4" autoplay='autoplay' preload='auto' loop muted height='544px')
+							source(src="assets/helpers/0001-0195.mp4" type="video/mp4")
 
-		header.container.-header 
-			.header
-				img._logo(src="assets/img/logo.svg", alt="Логотип")
-				nav.header-nav.-desktop 
-					a._item(href="#") Тарифы
-					a._item(href="#") Видеотур
-					a._item(href="#") Техническая поддержка
-					a._item(href="#") Контакты
-				._buttons 
-					button.c-button._button.-request Оставить заявку
-					button.c-button._button.-search 
-						svg(width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg")
-							path(fill-rule="evenodd" clip-rule="evenodd" d="M8.25 3.25C5.48858 3.25 3.25 5.48858 3.25 8.25C3.25 11.0114 5.48858 13.25 8.25 13.25C11.0114 13.25 13.25 11.0114 13.25 8.25C13.25 5.48858 11.0114 3.25 8.25 3.25ZM1.25 8.25C1.25 4.38401 4.38401 1.25 8.25 1.25C12.116 1.25 15.25 4.38401 15.25 8.25C15.25 12.116 12.116 15.25 8.25 15.25C4.38401 15.25 1.25 12.116 1.25 8.25Z" fill="currentColor")
-							path(fill-rule="evenodd" clip-rule="evenodd" d="M11.7804 11.7804C12.1709 11.3899 12.8041 11.3899 13.1946 11.7804L16.4571 15.0429C16.8476 15.4334 16.8476 16.0666 16.4571 16.4571C16.0666 16.8476 15.4334 16.8476 15.0429 16.4571L11.7804 13.1946C11.3899 12.8041 11.3899 12.1709 11.7804 11.7804Z" fill="currentColor")
-				._contact
-					p._text.-number + 7 (495) 12 54 18
-					p._text.-mail sales@enjoylab.ru
-				button.c-button._button.-phone 
-					svg(width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg")
-						path(d="M14.8012 10.6171C14.28 9.63191 12.4703 8.56365 12.3906 8.51694C12.158 8.38457 11.9154 8.3145 11.6883 8.3145C11.3506 8.3145 11.0742 8.46918 10.9068 8.75052C10.6421 9.06716 10.3138 9.43726 10.2341 9.49462C9.61742 9.91299 9.13468 9.8655 8.60055 9.33137L5.61949 6.35005C5.08874 5.8193 5.03995 5.33059 5.45547 4.7173C5.5136 4.6371 5.8837 4.30853 6.20034 4.04354C6.40226 3.92337 6.54085 3.74481 6.60159 3.52576C6.6823 3.2343 6.62287 2.89145 6.43237 2.55743C6.38747 2.4806 5.31869 0.670585 4.334 0.149692C4.15025 0.0523651 3.94314 0.000976562 3.73551 0.000976562C3.39344 0.000976562 3.07161 0.134379 2.82972 0.376009L2.17101 1.03446C1.12923 2.07598 0.752117 3.25662 1.04955 4.54341C1.29767 5.61582 2.02074 6.75701 3.19904 7.93505L7.01555 11.7516C8.50685 13.2429 9.9286 13.9992 11.2413 13.9992C11.2413 13.9992 11.2413 13.9992 11.2416 13.9992C12.2071 13.9992 13.1072 13.5888 13.9161 12.7798L14.5746 12.1214C14.9748 11.7215 15.0656 11.1167 14.8012 10.6171Z" fill="currentColor")
-				button.c-button._button.-menu 
-					svg(width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns="http://www.w3.org/2000/svg")
-						rect(x='2' y='4' width='16' height='2' rx='1' fill='currentColor')
-						rect(x='2' y='9' width='16' height='2' rx='1' fill='currentColor')
-						rect(x='2' y='14' width='16' height='2' rx='1' fill='currentColor')
-		
-		main
-			section.c-wrapper.-hero 
-				.container.-hero
-					.hero
-						h1._title Hello Print
-						p._subtitle Самая удобная система по управлению полиграфическим бизнесом
-						button.c-button._button 
-							span Заявка на подключение
-						._video
-							video(src="assets/helpers/0001-0195.mp4" autoplay='autoplay' preload='auto' loop muted height='544px')
-								source(src="assets/helpers/0001-0195.mp4" type="video/mp4")
+		section.container.-pre-features
+			.pre-features
+				._item
+					._animation
+					p._text Гибкие настройки
+				._item
+					._animation
+					p._text Всё в одной системе
+				._item
+					._animation
+					p._text Быстрое внедрение
+				._item
+					._animation
+					p._text Надёжность
 
-			section.container.-pre-features
-				.pre-features
-					._item
-						._animation
-						p._text Гибкие настройки
-					._item
-						._animation
-						p._text Всё в одной системе
-					._item
-						._animation
-						p._text Быстрое внедрение
-					._item
-						._animation
-						p._text Надёжность
+		section.container.-info
+			.info 
+				p._suptitle Поднимите продажи на новый уровень
+				h2._title.-h2 Обрабатывайте заявки в удобной CRM системе
+				._buttons
+					- 
+						let CRM = ['Заявки', 'Реестр заказов']
 
-			section.container.-info
-				.info 
-					p._suptitle Поднимите продажи на новый уровень
-					h2._title.-h2 Обрабатывайте заявки в удобной CRM системе
-					._buttons
-						- 
-							let CRM = ['Заявки', 'Реестр заказов']
+					each buttonText, index in CRM
+						if index === 0
+							button.c-button._button.active= buttonText
+						else
+							button.c-button._button= buttonText
 
-						each buttonText, index in CRM
-							if index === 0
-								button.c-button._button.active= buttonText
-							else
-								button.c-button._button= buttonText
-
-					h3._title.-h3 Контролируйте продажи в реальном времени
-					._content 
-						img._img(src='https://picsum.photos/600/600')
-						._column 
-							p._text 
-								|	Интерфейс в виде канбан-доски поможет не упустить ни одну заявку и довести клиента до заказа. Процесс работы отдела продаж станет для вас максимально прозрачным. Все заявки распределены по соответствующим этапам. Вы настраиваете какие статусы соответствуют вашему бизнес-процессу. 
-								br
-								br
-								|	На одном экране вы видите: удобный фильтр заявок с шаблонами, поисковую строку, канбан-доску с этапами заявок, карточки заявок, сумму заявок на каждом этапе.
-							a.c-button._button-link(href='#') Подробнее
-
-			section.container.-info
-				.info 
-					p._suptitle Вы больше не упустите ни одного клиента
-					h2._title.-h2 Централизованное хранение данных о клиентах
-					._buttons
-						- 
-							let DATA = ['Контрагенты', 'Представители', 'Юридические лица', 'Адреса', 'Заказы контрагента']
-
-						each buttonText, index in DATA
-							if index === 0
-								button.c-button._button.active= buttonText
-							else
-								button.c-button._button= buttonText
-
-					h3._title.-h3 Ведите единую клиентскую базу
-					._content 
-						img._img(src='https://picsum.photos/600/600')
-						._column 
-							p._text 
-								|	Контрагент — физическое или юридическое лицо, которое выступает одной из сторон сделки. Контрагентом называют клиента, поставщика, подрядчика и партнера. 
-								br
-								br
-								|	У каждого контрагента есть своя карточка, которая объединяет список представителей, юридических лиц и адресов контрагента. Заполните данные о контрагенте один раз и подставляйте данные в других местах системы: оформление заказа или заявки на доставку.
-							a.c-button._button-link(href='#') Подробнее
-
-			section.container.-info
-				.info 
-					p._suptitle Теперь все проще
-					h2._title.-h2 Рассчитывайте заказ в удобных калькуляторах
-					._buttons
-						- 
-							let CALCULATOR = ['Контрагенты', 'Представители', 'Юридические лица', 'Адреса', 'Заказы контрагента']
-
-						each buttonText, index in CALCULATOR
-							if index === 0
-								button.c-button._button.active= buttonText
-							else
-								button.c-button._button= buttonText
-
-					h3._title.-h3 Настройте калькулятор из любой таблицы с ценами
-					._content 
-						img._img(src='https://picsum.photos/600/600')
-						._column 
-							p._text 
-								|	Преобразуйте абсолютно любую таблицу с ценами в калькулятор с удобным интерфейсом для использования.
-								br
-								br
-								|	C помощью "стандартного" типа калькулятора можно настроить расчёт бесконечного числа разнообразных полиграфических продуктов, услуг и технологий: визитки, кружки, дизайн, шелкография, тампопечать и многое другое.
-							a.c-button._button-link(href='#') Подробнее
-
-			section.container.-info
-				.info 
-					p._suptitle Все, что нужно, всегда под рукой
-					h2._title.-h2 Храните всю информацию по заказу в карточке заказа
-					._buttons
-						- 
-							let INFORMATION = ['Инфо', 'КП', 'Спецификация', 'Маршрут', 'Оплаты', 'Логистика', 'Задачи', 'История', 'Затраты']
-
-						each buttonText, index in INFORMATION
-							if index === 0
-								button.c-button._button.active= buttonText
-							else
-								button.c-button._button= buttonText
-
-					h3._title.-h3 Вся информация в одном месте
-					._content 
-						img._img(src='https://picsum.photos/600/600')
-						._column 
-							p._text 
-								|	Преобразуйте абсолютно любую таблицу с ценами в калькулятор с удобным интерфейсом для использования.
-								br
-								br
-								|	C помощью "стандартного" типа калькулятора можно настроить расчёт бесконечного числа разнообразных полиграфических продуктов, услуг и технологий: визитки, кружки, дизайн, шелкография, тампопечать и многое другое.
-							a.c-button._button-link(href='#') Подробнее
-
-			section.c-wrapper.-integration
-				.container.-integration 
-					.integration 
-						h2._title Интеграция
-						p._subtitle API-интеграции Hello Print с другими облачными сервисами
-						._grid 
-							- for(let i = 1; i < 13; i++)
-								._item
-									img._img(src=`assets/img/integration-${i}.png` alt='Интеграция')
-
-			section.container.-client 
-				.client 
-					h2._title Клиенты и партнеры Hello Print
-					._row
-						- for(let i = 1; i < 4; i++)
-							._item
-								img._img(src=`assets/img/clients-0${i}.png` alt='Клиенты')
-
-			section.c-wrapper.-features
-				.container.-features 
-					.features
-						._wrapper-item
-							._item
-								._animation
-								p._text CRM
-						._wrapper-item
-							._item
-								._animation
-								p._text Калькуляторы
-						._wrapper-item
-							._item
-								._animation
-								p._text Уведомления
-						._wrapper-item
-							._item
-								._animation
-								p._text Система лояльности
-						._wrapper-item
-							._item
-								._animation
-								p._text Интеграция
-						._wrapper-item
-							._item
-								._animation
-								p._text Аналитика
-						._wrapper-item
-							._item
-								._animation
-								p._text Открытый API
-						._wrapper-item
-							._item
-								._animation
-								p._text Логистика
-						._wrapper-item
-							._item
-								._animation
-								p._text Затраты в заказе
-
-		footer.container.-footer 
-			.footer 
-				._top-part
+				h3._title.-h3 Контролируйте продажи в реальном времени
+				._content 
+					img._img(src='https://picsum.photos/600/600')
 					._column 
-						img._logo(src="assets/img/logo.svg", alt="Логотип")
-						p._text.-address г. Москва, ул. Автозаводская, 25
-						p._text.-number + 7 (495) 12 54 18
-						p._text.-mail sales@enjoylab.ru
-					._column
-						h3._title Разделы
-						a(href="#")._link Тарифы
-						a(href="#")._link Справка
-						a(href="#")._link Контакты
-						a(href="#")._link Соглашение
-						a(href="#")._link Договор-оферта
-					._column
-						h3._title Клиентам
-						a(href="#")._link Справка 
-						a(href="#")._link Видеотур 
-					._column
-						form(action="URL" method="GET").form
-							label._label
-								input(type="text" placeholder='Ваш e-mail')._input
-								svg(width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg")._label-img
-									path(fill-rule="evenodd" clip-rule="evenodd" d="M3 3.75C2.58921 3.75 2.25 4.08921 2.25 4.5V13.5C2.25 13.9108 2.58921 14.25 3 14.25H15C15.4108 14.25 15.75 13.9108 15.75 13.5V4.5C15.75 4.08921 15.4108 3.75 15 3.75H3ZM0.75 4.5C0.75 3.26079 1.76079 2.25 3 2.25H15C16.2392 2.25 17.25 3.26079 17.25 4.5V13.5C17.25 14.7392 16.2392 15.75 15 15.75H3C1.76079 15.75 0.75 14.7392 0.75 13.5V4.5Z" fill="currentColor")
-									path(fill-rule="evenodd" clip-rule="evenodd" d="M0.885579 4.06997C1.12312 3.73063 1.59076 3.6481 1.9301 3.88564L9 8.83457L16.0699 3.88564C16.4092 3.6481 16.8769 3.73063 17.1144 4.06997C17.352 4.4093 17.2694 4.87695 16.9301 5.11449L9.4301 10.3645C9.17186 10.5453 8.82815 10.5453 8.56991 10.3645L1.06991 5.11449C0.73057 4.87695 0.648044 4.4093 0.885579 4.06997Z" fill="currentColor")
-							button._button Подписаться на новости
-							label.footer-checkbox
-								input(type='checkbox')._input
-								span._box 
-									img._check(src="assets/img/check.svg", alt="Галочка")
-								span._text Настоящим даю согласие на обработку персональных данных
-		
-		footer.footer
-			._bottom-part
-				.container
-						p.footer__text.-bottom © 2019 - 2021 helloprint.ru
-						p.footer__text.-bottom Продукт компании vea.ru
+						p._text 
+							|	Интерфейс в виде канбан-доски поможет не упустить ни одну заявку и довести клиента до заказа. Процесс работы отдела продаж станет для вас максимально прозрачным. Все заявки распределены по соответствующим этапам. Вы настраиваете какие статусы соответствуют вашему бизнес-процессу. 
+							br
+							br
+							|	На одном экране вы видите: удобный фильтр заявок с шаблонами, поисковую строку, канбан-доску с этапами заявок, карточки заявок, сумму заявок на каждом этапе.
+						a.c-button._button-link(href='#') Подробнее
 
+		section.container.-info
+			.info 
+				p._suptitle Вы больше не упустите ни одного клиента
+				h2._title.-h2 Централизованное хранение данных о клиентах
+				._buttons
+					- 
+						let DATA = ['Контрагенты', 'Представители', 'Юридические лица', 'Адреса', 'Заказы контрагента']
 
-		script.
-			const tabGroups = document.querySelectorAll('.info__buttons')
-			tabGroups.forEach(tabGroup => {
-				const tabs = tabGroup.querySelectorAll('.info__button')
-				tabs.forEach((tab, index) => {
-					tab.addEventListener('click', () => {
-						tabs.forEach(remove => {
-							remove.classList.remove('active')
-						})
-						tab.classList.add('active')
-						console.log('123')
-					})
-				})
-			})
+					each buttonText, index in DATA
+						if index === 0
+							button.c-button._button.active= buttonText
+						else
+							button.c-button._button= buttonText
+
+				h3._title.-h3 Ведите единую клиентскую базу
+				._content 
+					img._img(src='https://picsum.photos/600/600')
+					._column 
+						p._text 
+							|	Контрагент — физическое или юридическое лицо, которое выступает одной из сторон сделки. Контрагентом называют клиента, поставщика, подрядчика и партнера. 
+							br
+							br
+							|	У каждого контрагента есть своя карточка, которая объединяет список представителей, юридических лиц и адресов контрагента. Заполните данные о контрагенте один раз и подставляйте данные в других местах системы: оформление заказа или заявки на доставку.
+						a.c-button._button-link(href='#') Подробнее
+
+		section.container.-info
+			.info 
+				p._suptitle Теперь все проще
+				h2._title.-h2 Рассчитывайте заказ в удобных калькуляторах
+				._buttons
+					- 
+						let CALCULATOR = ['Контрагенты', 'Представители', 'Юридические лица', 'Адреса', 'Заказы контрагента']
+
+					each buttonText, index in CALCULATOR
+						if index === 0
+							button.c-button._button.active= buttonText
+						else
+							button.c-button._button= buttonText
+
+				h3._title.-h3 Настройте калькулятор из любой таблицы с ценами
+				._content 
+					img._img(src='https://picsum.photos/600/600')
+					._column 
+						p._text 
+							|	Преобразуйте абсолютно любую таблицу с ценами в калькулятор с удобным интерфейсом для использования.
+							br
+							br
+							|	C помощью "стандартного" типа калькулятора можно настроить расчёт бесконечного числа разнообразных полиграфических продуктов, услуг и технологий: визитки, кружки, дизайн, шелкография, тампопечать и многое другое.
+						a.c-button._button-link(href='#') Подробнее
+
+		section.container.-info
+			.info 
+				p._suptitle Все, что нужно, всегда под рукой
+				h2._title.-h2 Храните всю информацию по заказу в карточке заказа
+				._buttons
+					- 
+						let INFORMATION = ['Инфо', 'КП', 'Спецификация', 'Маршрут', 'Оплаты', 'Логистика', 'Задачи', 'История', 'Затраты']
+
+					each buttonText, index in INFORMATION
+						if index === 0
+							button.c-button._button.active= buttonText
+						else
+							button.c-button._button= buttonText
+
+				h3._title.-h3 Вся информация в одном месте
+				._content 
+					img._img(src='https://picsum.photos/600/600')
+					._column 
+						p._text 
+							|	Преобразуйте абсолютно любую таблицу с ценами в калькулятор с удобным интерфейсом для использования.
+							br
+							br
+							|	C помощью "стандартного" типа калькулятора можно настроить расчёт бесконечного числа разнообразных полиграфических продуктов, услуг и технологий: визитки, кружки, дизайн, шелкография, тампопечать и многое другое.
+						a.c-button._button-link(href='#') Подробнее
+
+		section.c-wrapper.-integration
+			.container.-integration 
+				.integration 
+					h2._title Интеграция
+					p._subtitle API-интеграции Hello Print с другими облачными сервисами
+					._grid 
+						- for(let i = 1; i < 13; i++)
+							._item
+								img._img(src=`assets/img/integration-${i}.png` alt='Интеграция')
+
+		section.container.-client 
+			.client 
+				h2._title Клиенты и партнеры Hello Print
+				._row
+					- for(let i = 1; i < 4; i++)
+						._item
+							img._img(src=`assets/img/clients-0${i}.png` alt='Клиенты')
+
+		section.c-wrapper.-features
+			.container.-features 
+				.features
+					._wrapper-item
+						._item
+							._animation
+							p._text CRM
+					._wrapper-item
+						._item
+							._animation
+							p._text Калькуляторы
+					._wrapper-item
+						._item
+							._animation
+							p._text Уведомления
+					._wrapper-item
+						._item
+							._animation
+							p._text Система лояльности
+					._wrapper-item
+						._item
+							._animation
+							p._text Интеграция
+					._wrapper-item
+						._item
+							._animation
+							p._text Аналитика
+					._wrapper-item
+						._item
+							._animation
+							p._text Открытый API
+					._wrapper-item
+						._item
+							._animation
+							p._text Логистика
+					._wrapper-item
+						._item
+							._animation
+							p._text Затраты в заказе
+
+	include assets/includes/footer.pug

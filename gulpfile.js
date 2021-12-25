@@ -24,6 +24,7 @@ let path = {
 		pic: project_folder + '/assets/pic/',
 		fonts: project_folder + '/assets/fonts/',
 		helpers: project_folder + '/assets/helpers/',
+		includes: project_folder + '/assets/includes/',
 	},
 	src: {
 		html: [source_folder + '/*.{html,pug}', '!' + source_folder + '/_*.{html,pug}'],
@@ -34,6 +35,7 @@ let path = {
 		pic: source_folder + '/assets/pic/**/*.{jpeg,jpg,png,svg,gif,ico}',
 		fonts: source_folder + '/assets/fonts/*.{eot,ttf,woff,woff2}',
 		helpers: source_folder + '/assets/helpers/*',
+		includes: source_folder + '/assets/includes/*',
 	},
 	watch: {
 		html: source_folder + '/**/*.{html,pug}',
@@ -42,6 +44,7 @@ let path = {
 		// ts: source_folder + '/assets/scripts/**/*.ts',
 		img: source_folder + '/assets/img/**/*.{jpeg,jpg,png,svg,gif,ico}',
 		pic: source_folder + '/assets/pic/**/*.{jpeg,jpg,png,svg,gif,ico}',
+		includes: source_folder + '/assets/includes/*',
 	},
 	clean: "./" + project_folder + "/",
 }
@@ -92,6 +95,23 @@ export const html = () => {
 			svgo()
 		]))
 		.pipe(gulp.dest(path.build.html))
+		.pipe(browsersync.stream())
+}
+
+// Сборка includes
+export const includes = () => {
+	return gulp.src(path.src.includes)
+		.pipe(
+			pug({
+				plugins: [pugbem],
+				pretty: true
+			})
+		)
+		.pipe(fileinclude())
+		.pipe(imagemin([
+			svgo()
+		]))
+		.pipe(gulp.dest(path.build.includes))
 		.pipe(browsersync.stream())
 }
 
@@ -187,6 +207,7 @@ export const watchFiles = () => {
 	gulp.watch([path.watch.css], css);
 	gulp.watch([path.watch.img], images);
 	gulp.watch([path.watch.pic], picture);
+	gulp.watch([path.watch.includes], includes);
 }
 
 // Создание папки заного
@@ -205,6 +226,7 @@ export default gulp.series(
 		picture,
 		fonts,
 		helpers,
+		includes,
 	),
 	gulp.parallel(
 		js,
@@ -215,6 +237,7 @@ export default gulp.series(
 		picture,
 		fonts,
 		helpers,
+		includes,
 		watchFiles,
 		browserSync)
 );

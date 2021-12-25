@@ -124,10 +124,12 @@ h2
 		&--number
 			color: $Color-Black25
 			@include fluid-type($Container-M, $Container-L, 18px, 22px)
+			@include fluid-type($Container-S, $Container-M, 22px, 22px)
 
 		&--mail
 			color: $Color-Blue
 			@include fluid-type($Container-M, $Container-L, 12px, 16px)
+			@include fluid-type($Container-S, $Container-M, 16px, 16px)
 
 	@include adaptiveWidth($Container-M)
 		&__button
@@ -162,16 +164,56 @@ h2
 		color: $Color-Black22
 		font-weight: 500
 		transition: .2s
+		white-space: nowrap
 		@include fluid-type($Container-M, $Container-L, 14px, 18px)
 
 		&:hover, &:focus
 			color: $Color-Blue
+
+		&--dropdown
+			position: relative
+			cursor: default
+			&::after
+				content: ''
+				display: inline-block
+				position: absolute
+				top: 0
+				left: 0
+				right: 0
+				bottom: -20px
+
+			&:hover, &:focus
+				.header-nav__dropdown-list
+					transform: scale(1)
+					width: 250px
+					height: 76px
 
 	&--desktop
 		display: flex
 
 	&--mobile
 		display: none
+
+	&__dropdown-list
+		position: absolute
+		display: flex
+		flex-direction: column
+		top: 30px
+		background-color: $Color-White
+		padding: 12px 20px
+		border: 1px solid $Color-PaleBlue
+		z-index: 3
+		border-radius: 13px
+		transition: .5s
+		height: 0
+		width: 0
+		overflow: hidden
+		box-sizing: border-box
+		transform: scale(0)
+		&:hover
+			transform: scale(1)
+			width: 100px
+			height: 76px
 
 	@include adaptiveWidth($Container-M)
 		&--desktop
@@ -322,7 +364,8 @@ h2
 				bottom: -10px
 				padding: 0
 				backdrop-filter: blur(0)
-/** Преймущества **/	
+
+/** Преймущества под баннером	**/	
 
 .pre-features
 	display: flex
@@ -824,3 +867,212 @@ h2
 
 	&__input:focus + &__box
 		box-shadow: 0 0 6px $Color-LightBlue
+
+/** Заявка **/
+
+.request
+	position: absolute
+	right: 0
+	top: 0
+	z-index: 20
+	overflow: hidden
+	pointer-events: none
+	border-radius: 0 0 0 30px
+	&.active
+		pointer-events: auto
+		box-shadow: 0px 4px 50px $Color-PaleGray
+		transition: .3s .5s
+
+		.request-form
+			transform: translateX(0)
+
+.request-form
+	position: relative
+	top: 0
+	right: 0
+	display: flex
+	flex-direction: column
+	padding: 37px 47px 64px 65px
+	background-color: $Color-White
+	border-radius: 0 0 0 30px
+	max-width: 450px
+	box-sizing: border-box
+	overflow: hidden
+	transition: .5s
+	transform: translateX(100%)
+
+	&__close
+		width: 24px
+		height: 24px
+		background: transparent
+		border: 0
+		outline: none
+		position: absolute
+		right: 17px
+		top: 25px
+		padding: 0
+		transition: .3s
+		cursor: pointer
+		img
+			width: 100%
+			height: 100%
+
+		&:hover
+			transform: scale(1.2)
+
+	&__title
+		text-align: left
+		margin-bottom: 28px
+		font-size: 24px
+		@include fluid-type($Container-S, $Container-M, 18px, 24px)
+
+	&__input
+		height: 54px
+		padding: 0px 25px
+		border-radius: 10px
+		border: 1px solid $Color-PaleGray
+		font-size: 14px
+		margin-bottom: 10px
+		&::placeholder
+			color: $Color-PaleGray
+
+		&:focus
+			border-color: $Color-Blue
+			box-shadow: 0 0 6px rgba($Color-Blue, 0.36)
+
+	&__text
+		font-size: 12px
+		color: $Color-PaleGray
+		margin-bottom: 15px
+		@include fluid-type($Container-S, $Container-M, 10px, 12px)
+
+	&__button
+		height: 54px
+		width: 100%
+		background-color: $Color-Purple
+		font-size: 20px
+		font-weight: 700
+		color: $Color-White
+		border: 0
+		border-radius: 10px
+		margin: 10px 0px 20px
+		@include fluid-type($Container-S, $Container-M, 14px, 20px)
+		&:focus
+			box-shadow: 0 0 6px $Color-Purple
+
+/** Мобильная навигация	**/
+
+.nav-mobile
+	position: absolute
+	right: 0
+	top: 0
+	z-index: 20
+	overflow: hidden
+	pointer-events: none
+	border-radius: 0 0 0 30px
+	max-width: 258px
+	width: 100%
+	&.active
+		pointer-events: auto
+		box-shadow: 0px 4px 50px $Color-PaleGray
+		transition: .3s .5s
+		.header--mobile
+			transform: translateX(0)
+
+.header--mobile
+	position: relative
+	top: 0
+	right: 0
+	display: flex
+	flex-direction: column
+	align-items: flex-start
+	padding: 65px 33px 30px 33px
+	background-color: $Color-White
+	border-radius: 0 0 0 30px
+	max-width: 258px
+	width: 100%
+	box-sizing: border-box
+	overflow: hidden
+	transition: .5s
+	transform: translateX(100%)
+
+	.header
+		&__close
+			width: 24px
+			height: 24px
+			background: transparent
+			border: 0
+			outline: none
+			position: absolute
+			right: 17px
+			top: 25px
+			padding: 0
+			transition: .3s
+			cursor: pointer
+			img
+				width: 100%
+				height: 100%
+
+			&:hover
+				transform: scale(1.2)
+
+		&__item
+			color: $Color-Black22
+			font-weight: 500
+			transition: .2s
+			white-space: nowrap
+			img
+				transition: .2s
+				margin-left: 10px
+				transform: rotate(180deg)
+
+			@include fluid-type($Container-M, $Container-L, 14px, 18px)
+
+			&:hover, &:focus
+				color: $Color-Blue
+				img
+					transform: rotate(0deg)
+
+			&--dropdown-mobile
+				margin-bottom: 0px !important
+				&:focus
+					.header__dropdown
+						height: 44px
+
+		&__button
+			width: 100%
+			margin: 14px 0 17px
+
+		&__contact
+			display: flex
+			text-align: center
+			align-items: center
+			margin: 0
+			width: 100%
+
+		&__text
+			&--mobile
+				font-size: 16px !important
+
+			&--number
+				font-size: 22px !important
+
+		&__item
+			margin-bottom: 15px
+			&:last-child
+				margin-bottom: 0
+
+		&__dropdown
+			position: relative
+			left: 0
+			top: 0
+			flex-direction: column
+			transform: scale(1)
+			border: 0
+			height: 0
+			width: auto
+			padding: 0
+			transition: .3s
+			margin-top: 10px
+			.header__item
+				margin: 0
