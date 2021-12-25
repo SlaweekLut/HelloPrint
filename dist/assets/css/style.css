@@ -2006,6 +2006,20 @@ h2 {
   }
 }
 
+@media screen and (max-width: 450px) {
+  .request {
+    border-radius: 0;
+  }
+
+  .request-form {
+    border-radius: 0;
+  }
+
+  .request-form__title {
+    text-align: center;
+  }
+}
+
 @media screen and (max-width: 320px) {
   .integration__grid {
     display: grid;

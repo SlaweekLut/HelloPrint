@@ -886,6 +886,8 @@ h2
 		.request-form
 			transform: translateX(0)
 
+	@include adaptiveWidth(450px)
+		border-radius: 0
 .request-form
 	position: relative
 	top: 0
@@ -959,6 +961,11 @@ h2
 		@include fluid-type($Container-S, $Container-M, 14px, 20px)
 		&:focus
 			box-shadow: 0 0 6px $Color-Purple
+
+	@include adaptiveWidth(450px)
+		border-radius: 0
+		&__title
+			text-align: center
 
 /** Мобильная навигация	**/
 
