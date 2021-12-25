@@ -44,19 +44,31 @@ html(lang='ru')
 						rect(x='2' y='14' width='16' height='2' rx='1' fill='currentColor')
 		
 		main
-			.c-wrapper.-hero 
-				section.container.-hero
+			section.c-wrapper.-hero 
+				.container.-hero
 					.hero
 						h1._title Hello Print
 						p._subtitle Самая удобная система по управлению полиграфическим бизнесом
 						button.c-button._button 
 							span Заявка на подключение
-						video(src="assets/helpers/0001-0195.mp4" autoplay='autoplay' preload='auto' loop muted height='544px')._video
-							source(src="assets/helpers/0001-0195.mp4" type="video/mp4")
+						._video
+							video(src="assets/helpers/0001-0195.mp4" autoplay='autoplay' preload='auto' loop muted height='544px')
+								source(src="assets/helpers/0001-0195.mp4" type="video/mp4")
 
-			section.container.-features
-				.features
-
+			section.container.-pre-features
+				.pre-features
+					._item
+						._animation
+						p._text Гибкие настройки
+					._item
+						._animation
+						p._text Всё в одной системе
+					._item
+						._animation
+						p._text Быстрое внедрение
+					._item
+						._animation
+						p._text Надёжность
 
 			section.container.-info
 				.info 
@@ -158,8 +170,8 @@ html(lang='ru')
 								|	C помощью "стандартного" типа калькулятора можно настроить расчёт бесконечного числа разнообразных полиграфических продуктов, услуг и технологий: визитки, кружки, дизайн, шелкография, тампопечать и многое другое.
 							a.c-button._button-link(href='#') Подробнее
 
-			.c-wrapper.-integration
-				section.container.-integration 
+			section.c-wrapper.-integration
+				.container.-integration 
 					.integration 
 						h2._title Интеграция
 						p._subtitle API-интеграции Hello Print с другими облачными сервисами
@@ -175,7 +187,47 @@ html(lang='ru')
 						- for(let i = 1; i < 4; i++)
 							._item
 								img._img(src=`assets/img/clients-0${i}.png` alt='Клиенты')
-		
+
+			section.c-wrapper.-features
+				.container.-features 
+					.features
+						._wrapper-item
+							._item
+								._animation
+								p._text CRM
+						._wrapper-item
+							._item
+								._animation
+								p._text Калькуляторы
+						._wrapper-item
+							._item
+								._animation
+								p._text Уведомления
+						._wrapper-item
+							._item
+								._animation
+								p._text Система лояльности
+						._wrapper-item
+							._item
+								._animation
+								p._text Интеграция
+						._wrapper-item
+							._item
+								._animation
+								p._text Аналитика
+						._wrapper-item
+							._item
+								._animation
+								p._text Открытый API
+						._wrapper-item
+							._item
+								._animation
+								p._text Логистика
+						._wrapper-item
+							._item
+								._animation
+								p._text Затраты в заказе
+
 		footer.container.-footer 
 			.footer 
 				._top-part
