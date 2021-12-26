@@ -132,6 +132,53 @@ h2 {
   background-color: #F5F9FD;
 }
 
+.c-wrapper--requisite {
+  padding: 24px 0px 48px;
+  background-color: #fff;
+  border-top: 1px solid #EFF5FB;
+  border-bottom: 1px solid #EFF5FB;
+  margin: 45px 0;
+}
+
+.main--light {
+  background-color: #FCFDFD;
+  border-top: 1px solid #EFF5FB;
+  border-bottom: 1px solid #EFF5FB;
+}
+
+/** Линия навигации **/
+
+.line-nav {
+  margin: 25px 0;
+}
+
+.line-nav__link {
+  position: relative;
+  margin-right: 25px;
+  font-size: 14px;
+  color: #0085FF;
+  font-weight: 500;
+}
+
+.line-nav__link::after {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 1px;
+  background: #B7CEEC;
+  position: absolute;
+  right: -18px;
+  top: 50%;
+}
+
+.line-nav__link:last-child {
+  color: #252525;
+}
+
+.line-nav__link:last-child::after {
+  display: none;
+}
+
 /** Шапка сайта **/
 
 .header {
@@ -1382,6 +1429,97 @@ h2 {
   margin: 0;
 }
 
+/** Договор **/
+
+.contract__title {
+  text-align: left;
+}
+
+.contract__title--h1 {
+  margin: 0;
+  font-size: 33px;
+  font-family: Greenwich;
+}
+
+.contract__title--h1 {
+  font-size: 24px;
+}
+
+.contract__title--h2 {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  text-transform: uppercase;
+  font-size: 18px;
+  margin: 36px 0px 18px;
+}
+
+.contract__title--h3 {
+  margin: 18px 0px 18px;
+}
+
+.contract__text {
+  font-size: 18px;
+  line-height: 160%;
+  margin-bottom: 16px;
+}
+
+.contract__subtitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  max-width: 335px;
+  width: 100%;
+  margin: 25px 0;
+}
+
+.contract__subtitle--agreement {
+  max-width: 500px;
+}
+
+.contract__subtitle-text {
+  font-size: 18px;
+  font-weight: 700;
+  color: #383838;
+}
+
+.contract--footer {
+  padding-bottom: 30px;
+}
+
+/** Реквизиты **/
+
+.requisite__row {
+  max-width: 850px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.requisite__title {
+  text-align: left;
+  margin-bottom: 24px;
+  font-size: 24px;
+  line-height: 180%;
+}
+
+.requisite__text {
+  max-width: 600px;
+  width: 100%;
+  line-height: 180%;
+}
+
+.requisite__text--bold {
+  max-width: 168px;
+  font-weight: 700;
+}
+
 @media screen and (min-width: 568px) {
   h2 {
     font-size: calc(20px + 6 * ((100vw - 568px) / 312));
@@ -1449,6 +1587,10 @@ h2 {
 
   .request-form__button {
     font-size: calc(14px + 6 * ((100vw - 568px) / 312));
+  }
+
+  .contract__title--h1 {
+    font-size: calc(24px + 6 * ((100vw - 568px) / 312));
   }
 }
 
@@ -1551,6 +1693,10 @@ h2 {
 
   .header--mobile .header__item {
     font-size: calc(14px + 4 * ((100vw - 880px) / 316));
+  }
+
+  .contract__title--h1 {
+    font-size: 30px;
   }
 }
 
@@ -2003,6 +2149,19 @@ h2 {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+  }
+
+  .requisite__row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 0px;
+    margin-bottom: 10px;
+  }
+
+  .requisite__title {
+    margin-bottom: 0;
   }
 }
 

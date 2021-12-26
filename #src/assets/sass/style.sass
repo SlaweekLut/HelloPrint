@@ -52,6 +52,13 @@ h2
 		background-color: #F5F9FD
 	&--features
 		background-color: #F5F9FD
+	&--requisite
+		padding: 24px 0px 48px
+		background-color: #fff
+		border-top: 1px solid #EFF5FB
+		border-bottom: 1px solid #EFF5FB
+		margin: 45px 0
+
 	@include adaptiveWidth($Container-M)
 		&--hero
 			overflow: hidden
@@ -59,6 +66,36 @@ h2
 	@include adaptiveWidth($Container-M)
 		&--hero
 			background: linear-gradient(0deg, #6712E4 0%, #6D3DBB 25%, #6D3DBB 75%, #6712E4 100%) ,#9566DD
+
+.main
+	&--light
+		background-color: #FCFDFD
+		border-top: 1px solid #EFF5FB
+		border-bottom: 1px solid #EFF5FB
+
+/** Линия навигации **/
+.line-nav
+	margin: 25px 0
+	&__link
+		position: relative
+		margin-right: 25px
+		font-size: 14px
+		color: $Color-Blue
+		font-weight: 500
+		&::after
+			content: ''
+			display: inline-block
+			width: 10px
+			height: 1px
+			background: $Color-PaleBlue
+			position: absolute
+			right: -18px
+			top: 50%
+
+		&:last-child
+			color: $Color-Black25
+			&::after
+				display: none
 
 /** Шапка сайта **/
 
@@ -1083,3 +1120,77 @@ h2
 			margin-top: 10px
 			.header__item
 				margin: 0
+
+/** Договор **/
+
+.contract
+
+	&__title
+		text-align: left
+		&--h1
+			margin: 0
+			font-size: 33px
+			font-family: $Font-Greenwich
+			@include fluid-type($Container-S, $Container-M, 24px , 30px )
+
+		&--h2
+			box-sizing: border-box
+			text-transform: uppercase
+			font-size: 18px
+			margin: 36px 0px 18px
+		&--h3
+			margin: 18px 0px 18px
+
+	&__text
+		font-size: 18px
+		line-height: 160%
+		margin-bottom: 16px
+
+	&__subtitle
+		display: flex
+		justify-content: space-between
+		max-width: 335px
+		width: 100%
+		margin: 25px 0
+		&--agreement
+			max-width: 500px
+
+	&__subtitle-text
+		font-size: 18px
+		font-weight: 700
+		color: $Color-Black38
+
+	&--footer
+		padding-bottom: 30px
+
+/** Реквизиты **/
+
+.requisite
+	&__row
+		max-width: 850px
+		display: flex
+		justify-content: space-between
+		gap: 20px
+
+	&__title
+		text-align: left
+		margin-bottom: 24px
+		font-size: 24px
+		line-height: 180%
+
+	&__text
+		max-width: 600px
+		width: 100%
+		line-height: 180%
+		&--bold
+			max-width: 168px
+			font-weight: 700
+
+	@include adaptiveWidth($Container-S)
+		&__row
+			flex-direction: column
+			gap: 0px
+			margin-bottom: 10px
+
+		&__title
+			margin-bottom: 0
