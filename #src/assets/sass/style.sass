@@ -1469,3 +1469,163 @@ h2
 	&__input:focus + &__box
 		box-shadow: 0 0 6px rgba($Color-Blue, 0.2)
 		border-color: $Color-Blue
+
+/** Контакты **/
+
+.contact
+
+	&__title
+		font-family: $Font-Greenwich
+		text-align: center
+		margin-bottom: 40px
+
+		&--h2
+			text-align: left
+			font-size: 22px
+			margin-bottom: 28px
+
+		&--office
+			margin-bottom: 5px
+
+	&__block
+		display: flex
+		border: 1px solid $Color-PaleBlue
+		border-radius: 20px
+		overflow: hidden
+
+	&__contacts
+		width: 100%
+		max-width: 40%
+		border-left: 1px solid $Color-PaleBlue
+
+	&__column
+		display: flex
+		flex-direction: column
+		padding: 30px 70px 37px
+		background: $Color-LightPaleBlue
+		&:first-child
+			padding: 50px 70px
+			border-bottom: 1px solid $Color-PaleBlue
+
+	&__links
+		display: flex
+		flex-direction: column
+
+	&__link
+		margin-bottom: 20px
+		display: flex
+		align-items: center
+		gap: 20px
+		font-weight: 500
+		font-size: 18px
+		color: $Color-Blue
+
+		&--gray
+			color: $Color-PaleGray
+			margin-bottom: 0
+			font-size: 12px
+			font-weight: 500
+			line-height: 170%
+			font-family: $Font-Greenwich
+			justify-content: space-between
+			width: 182px
+			svg
+				transform: rotate(90deg)
+
+	&__text
+		font-size: 16px
+		margin: 5px 0px 10px
+		font-weight: 500
+
+	@include adaptiveWidth($Container-M)
+		&__block
+			flex-direction: column
+
+		&__contacts
+			max-width: 100%
+			border-left: 0
+			border-top: 1px solid $Color-PaleBlue
+
+		&__column
+			padding: 40px 63px 38px
+			&:first-child
+				border: 0
+				padding: 30px 63px 0
+
+		&__links
+			display: grid
+			grid-template-columns: 1fr 1fr
+			justify-content: space-between
+
+	@include adaptiveWidth($Container-S)
+
+		&__links
+			display: flex
+
+		&__column
+			padding: 24px 30px 22px
+			&:first-child
+				padding: 23px 30px 0
+
+.contact-form
+	box-sizing: border-box
+	max-width: 60%
+	width: 100%
+	padding: 55px 100px 74px
+	background-color: $Color-White
+	&__title
+		text-align: left
+		font-size: 24px
+		margin-bottom: 36px
+
+	&__title-input
+		margin-bottom: 10px
+		@include fluid-type($Container-S, $Container-M, 12px, 16px)
+
+	&__input
+		width: 100%
+		padding-bottom: 20px
+		border: 0
+		border-bottom: 1px solid $Color-PaleBlue
+		font-size: 18px
+		font-weight: 600
+		margin-bottom: 22px
+		font-family: $Font-Greenwich
+
+		&::placeholder
+			color: $Color-PaleBlue
+
+		@include fluid-type($Container-M, $Container-L, 16px, 18px)
+		@include fluid-type($Container-S, $Container-M, 12px, 16px)
+
+	&__row
+		display: flex
+		align-items: center
+		justify-content: space-between
+		gap: 5%
+
+	&__button
+		color: $Color-White
+		border: 0
+		border-radius: 12px
+		max-width: 180px
+		width: 100%
+		height: 56px
+		background-color: $Color-Purple
+		font-weight: 700
+
+	.footer-checkbox__text
+		max-width: 100%
+
+	@include adaptiveWidth($Container-M)
+		max-width: 100%
+		padding: 37px 63px 56px
+
+	@include adaptiveWidth($Container-S)
+		padding: 21px 30px 27px
+		&__button
+			max-width: 100%
+			width: 100%
+			margin-bottom: 17px
+		&__row
+			flex-direction: column-reverse

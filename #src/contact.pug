@@ -1,0 +1,58 @@
+include assets/includes/head.pug
+body
+	include assets/includes/header.pug
+
+	main.main.-light 
+		.container
+			nav.line-nav
+				a(href='#')._link Главная
+				a(href='#')._link Контакты
+
+		.container
+			.contact 
+				h1._title Контакты
+
+				._block 
+					form.contact-form 
+						h2._title Задайте нам вопрос
+						p._title-input Как к вам обращаться?
+						input._input(placeholder='Александр') 
+						
+						p._title-input Ваш телефон
+						input._input(placeholder='+ 7' type='tel') 
+						
+						p._title-input Как Вам удобно общаться?
+						input._input(placeholder='Напишите Ваш вотсап/телеграмм/телефон/email') 
+						
+						._row 
+							label.footer-checkbox
+								input(type='checkbox')._input
+								span._box 
+									img._check(src="assets/img/check.svg", alt="Галочка")
+								span._text Нажимая на кнопку отправить Вы даете согласие на обработку персональных данных
+	
+							button._button Отправить
+					._contacts 
+						._column
+							h2._title.-h2 Наши контакты 
+							._links 
+								a._link(href='#') #[img(src="assets/img/Social-01.svg", alt="Телеграм")] Telegram
+								a._link(href='#') #[img(src="assets/img/Social-02.svg", alt="Ватсап")] WhatsApp
+								a._link(href='#') #[img(src="assets/img/Social-03.svg", alt="Мессенджер")] @helloprint
+								a._link(href='#') #[img(src="assets/img/Social-04.svg", alt="Почта")] sales@enjoylab.ru
+								a._link(href='#') #[img(src="assets/img/Social-05.svg", alt="Телефон")] +7 (495) 128-54-18
+						
+						._column
+							h2._title.-h2.-office Наш офис 
+							p._text г. Москва, ул. Автозаводская 25
+							a._link.-gray(href="#") 
+								span Показать на Яндекс.Картах 
+								svg(width="7" height="5" viewBox="0 0 7 5" fill="none" xmlns="http://www.w3.org/2000/svg")
+										path(d="M5.71643 4.03183C6.00965 4.32505 6.48686 4.32505 6.78008 4.03183C7.07331 3.7386 7.07331 3.2614 6.78008 2.96817L4.03183 0.219918C3.7386 -0.0733059 3.2614 -0.0733059 2.96817 0.219918L0.219918 2.96817C-0.073306 3.2614 -0.073306 3.7386 0.219918 4.03183C0.513142 4.32505 0.990349 4.32505 1.28357 4.03183L3.5 1.8154L5.71643 4.03183Z" fill="currentColor")
+							a._link.-gray(href="#") 
+								span Показать на Google Maps
+								svg(width="7" height="5" viewBox="0 0 7 5" fill="none" xmlns="http://www.w3.org/2000/svg")
+										path(d="M5.71643 4.03183C6.00965 4.32505 6.48686 4.32505 6.78008 4.03183C7.07331 3.7386 7.07331 3.2614 6.78008 2.96817L4.03183 0.219918C3.7386 -0.0733059 3.2614 -0.0733059 2.96817 0.219918L0.219918 2.96817C-0.073306 3.2614 -0.073306 3.7386 0.219918 4.03183C0.513142 4.32505 0.990349 4.32505 1.28357 4.03183L3.5 1.8154L5.71643 4.03183Z" fill="currentColor")
+	
+	
+	include assets/includes/footer.pug
