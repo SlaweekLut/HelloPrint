@@ -1,0 +1,3120 @@
+include assets/includes/head.pug
+body
+	include assets/includes/header.pug
+
+	main.main.-light 
+		.container
+			nav.line-nav
+				a(href='#')._link Главная
+				a(href='#')._link Тарифы
+
+		.container
+			.tariffs 
+				h1._title Стоимость hello print
+				p._subtitle Hello Print у каждого свой. Рассчитай тариф который подходит тебе
+
+				.tariffs-swiper.swiper 
+					.tariffs-wrapper.swiper-wrapper 
+						.tariffs-swiper-slide.swiper-slide
+							p._text.-suptitle Тариф
+							h2._title Копицентр
+							p._text.-subtitle в тариф включено
+							p._text.-on #[img(src="assets/img/check-2.svg", alt="включено")] 1 компания
+							p._text.-on #[img(src="assets/img/check-2.svg", alt="включено")] 5 сотрудников
+							p._text.-on #[img(src="assets/img/check-2.svg", alt="включено")] 1 касса
+							p._text.-price 5 000 ₽
+							p._text.-time месяц
+							p._text.-module Модули
+
+							._dropdown 
+								._opener 
+									p._text.-opener Заявки / Заказы 
+									svg(width="7" height="5" viewBox="0 0 7 5" fill="none" xmlns="http://www.w3.org/2000/svg")
+										path(d="M5.71643 4.03183C6.00965 4.32505 6.48686 4.32505 6.78008 4.03183C7.07331 3.7386 7.07331 3.2614 6.78008 2.96817L4.03183 0.219918C3.7386 -0.0733059 3.2614 -0.0733059 2.96817 0.219918L0.219918 2.96817C-0.073306 3.2614 -0.073306 3.7386 0.219918 4.03183C0.513142 4.32505 0.990349 4.32505 1.28357 4.03183L3.5 1.8154L5.71643 4.03183Z" fill="currentColor")
+
+								
+								._list 
+									p._text.-list-title Входит в базовую стоимость
+									label.checkbox-tariffs
+										input(type="checkbox")._input
+
+										span._box 
+											svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+												g(clip-path="url(#clip0_597_620)")
+													path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+												defs
+													clipPath(id="clip0_597_620")
+														rect(width="10" height="10" fill="white")
+										
+										span._text 
+											span Email-уведомления 
+											span + 500 ₽ / мес.
+
+									label.checkbox-tariffs
+										input(type="checkbox")._input
+
+										span._box 
+											svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+												g(clip-path="url(#clip0_597_620)")
+													path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+												defs
+													clipPath(id="clip0_597_620")
+														rect(width="10" height="10" fill="white")
+										
+										span._text 
+											span Push-уведомления
+											span + 500 ₽ / мес.
+
+									p._text.-list-title Дополнительно
+
+									label.checkbox-tariffs
+										input(type="checkbox")._input
+
+										span._box 
+											svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+												g(clip-path="url(#clip0_597_620)")
+													path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+												defs
+													clipPath(id="clip0_597_620")
+														rect(width="10" height="10" fill="white")
+										
+										span._text 
+											span СМС-уведомления
+											span + 500 ₽ / мес.
+							._dropdown 
+								._opener 
+									p._text.-opener Рабочее место кассира
+									svg(width="7" height="5" viewBox="0 0 7 5" fill="none" xmlns="http://www.w3.org/2000/svg")
+										path(d="M5.71643 4.03183C6.00965 4.32505 6.48686 4.32505 6.78008 4.03183C7.07331 3.7386 7.07331 3.2614 6.78008 2.96817L4.03183 0.219918C3.7386 -0.0733059 3.2614 -0.0733059 2.96817 0.219918L0.219918 2.96817C-0.073306 3.2614 -0.073306 3.7386 0.219918 4.03183C0.513142 4.32505 0.990349 4.32505 1.28357 4.03183L3.5 1.8154L5.71643 4.03183Z" fill="currentColor")
+								
+								._list 
+									p._text.-list-title Входит в базовую стоимость
+									label.checkbox-tariffs
+										input(type="checkbox")._input
+
+										span._box 
+											svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+												g(clip-path="url(#clip0_597_620)")
+													path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+												defs
+													clipPath(id="clip0_597_620")
+														rect(width="10" height="10" fill="white")
+										
+										span._text 
+											span Email-уведомления 
+											span + 500 ₽ / мес.
+
+									label.checkbox-tariffs
+										input(type="checkbox")._input
+
+										span._box 
+											svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+												g(clip-path="url(#clip0_597_620)")
+													path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+												defs
+													clipPath(id="clip0_597_620")
+														rect(width="10" height="10" fill="white")
+										
+										span._text 
+											span Push-уведомления
+											span + 500 ₽ / мес.
+
+									p._text.-list-title Дополнительно
+
+									label.checkbox-tariffs
+										input(type="checkbox")._input
+
+										span._box 
+											svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+												g(clip-path="url(#clip0_597_620)")
+													path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+												defs
+													clipPath(id="clip0_597_620")
+														rect(width="10" height="10" fill="white")
+										
+										span._text 
+											span СМС-уведомления
+											span + 500 ₽ / мес.
+							._dropdown 
+									._opener 
+										p._text.-opener Контрагенты
+										svg(width="7" height="5" viewBox="0 0 7 5" fill="none" xmlns="http://www.w3.org/2000/svg")
+											path(d="M5.71643 4.03183C6.00965 4.32505 6.48686 4.32505 6.78008 4.03183C7.07331 3.7386 7.07331 3.2614 6.78008 2.96817L4.03183 0.219918C3.7386 -0.0733059 3.2614 -0.0733059 2.96817 0.219918L0.219918 2.96817C-0.073306 3.2614 -0.073306 3.7386 0.219918 4.03183C0.513142 4.32505 0.990349 4.32505 1.28357 4.03183L3.5 1.8154L5.71643 4.03183Z" fill="currentColor")
+									
+									._list 
+										p._text.-list-title Входит в базовую стоимость
+										label.checkbox-tariffs
+											input(type="checkbox")._input
+
+											span._box 
+												svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+													g(clip-path="url(#clip0_597_620)")
+														path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+													defs
+														clipPath(id="clip0_597_620")
+															rect(width="10" height="10" fill="white")
+											
+											span._text 
+												span Email-уведомления 
+												span + 500 ₽ / мес.
+
+										label.checkbox-tariffs
+											input(type="checkbox")._input
+
+											span._box 
+												svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+													g(clip-path="url(#clip0_597_620)")
+														path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+													defs
+														clipPath(id="clip0_597_620")
+															rect(width="10" height="10" fill="white")
+											
+											span._text 
+												span Push-уведомления
+												span + 500 ₽ / мес.
+
+										p._text.-list-title Дополнительно
+
+										label.checkbox-tariffs
+											input(type="checkbox")._input
+
+											span._box 
+												svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+													g(clip-path="url(#clip0_597_620)")
+														path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+													defs
+														clipPath(id="clip0_597_620")
+															rect(width="10" height="10" fill="white")
+											
+											span._text 
+												span СМС-уведомления
+												span + 500 ₽ / мес.
+							._dropdown 
+									._opener 
+										p._text.-opener Интеграции
+										svg(width="7" height="5" viewBox="0 0 7 5" fill="none" xmlns="http://www.w3.org/2000/svg")
+											path(d="M5.71643 4.03183C6.00965 4.32505 6.48686 4.32505 6.78008 4.03183C7.07331 3.7386 7.07331 3.2614 6.78008 2.96817L4.03183 0.219918C3.7386 -0.0733059 3.2614 -0.0733059 2.96817 0.219918L0.219918 2.96817C-0.073306 3.2614 -0.073306 3.7386 0.219918 4.03183C0.513142 4.32505 0.990349 4.32505 1.28357 4.03183L3.5 1.8154L5.71643 4.03183Z" fill="currentColor")
+									
+									._list 
+										p._text.-list-title Входит в базовую стоимость
+										label.checkbox-tariffs
+											input(type="checkbox")._input
+
+											span._box 
+												svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+													g(clip-path="url(#clip0_597_620)")
+														path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+													defs
+														clipPath(id="clip0_597_620")
+															rect(width="10" height="10" fill="white")
+											
+											span._text 
+												span Email-уведомления 
+												span + 500 ₽ / мес.
+
+										label.checkbox-tariffs
+											input(type="checkbox")._input
+
+											span._box 
+												svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+													g(clip-path="url(#clip0_597_620)")
+														path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+													defs
+														clipPath(id="clip0_597_620")
+															rect(width="10" height="10" fill="white")
+											
+											span._text 
+												span Push-уведомления
+												span + 500 ₽ / мес.
+
+										p._text.-list-title Дополнительно
+
+										label.checkbox-tariffs
+											input(type="checkbox")._input
+
+											span._box 
+												svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+													g(clip-path="url(#clip0_597_620)")
+														path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+													defs
+														clipPath(id="clip0_597_620")
+															rect(width="10" height="10" fill="white")
+											
+											span._text 
+												span СМС-уведомления
+												span + 500 ₽ / мес.
+							._dropdown 
+									._opener 
+										p._text.-opener Автоматизация
+										svg(width="7" height="5" viewBox="0 0 7 5" fill="none" xmlns="http://www.w3.org/2000/svg")
+											path(d="M5.71643 4.03183C6.00965 4.32505 6.48686 4.32505 6.78008 4.03183C7.07331 3.7386 7.07331 3.2614 6.78008 2.96817L4.03183 0.219918C3.7386 -0.0733059 3.2614 -0.0733059 2.96817 0.219918L0.219918 2.96817C-0.073306 3.2614 -0.073306 3.7386 0.219918 4.03183C0.513142 4.32505 0.990349 4.32505 1.28357 4.03183L3.5 1.8154L5.71643 4.03183Z" fill="currentColor")
+									
+									._list 
+										p._text.-list-title Входит в базовую стоимость
+										label.checkbox-tariffs
+											input(type="checkbox")._input
+
+											span._box 
+												svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+													g(clip-path="url(#clip0_597_620)")
+														path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+													defs
+														clipPath(id="clip0_597_620")
+															rect(width="10" height="10" fill="white")
+											
+											span._text 
+												span Email-уведомления 
+												span + 500 ₽ / мес.
+
+										label.checkbox-tariffs
+											input(type="checkbox")._input
+
+											span._box 
+												svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+													g(clip-path="url(#clip0_597_620)")
+														path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+													defs
+														clipPath(id="clip0_597_620")
+															rect(width="10" height="10" fill="white")
+											
+											span._text 
+												span Push-уведомления
+												span + 500 ₽ / мес.
+
+										p._text.-list-title Дополнительно
+
+										label.checkbox-tariffs
+											input(type="checkbox")._input
+
+											span._box 
+												svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+													g(clip-path="url(#clip0_597_620)")
+														path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+													defs
+														clipPath(id="clip0_597_620")
+															rect(width="10" height="10" fill="white")
+											
+											span._text 
+												span СМС-уведомления
+												span + 500 ₽ / мес.
+							._dropdown 
+									._opener 
+										p._text.-opener Задачи
+										svg(width="7" height="5" viewBox="0 0 7 5" fill="none" xmlns="http://www.w3.org/2000/svg")
+											path(d="M5.71643 4.03183C6.00965 4.32505 6.48686 4.32505 6.78008 4.03183C7.07331 3.7386 7.07331 3.2614 6.78008 2.96817L4.03183 0.219918C3.7386 -0.0733059 3.2614 -0.0733059 2.96817 0.219918L0.219918 2.96817C-0.073306 3.2614 -0.073306 3.7386 0.219918 4.03183C0.513142 4.32505 0.990349 4.32505 1.28357 4.03183L3.5 1.8154L5.71643 4.03183Z" fill="currentColor")
+									
+									._list 
+										p._text.-list-title Входит в базовую стоимость
+										label.checkbox-tariffs
+											input(type="checkbox")._input
+
+											span._box 
+												svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+													g(clip-path="url(#clip0_597_620)")
+														path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+													defs
+														clipPath(id="clip0_597_620")
+															rect(width="10" height="10" fill="white")
+											
+											span._text 
+												span Email-уведомления 
+												span + 500 ₽ / мес.
+
+										label.checkbox-tariffs
+											input(type="checkbox")._input
+
+											span._box 
+												svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+													g(clip-path="url(#clip0_597_620)")
+														path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+													defs
+														clipPath(id="clip0_597_620")
+															rect(width="10" height="10" fill="white")
+											
+											span._text 
+												span Push-уведомления
+												span + 500 ₽ / мес.
+
+										p._text.-list-title Дополнительно
+
+										label.checkbox-tariffs
+											input(type="checkbox")._input
+
+											span._box 
+												svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+													g(clip-path="url(#clip0_597_620)")
+														path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+													defs
+														clipPath(id="clip0_597_620")
+															rect(width="10" height="10" fill="white")
+											
+											span._text 
+												span СМС-уведомления
+												span + 500 ₽ / мес.
+							._dropdown 
+									._opener
+										p._text.-opener Автоматизация
+										svg(width="7" height="5" viewBox="0 0 7 5" fill="none" xmlns="http://www.w3.org/2000/svg")
+											path(d="M5.71643 4.03183C6.00965 4.32505 6.48686 4.32505 6.78008 4.03183C7.07331 3.7386 7.07331 3.2614 6.78008 2.96817L4.03183 0.219918C3.7386 -0.0733059 3.2614 -0.0733059 2.96817 0.219918L0.219918 2.96817C-0.073306 3.2614 -0.073306 3.7386 0.219918 4.03183C0.513142 4.32505 0.990349 4.32505 1.28357 4.03183L3.5 1.8154L5.71643 4.03183Z" fill="currentColor")
+									
+									._list 
+										p._text.-list-title Входит в базовую стоимость
+										label.checkbox-tariffs
+											input(type="checkbox")._input
+
+											span._box 
+												svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+													g(clip-path="url(#clip0_597_620)")
+														path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+													defs
+														clipPath(id="clip0_597_620")
+															rect(width="10" height="10" fill="white")
+											
+											span._text 
+												span Email-уведомления 
+												span + 500 ₽ / мес.
+
+										label.checkbox-tariffs
+											input(type="checkbox")._input
+
+											span._box 
+												svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+													g(clip-path="url(#clip0_597_620)")
+														path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+													defs
+														clipPath(id="clip0_597_620")
+															rect(width="10" height="10" fill="white")
+											
+											span._text 
+												span Push-уведомления
+												span + 500 ₽ / мес.
+
+										p._text.-list-title Дополнительно
+
+										label.checkbox-tariffs
+											input(type="checkbox")._input
+
+											span._box 
+												svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+													g(clip-path="url(#clip0_597_620)")
+														path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+													defs
+														clipPath(id="clip0_597_620")
+															rect(width="10" height="10" fill="white")
+											
+											span._text 
+												span СМС-уведомления
+												span + 500 ₽ / мес.
+							._dropdown 
+								._opener 
+									p._text.-opener Задачи
+									svg(width="7" height="5" viewBox="0 0 7 5" fill="none" xmlns="http://www.w3.org/2000/svg")
+										path(d="M5.71643 4.03183C6.00965 4.32505 6.48686 4.32505 6.78008 4.03183C7.07331 3.7386 7.07331 3.2614 6.78008 2.96817L4.03183 0.219918C3.7386 -0.0733059 3.2614 -0.0733059 2.96817 0.219918L0.219918 2.96817C-0.073306 3.2614 -0.073306 3.7386 0.219918 4.03183C0.513142 4.32505 0.990349 4.32505 1.28357 4.03183L3.5 1.8154L5.71643 4.03183Z" fill="currentColor")
+								
+								._list 
+									p._text.-list-title Входит в базовую стоимость
+									label.checkbox-tariffs
+										input(type="checkbox")._input
+
+										span._box 
+											svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+												g(clip-path="url(#clip0_597_620)")
+													path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+												defs
+													clipPath(id="clip0_597_620")
+														rect(width="10" height="10" fill="white")
+										
+										span._text 
+											span Email-уведомления 
+											span + 500 ₽ / мес.
+
+									label.checkbox-tariffs
+										input(type="checkbox")._input
+
+										span._box 
+											svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+												g(clip-path="url(#clip0_597_620)")
+													path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+												defs
+													clipPath(id="clip0_597_620")
+														rect(width="10" height="10" fill="white")
+										
+										span._text 
+											span Push-уведомления
+											span + 500 ₽ / мес.
+
+									p._text.-list-title Дополнительно
+
+									label.checkbox-tariffs
+										input(type="checkbox")._input
+
+										span._box 
+											svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+												g(clip-path="url(#clip0_597_620)")
+													path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+												defs
+													clipPath(id="clip0_597_620")
+														rect(width="10" height="10" fill="white")
+										
+										span._text 
+											span СМС-уведомления
+											span + 500 ₽ / мес.
+							._dropdown 
+								._opener 
+									p._text.-opener Платежи
+									svg(width="7" height="5" viewBox="0 0 7 5" fill="none" xmlns="http://www.w3.org/2000/svg")
+										path(d="M5.71643 4.03183C6.00965 4.32505 6.48686 4.32505 6.78008 4.03183C7.07331 3.7386 7.07331 3.2614 6.78008 2.96817L4.03183 0.219918C3.7386 -0.0733059 3.2614 -0.0733059 2.96817 0.219918L0.219918 2.96817C-0.073306 3.2614 -0.073306 3.7386 0.219918 4.03183C0.513142 4.32505 0.990349 4.32505 1.28357 4.03183L3.5 1.8154L5.71643 4.03183Z" fill="currentColor")
+								
+								._list 
+									p._text.-list-title Входит в базовую стоимость
+									label.checkbox-tariffs
+										input(type="checkbox")._input
+
+										span._box 
+											svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+												g(clip-path="url(#clip0_597_620)")
+													path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+												defs
+													clipPath(id="clip0_597_620")
+														rect(width="10" height="10" fill="white")
+										
+										span._text 
+											span Email-уведомления 
+											span + 500 ₽ / мес.
+
+									label.checkbox-tariffs
+										input(type="checkbox")._input
+
+										span._box 
+											svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+												g(clip-path="url(#clip0_597_620)")
+													path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+												defs
+													clipPath(id="clip0_597_620")
+														rect(width="10" height="10" fill="white")
+										
+										span._text 
+											span Push-уведомления
+											span + 500 ₽ / мес.
+
+									p._text.-list-title Дополнительно
+
+									label.checkbox-tariffs
+										input(type="checkbox")._input
+
+										span._box 
+											svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+												g(clip-path="url(#clip0_597_620)")
+													path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+												defs
+													clipPath(id="clip0_597_620")
+														rect(width="10" height="10" fill="white")
+										
+										span._text 
+											span СМС-уведомления
+											span + 500 ₽ / мес.
+							._dropdown 
+									._opener 
+										p._text.-opener Логистика
+										svg(width="7" height="5" viewBox="0 0 7 5" fill="none" xmlns="http://www.w3.org/2000/svg")
+											path(d="M5.71643 4.03183C6.00965 4.32505 6.48686 4.32505 6.78008 4.03183C7.07331 3.7386 7.07331 3.2614 6.78008 2.96817L4.03183 0.219918C3.7386 -0.0733059 3.2614 -0.0733059 2.96817 0.219918L0.219918 2.96817C-0.073306 3.2614 -0.073306 3.7386 0.219918 4.03183C0.513142 4.32505 0.990349 4.32505 1.28357 4.03183L3.5 1.8154L5.71643 4.03183Z" fill="currentColor")
+									
+									._list 
+										p._text.-list-title Входит в базовую стоимость
+										label.checkbox-tariffs
+											input(type="checkbox")._input
+
+											span._box 
+												svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+													g(clip-path="url(#clip0_597_620)")
+														path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+													defs
+														clipPath(id="clip0_597_620")
+															rect(width="10" height="10" fill="white")
+											
+											span._text 
+												span Email-уведомления 
+												span + 500 ₽ / мес.
+
+										label.checkbox-tariffs
+											input(type="checkbox")._input
+
+											span._box 
+												svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+													g(clip-path="url(#clip0_597_620)")
+														path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+													defs
+														clipPath(id="clip0_597_620")
+															rect(width="10" height="10" fill="white")
+											
+											span._text 
+												span Push-уведомления
+												span + 500 ₽ / мес.
+
+										p._text.-list-title Дополнительно
+
+										label.checkbox-tariffs
+											input(type="checkbox")._input
+
+											span._box 
+												svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+													g(clip-path="url(#clip0_597_620)")
+														path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+													defs
+														clipPath(id="clip0_597_620")
+															rect(width="10" height="10" fill="white")
+											
+											span._text 
+												span СМС-уведомления
+												span + 500 ₽ / мес.
+							._dropdown 
+									._opener 
+										p._text.-opener Склад
+										svg(width="7" height="5" viewBox="0 0 7 5" fill="none" xmlns="http://www.w3.org/2000/svg")
+											path(d="M5.71643 4.03183C6.00965 4.32505 6.48686 4.32505 6.78008 4.03183C7.07331 3.7386 7.07331 3.2614 6.78008 2.96817L4.03183 0.219918C3.7386 -0.0733059 3.2614 -0.0733059 2.96817 0.219918L0.219918 2.96817C-0.073306 3.2614 -0.073306 3.7386 0.219918 4.03183C0.513142 4.32505 0.990349 4.32505 1.28357 4.03183L3.5 1.8154L5.71643 4.03183Z" fill="currentColor")
+									
+									._list 
+										p._text.-list-title Входит в базовую стоимость
+										label.checkbox-tariffs
+											input(type="checkbox")._input
+
+											span._box 
+												svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+													g(clip-path="url(#clip0_597_620)")
+														path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+													defs
+														clipPath(id="clip0_597_620")
+															rect(width="10" height="10" fill="white")
+											
+											span._text 
+												span Email-уведомления 
+												span + 500 ₽ / мес.
+
+										label.checkbox-tariffs
+											input(type="checkbox")._input
+
+											span._box 
+												svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+													g(clip-path="url(#clip0_597_620)")
+														path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+													defs
+														clipPath(id="clip0_597_620")
+															rect(width="10" height="10" fill="white")
+											
+											span._text 
+												span Push-уведомления
+												span + 500 ₽ / мес.
+
+										p._text.-list-title Дополнительно
+
+										label.checkbox-tariffs
+											input(type="checkbox")._input
+
+											span._box 
+												svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+													g(clip-path="url(#clip0_597_620)")
+														path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+													defs
+														clipPath(id="clip0_597_620")
+															rect(width="10" height="10" fill="white")
+											
+											span._text 
+												span СМС-уведомления
+												span + 500 ₽ / мес.
+							._dropdown 
+									._opener 
+										p._text.-opener Файловое хранилище
+										svg(width="7" height="5" viewBox="0 0 7 5" fill="none" xmlns="http://www.w3.org/2000/svg")
+											path(d="M5.71643 4.03183C6.00965 4.32505 6.48686 4.32505 6.78008 4.03183C7.07331 3.7386 7.07331 3.2614 6.78008 2.96817L4.03183 0.219918C3.7386 -0.0733059 3.2614 -0.0733059 2.96817 0.219918L0.219918 2.96817C-0.073306 3.2614 -0.073306 3.7386 0.219918 4.03183C0.513142 4.32505 0.990349 4.32505 1.28357 4.03183L3.5 1.8154L5.71643 4.03183Z" fill="currentColor")
+									
+									._list 
+										p._text.-list-title Входит в базовую стоимость
+										label.checkbox-tariffs
+											input(type="checkbox")._input
+
+											span._box 
+												svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+													g(clip-path="url(#clip0_597_620)")
+														path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+													defs
+														clipPath(id="clip0_597_620")
+															rect(width="10" height="10" fill="white")
+											
+											span._text 
+												span Email-уведомления 
+												span + 500 ₽ / мес.
+
+										label.checkbox-tariffs
+											input(type="checkbox")._input
+
+											span._box 
+												svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+													g(clip-path="url(#clip0_597_620)")
+														path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+													defs
+														clipPath(id="clip0_597_620")
+															rect(width="10" height="10" fill="white")
+											
+											span._text 
+												span Push-уведомления
+												span + 500 ₽ / мес.
+
+										p._text.-list-title Дополнительно
+
+										label.checkbox-tariffs
+											input(type="checkbox")._input
+
+											span._box 
+												svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+													g(clip-path="url(#clip0_597_620)")
+														path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+													defs
+														clipPath(id="clip0_597_620")
+															rect(width="10" height="10" fill="white")
+											
+											span._text 
+												span СМС-уведомления
+												span + 500 ₽ / мес.
+							._dropdown 
+									._opener 
+										p._text.-opener Система лояльности
+										svg(width="7" height="5" viewBox="0 0 7 5" fill="none" xmlns="http://www.w3.org/2000/svg")
+											path(d="M5.71643 4.03183C6.00965 4.32505 6.48686 4.32505 6.78008 4.03183C7.07331 3.7386 7.07331 3.2614 6.78008 2.96817L4.03183 0.219918C3.7386 -0.0733059 3.2614 -0.0733059 2.96817 0.219918L0.219918 2.96817C-0.073306 3.2614 -0.073306 3.7386 0.219918 4.03183C0.513142 4.32505 0.990349 4.32505 1.28357 4.03183L3.5 1.8154L5.71643 4.03183Z" fill="currentColor")
+									
+									._list 
+										p._text.-list-title Входит в базовую стоимость
+										label.checkbox-tariffs
+											input(type="checkbox")._input
+
+											span._box 
+												svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+													g(clip-path="url(#clip0_597_620)")
+														path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+													defs
+														clipPath(id="clip0_597_620")
+															rect(width="10" height="10" fill="white")
+											
+											span._text 
+												span Email-уведомления 
+												span + 500 ₽ / мес.
+
+										label.checkbox-tariffs
+											input(type="checkbox")._input
+
+											span._box 
+												svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+													g(clip-path="url(#clip0_597_620)")
+														path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+													defs
+														clipPath(id="clip0_597_620")
+															rect(width="10" height="10" fill="white")
+											
+											span._text 
+												span Push-уведомления
+												span + 500 ₽ / мес.
+
+										p._text.-list-title Дополнительно
+
+										label.checkbox-tariffs
+											input(type="checkbox")._input
+
+											span._box 
+												svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+													g(clip-path="url(#clip0_597_620)")
+														path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+													defs
+														clipPath(id="clip0_597_620")
+															rect(width="10" height="10" fill="white")
+											
+											span._text 
+												span СМС-уведомления
+												span + 500 ₽ / мес.
+							._dropdown 
+									._opener 
+										p._text.-opener Отчёты
+										svg(width="7" height="5" viewBox="0 0 7 5" fill="none" xmlns="http://www.w3.org/2000/svg")
+											path(d="M5.71643 4.03183C6.00965 4.32505 6.48686 4.32505 6.78008 4.03183C7.07331 3.7386 7.07331 3.2614 6.78008 2.96817L4.03183 0.219918C3.7386 -0.0733059 3.2614 -0.0733059 2.96817 0.219918L0.219918 2.96817C-0.073306 3.2614 -0.073306 3.7386 0.219918 4.03183C0.513142 4.32505 0.990349 4.32505 1.28357 4.03183L3.5 1.8154L5.71643 4.03183Z" fill="currentColor")
+									
+									._list 
+										p._text.-list-title Входит в базовую стоимость
+										label.checkbox-tariffs
+											input(type="checkbox")._input
+
+											span._box 
+												svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+													g(clip-path="url(#clip0_597_620)")
+														path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+													defs
+														clipPath(id="clip0_597_620")
+															rect(width="10" height="10" fill="white")
+											
+											span._text 
+												span Email-уведомления 
+												span + 500 ₽ / мес.
+
+										label.checkbox-tariffs
+											input(type="checkbox")._input
+
+											span._box 
+												svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+													g(clip-path="url(#clip0_597_620)")
+														path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+													defs
+														clipPath(id="clip0_597_620")
+															rect(width="10" height="10" fill="white")
+											
+											span._text 
+												span Push-уведомления
+												span + 500 ₽ / мес.
+
+										p._text.-list-title Дополнительно
+
+										label.checkbox-tariffs
+											input(type="checkbox")._input
+
+											span._box 
+												svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+													g(clip-path="url(#clip0_597_620)")
+														path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+													defs
+														clipPath(id="clip0_597_620")
+															rect(width="10" height="10" fill="white")
+											
+											span._text 
+												span СМС-уведомления
+												span + 500 ₽ / мес.
+							
+							._bottom 
+								p._text.-result.-bottom Итого
+								p._text.-price.-bottom 5 500 ₽
+								p._text.-time.-bottom месяц
+
+								button._button Заявка на подключение
+						.tariffs-swiper-slide.swiper-slide.-best
+							p._best #[img(src="assets/img/star.svg", alt="Лучший")] Лучший выбор
+							p._text.-suptitle Тариф
+							h2._title Копицентр
+							p._text.-subtitle в тариф включено
+							p._text.-on #[img(src="assets/img/check-2.svg", alt="включено")] 1 компания
+							p._text.-on #[img(src="assets/img/check-2.svg", alt="включено")] 5 сотрудников
+							p._text.-on #[img(src="assets/img/check-2.svg", alt="включено")] 1 касса
+							p._text.-price 5 000 ₽
+							p._text.-time месяц
+							p._text.-module Модули
+
+							._dropdown 
+								._opener 
+									p._text.-opener Заявки / Заказы 
+									svg(width="7" height="5" viewBox="0 0 7 5" fill="none" xmlns="http://www.w3.org/2000/svg")
+										path(d="M5.71643 4.03183C6.00965 4.32505 6.48686 4.32505 6.78008 4.03183C7.07331 3.7386 7.07331 3.2614 6.78008 2.96817L4.03183 0.219918C3.7386 -0.0733059 3.2614 -0.0733059 2.96817 0.219918L0.219918 2.96817C-0.073306 3.2614 -0.073306 3.7386 0.219918 4.03183C0.513142 4.32505 0.990349 4.32505 1.28357 4.03183L3.5 1.8154L5.71643 4.03183Z" fill="currentColor")
+
+								
+								._list 
+									p._text.-list-title Входит в базовую стоимость
+									label.checkbox-tariffs
+										input(type="checkbox")._input
+
+										span._box 
+											svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+												g(clip-path="url(#clip0_597_620)")
+													path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+												defs
+													clipPath(id="clip0_597_620")
+														rect(width="10" height="10" fill="white")
+										
+										span._text 
+											span Email-уведомления 
+											span + 500 ₽ / мес.
+
+									label.checkbox-tariffs
+										input(type="checkbox")._input
+
+										span._box 
+											svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+												g(clip-path="url(#clip0_597_620)")
+													path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+												defs
+													clipPath(id="clip0_597_620")
+														rect(width="10" height="10" fill="white")
+										
+										span._text 
+											span Push-уведомления
+											span + 500 ₽ / мес.
+
+									p._text.-list-title Дополнительно
+
+									label.checkbox-tariffs
+										input(type="checkbox")._input
+
+										span._box 
+											svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+												g(clip-path="url(#clip0_597_620)")
+													path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+												defs
+													clipPath(id="clip0_597_620")
+														rect(width="10" height="10" fill="white")
+										
+										span._text 
+											span СМС-уведомления
+											span + 500 ₽ / мес.
+							._dropdown 
+								._opener 
+									p._text.-opener Рабочее место кассира
+									svg(width="7" height="5" viewBox="0 0 7 5" fill="none" xmlns="http://www.w3.org/2000/svg")
+										path(d="M5.71643 4.03183C6.00965 4.32505 6.48686 4.32505 6.78008 4.03183C7.07331 3.7386 7.07331 3.2614 6.78008 2.96817L4.03183 0.219918C3.7386 -0.0733059 3.2614 -0.0733059 2.96817 0.219918L0.219918 2.96817C-0.073306 3.2614 -0.073306 3.7386 0.219918 4.03183C0.513142 4.32505 0.990349 4.32505 1.28357 4.03183L3.5 1.8154L5.71643 4.03183Z" fill="currentColor")
+								
+								._list 
+									p._text.-list-title Входит в базовую стоимость
+									label.checkbox-tariffs
+										input(type="checkbox")._input
+
+										span._box 
+											svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+												g(clip-path="url(#clip0_597_620)")
+													path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+												defs
+													clipPath(id="clip0_597_620")
+														rect(width="10" height="10" fill="white")
+										
+										span._text 
+											span Email-уведомления 
+											span + 500 ₽ / мес.
+
+									label.checkbox-tariffs
+										input(type="checkbox")._input
+
+										span._box 
+											svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+												g(clip-path="url(#clip0_597_620)")
+													path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+												defs
+													clipPath(id="clip0_597_620")
+														rect(width="10" height="10" fill="white")
+										
+										span._text 
+											span Push-уведомления
+											span + 500 ₽ / мес.
+
+									p._text.-list-title Дополнительно
+
+									label.checkbox-tariffs
+										input(type="checkbox")._input
+
+										span._box 
+											svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+												g(clip-path="url(#clip0_597_620)")
+													path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+												defs
+													clipPath(id="clip0_597_620")
+														rect(width="10" height="10" fill="white")
+										
+										span._text 
+											span СМС-уведомления
+											span + 500 ₽ / мес.
+							._dropdown 
+									._opener 
+										p._text.-opener Контрагенты
+										svg(width="7" height="5" viewBox="0 0 7 5" fill="none" xmlns="http://www.w3.org/2000/svg")
+											path(d="M5.71643 4.03183C6.00965 4.32505 6.48686 4.32505 6.78008 4.03183C7.07331 3.7386 7.07331 3.2614 6.78008 2.96817L4.03183 0.219918C3.7386 -0.0733059 3.2614 -0.0733059 2.96817 0.219918L0.219918 2.96817C-0.073306 3.2614 -0.073306 3.7386 0.219918 4.03183C0.513142 4.32505 0.990349 4.32505 1.28357 4.03183L3.5 1.8154L5.71643 4.03183Z" fill="currentColor")
+									
+									._list 
+										p._text.-list-title Входит в базовую стоимость
+										label.checkbox-tariffs
+											input(type="checkbox")._input
+
+											span._box 
+												svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+													g(clip-path="url(#clip0_597_620)")
+														path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+													defs
+														clipPath(id="clip0_597_620")
+															rect(width="10" height="10" fill="white")
+											
+											span._text 
+												span Email-уведомления 
+												span + 500 ₽ / мес.
+
+										label.checkbox-tariffs
+											input(type="checkbox")._input
+
+											span._box 
+												svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+													g(clip-path="url(#clip0_597_620)")
+														path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+													defs
+														clipPath(id="clip0_597_620")
+															rect(width="10" height="10" fill="white")
+											
+											span._text 
+												span Push-уведомления
+												span + 500 ₽ / мес.
+
+										p._text.-list-title Дополнительно
+
+										label.checkbox-tariffs
+											input(type="checkbox")._input
+
+											span._box 
+												svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+													g(clip-path="url(#clip0_597_620)")
+														path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+													defs
+														clipPath(id="clip0_597_620")
+															rect(width="10" height="10" fill="white")
+											
+											span._text 
+												span СМС-уведомления
+												span + 500 ₽ / мес.
+							._dropdown 
+									._opener 
+										p._text.-opener Интеграции
+										svg(width="7" height="5" viewBox="0 0 7 5" fill="none" xmlns="http://www.w3.org/2000/svg")
+											path(d="M5.71643 4.03183C6.00965 4.32505 6.48686 4.32505 6.78008 4.03183C7.07331 3.7386 7.07331 3.2614 6.78008 2.96817L4.03183 0.219918C3.7386 -0.0733059 3.2614 -0.0733059 2.96817 0.219918L0.219918 2.96817C-0.073306 3.2614 -0.073306 3.7386 0.219918 4.03183C0.513142 4.32505 0.990349 4.32505 1.28357 4.03183L3.5 1.8154L5.71643 4.03183Z" fill="currentColor")
+									
+									._list 
+										p._text.-list-title Входит в базовую стоимость
+										label.checkbox-tariffs
+											input(type="checkbox")._input
+
+											span._box 
+												svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+													g(clip-path="url(#clip0_597_620)")
+														path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+													defs
+														clipPath(id="clip0_597_620")
+															rect(width="10" height="10" fill="white")
+											
+											span._text 
+												span Email-уведомления 
+												span + 500 ₽ / мес.
+
+										label.checkbox-tariffs
+											input(type="checkbox")._input
+
+											span._box 
+												svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+													g(clip-path="url(#clip0_597_620)")
+														path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+													defs
+														clipPath(id="clip0_597_620")
+															rect(width="10" height="10" fill="white")
+											
+											span._text 
+												span Push-уведомления
+												span + 500 ₽ / мес.
+
+										p._text.-list-title Дополнительно
+
+										label.checkbox-tariffs
+											input(type="checkbox")._input
+
+											span._box 
+												svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+													g(clip-path="url(#clip0_597_620)")
+														path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+													defs
+														clipPath(id="clip0_597_620")
+															rect(width="10" height="10" fill="white")
+											
+											span._text 
+												span СМС-уведомления
+												span + 500 ₽ / мес.
+							._dropdown 
+									._opener 
+										p._text.-opener Автоматизация
+										svg(width="7" height="5" viewBox="0 0 7 5" fill="none" xmlns="http://www.w3.org/2000/svg")
+											path(d="M5.71643 4.03183C6.00965 4.32505 6.48686 4.32505 6.78008 4.03183C7.07331 3.7386 7.07331 3.2614 6.78008 2.96817L4.03183 0.219918C3.7386 -0.0733059 3.2614 -0.0733059 2.96817 0.219918L0.219918 2.96817C-0.073306 3.2614 -0.073306 3.7386 0.219918 4.03183C0.513142 4.32505 0.990349 4.32505 1.28357 4.03183L3.5 1.8154L5.71643 4.03183Z" fill="currentColor")
+									
+									._list 
+										p._text.-list-title Входит в базовую стоимость
+										label.checkbox-tariffs
+											input(type="checkbox")._input
+
+											span._box 
+												svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+													g(clip-path="url(#clip0_597_620)")
+														path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+													defs
+														clipPath(id="clip0_597_620")
+															rect(width="10" height="10" fill="white")
+											
+											span._text 
+												span Email-уведомления 
+												span + 500 ₽ / мес.
+
+										label.checkbox-tariffs
+											input(type="checkbox")._input
+
+											span._box 
+												svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+													g(clip-path="url(#clip0_597_620)")
+														path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+													defs
+														clipPath(id="clip0_597_620")
+															rect(width="10" height="10" fill="white")
+											
+											span._text 
+												span Push-уведомления
+												span + 500 ₽ / мес.
+
+										p._text.-list-title Дополнительно
+
+										label.checkbox-tariffs
+											input(type="checkbox")._input
+
+											span._box 
+												svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+													g(clip-path="url(#clip0_597_620)")
+														path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+													defs
+														clipPath(id="clip0_597_620")
+															rect(width="10" height="10" fill="white")
+											
+											span._text 
+												span СМС-уведомления
+												span + 500 ₽ / мес.
+							._dropdown 
+									._opener 
+										p._text.-opener Задачи
+										svg(width="7" height="5" viewBox="0 0 7 5" fill="none" xmlns="http://www.w3.org/2000/svg")
+											path(d="M5.71643 4.03183C6.00965 4.32505 6.48686 4.32505 6.78008 4.03183C7.07331 3.7386 7.07331 3.2614 6.78008 2.96817L4.03183 0.219918C3.7386 -0.0733059 3.2614 -0.0733059 2.96817 0.219918L0.219918 2.96817C-0.073306 3.2614 -0.073306 3.7386 0.219918 4.03183C0.513142 4.32505 0.990349 4.32505 1.28357 4.03183L3.5 1.8154L5.71643 4.03183Z" fill="currentColor")
+									
+									._list 
+										p._text.-list-title Входит в базовую стоимость
+										label.checkbox-tariffs
+											input(type="checkbox")._input
+
+											span._box 
+												svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+													g(clip-path="url(#clip0_597_620)")
+														path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+													defs
+														clipPath(id="clip0_597_620")
+															rect(width="10" height="10" fill="white")
+											
+											span._text 
+												span Email-уведомления 
+												span + 500 ₽ / мес.
+
+										label.checkbox-tariffs
+											input(type="checkbox")._input
+
+											span._box 
+												svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+													g(clip-path="url(#clip0_597_620)")
+														path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+													defs
+														clipPath(id="clip0_597_620")
+															rect(width="10" height="10" fill="white")
+											
+											span._text 
+												span Push-уведомления
+												span + 500 ₽ / мес.
+
+										p._text.-list-title Дополнительно
+
+										label.checkbox-tariffs
+											input(type="checkbox")._input
+
+											span._box 
+												svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+													g(clip-path="url(#clip0_597_620)")
+														path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+													defs
+														clipPath(id="clip0_597_620")
+															rect(width="10" height="10" fill="white")
+											
+											span._text 
+												span СМС-уведомления
+												span + 500 ₽ / мес.
+							._dropdown 
+									._opener
+										p._text.-opener Автоматизация
+										svg(width="7" height="5" viewBox="0 0 7 5" fill="none" xmlns="http://www.w3.org/2000/svg")
+											path(d="M5.71643 4.03183C6.00965 4.32505 6.48686 4.32505 6.78008 4.03183C7.07331 3.7386 7.07331 3.2614 6.78008 2.96817L4.03183 0.219918C3.7386 -0.0733059 3.2614 -0.0733059 2.96817 0.219918L0.219918 2.96817C-0.073306 3.2614 -0.073306 3.7386 0.219918 4.03183C0.513142 4.32505 0.990349 4.32505 1.28357 4.03183L3.5 1.8154L5.71643 4.03183Z" fill="currentColor")
+									
+									._list 
+										p._text.-list-title Входит в базовую стоимость
+										label.checkbox-tariffs
+											input(type="checkbox")._input
+
+											span._box 
+												svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+													g(clip-path="url(#clip0_597_620)")
+														path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+													defs
+														clipPath(id="clip0_597_620")
+															rect(width="10" height="10" fill="white")
+											
+											span._text 
+												span Email-уведомления 
+												span + 500 ₽ / мес.
+
+										label.checkbox-tariffs
+											input(type="checkbox")._input
+
+											span._box 
+												svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+													g(clip-path="url(#clip0_597_620)")
+														path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+													defs
+														clipPath(id="clip0_597_620")
+															rect(width="10" height="10" fill="white")
+											
+											span._text 
+												span Push-уведомления
+												span + 500 ₽ / мес.
+
+										p._text.-list-title Дополнительно
+
+										label.checkbox-tariffs
+											input(type="checkbox")._input
+
+											span._box 
+												svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+													g(clip-path="url(#clip0_597_620)")
+														path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+													defs
+														clipPath(id="clip0_597_620")
+															rect(width="10" height="10" fill="white")
+											
+											span._text 
+												span СМС-уведомления
+												span + 500 ₽ / мес.
+							._dropdown 
+								._opener 
+									p._text.-opener Задачи
+									svg(width="7" height="5" viewBox="0 0 7 5" fill="none" xmlns="http://www.w3.org/2000/svg")
+										path(d="M5.71643 4.03183C6.00965 4.32505 6.48686 4.32505 6.78008 4.03183C7.07331 3.7386 7.07331 3.2614 6.78008 2.96817L4.03183 0.219918C3.7386 -0.0733059 3.2614 -0.0733059 2.96817 0.219918L0.219918 2.96817C-0.073306 3.2614 -0.073306 3.7386 0.219918 4.03183C0.513142 4.32505 0.990349 4.32505 1.28357 4.03183L3.5 1.8154L5.71643 4.03183Z" fill="currentColor")
+								
+								._list 
+									p._text.-list-title Входит в базовую стоимость
+									label.checkbox-tariffs
+										input(type="checkbox")._input
+
+										span._box 
+											svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+												g(clip-path="url(#clip0_597_620)")
+													path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+												defs
+													clipPath(id="clip0_597_620")
+														rect(width="10" height="10" fill="white")
+										
+										span._text 
+											span Email-уведомления 
+											span + 500 ₽ / мес.
+
+									label.checkbox-tariffs
+										input(type="checkbox")._input
+
+										span._box 
+											svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+												g(clip-path="url(#clip0_597_620)")
+													path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+												defs
+													clipPath(id="clip0_597_620")
+														rect(width="10" height="10" fill="white")
+										
+										span._text 
+											span Push-уведомления
+											span + 500 ₽ / мес.
+
+									p._text.-list-title Дополнительно
+
+									label.checkbox-tariffs
+										input(type="checkbox")._input
+
+										span._box 
+											svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+												g(clip-path="url(#clip0_597_620)")
+													path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+												defs
+													clipPath(id="clip0_597_620")
+														rect(width="10" height="10" fill="white")
+										
+										span._text 
+											span СМС-уведомления
+											span + 500 ₽ / мес.
+							._dropdown 
+								._opener 
+									p._text.-opener Платежи
+									svg(width="7" height="5" viewBox="0 0 7 5" fill="none" xmlns="http://www.w3.org/2000/svg")
+										path(d="M5.71643 4.03183C6.00965 4.32505 6.48686 4.32505 6.78008 4.03183C7.07331 3.7386 7.07331 3.2614 6.78008 2.96817L4.03183 0.219918C3.7386 -0.0733059 3.2614 -0.0733059 2.96817 0.219918L0.219918 2.96817C-0.073306 3.2614 -0.073306 3.7386 0.219918 4.03183C0.513142 4.32505 0.990349 4.32505 1.28357 4.03183L3.5 1.8154L5.71643 4.03183Z" fill="currentColor")
+								
+								._list 
+									p._text.-list-title Входит в базовую стоимость
+									label.checkbox-tariffs
+										input(type="checkbox")._input
+
+										span._box 
+											svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+												g(clip-path="url(#clip0_597_620)")
+													path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+												defs
+													clipPath(id="clip0_597_620")
+														rect(width="10" height="10" fill="white")
+										
+										span._text 
+											span Email-уведомления 
+											span + 500 ₽ / мес.
+
+									label.checkbox-tariffs
+										input(type="checkbox")._input
+
+										span._box 
+											svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+												g(clip-path="url(#clip0_597_620)")
+													path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+												defs
+													clipPath(id="clip0_597_620")
+														rect(width="10" height="10" fill="white")
+										
+										span._text 
+											span Push-уведомления
+											span + 500 ₽ / мес.
+
+									p._text.-list-title Дополнительно
+
+									label.checkbox-tariffs
+										input(type="checkbox")._input
+
+										span._box 
+											svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+												g(clip-path="url(#clip0_597_620)")
+													path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+												defs
+													clipPath(id="clip0_597_620")
+														rect(width="10" height="10" fill="white")
+										
+										span._text 
+											span СМС-уведомления
+											span + 500 ₽ / мес.
+							._dropdown 
+									._opener 
+										p._text.-opener Логистика
+										svg(width="7" height="5" viewBox="0 0 7 5" fill="none" xmlns="http://www.w3.org/2000/svg")
+											path(d="M5.71643 4.03183C6.00965 4.32505 6.48686 4.32505 6.78008 4.03183C7.07331 3.7386 7.07331 3.2614 6.78008 2.96817L4.03183 0.219918C3.7386 -0.0733059 3.2614 -0.0733059 2.96817 0.219918L0.219918 2.96817C-0.073306 3.2614 -0.073306 3.7386 0.219918 4.03183C0.513142 4.32505 0.990349 4.32505 1.28357 4.03183L3.5 1.8154L5.71643 4.03183Z" fill="currentColor")
+									
+									._list 
+										p._text.-list-title Входит в базовую стоимость
+										label.checkbox-tariffs
+											input(type="checkbox")._input
+
+											span._box 
+												svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+													g(clip-path="url(#clip0_597_620)")
+														path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+													defs
+														clipPath(id="clip0_597_620")
+															rect(width="10" height="10" fill="white")
+											
+											span._text 
+												span Email-уведомления 
+												span + 500 ₽ / мес.
+
+										label.checkbox-tariffs
+											input(type="checkbox")._input
+
+											span._box 
+												svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+													g(clip-path="url(#clip0_597_620)")
+														path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+													defs
+														clipPath(id="clip0_597_620")
+															rect(width="10" height="10" fill="white")
+											
+											span._text 
+												span Push-уведомления
+												span + 500 ₽ / мес.
+
+										p._text.-list-title Дополнительно
+
+										label.checkbox-tariffs
+											input(type="checkbox")._input
+
+											span._box 
+												svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+													g(clip-path="url(#clip0_597_620)")
+														path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+													defs
+														clipPath(id="clip0_597_620")
+															rect(width="10" height="10" fill="white")
+											
+											span._text 
+												span СМС-уведомления
+												span + 500 ₽ / мес.
+							._dropdown 
+									._opener 
+										p._text.-opener Склад
+										svg(width="7" height="5" viewBox="0 0 7 5" fill="none" xmlns="http://www.w3.org/2000/svg")
+											path(d="M5.71643 4.03183C6.00965 4.32505 6.48686 4.32505 6.78008 4.03183C7.07331 3.7386 7.07331 3.2614 6.78008 2.96817L4.03183 0.219918C3.7386 -0.0733059 3.2614 -0.0733059 2.96817 0.219918L0.219918 2.96817C-0.073306 3.2614 -0.073306 3.7386 0.219918 4.03183C0.513142 4.32505 0.990349 4.32505 1.28357 4.03183L3.5 1.8154L5.71643 4.03183Z" fill="currentColor")
+									
+									._list 
+										p._text.-list-title Входит в базовую стоимость
+										label.checkbox-tariffs
+											input(type="checkbox")._input
+
+											span._box 
+												svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+													g(clip-path="url(#clip0_597_620)")
+														path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+													defs
+														clipPath(id="clip0_597_620")
+															rect(width="10" height="10" fill="white")
+											
+											span._text 
+												span Email-уведомления 
+												span + 500 ₽ / мес.
+
+										label.checkbox-tariffs
+											input(type="checkbox")._input
+
+											span._box 
+												svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+													g(clip-path="url(#clip0_597_620)")
+														path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+													defs
+														clipPath(id="clip0_597_620")
+															rect(width="10" height="10" fill="white")
+											
+											span._text 
+												span Push-уведомления
+												span + 500 ₽ / мес.
+
+										p._text.-list-title Дополнительно
+
+										label.checkbox-tariffs
+											input(type="checkbox")._input
+
+											span._box 
+												svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+													g(clip-path="url(#clip0_597_620)")
+														path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+													defs
+														clipPath(id="clip0_597_620")
+															rect(width="10" height="10" fill="white")
+											
+											span._text 
+												span СМС-уведомления
+												span + 500 ₽ / мес.
+							._dropdown 
+									._opener 
+										p._text.-opener Файловое хранилище
+										svg(width="7" height="5" viewBox="0 0 7 5" fill="none" xmlns="http://www.w3.org/2000/svg")
+											path(d="M5.71643 4.03183C6.00965 4.32505 6.48686 4.32505 6.78008 4.03183C7.07331 3.7386 7.07331 3.2614 6.78008 2.96817L4.03183 0.219918C3.7386 -0.0733059 3.2614 -0.0733059 2.96817 0.219918L0.219918 2.96817C-0.073306 3.2614 -0.073306 3.7386 0.219918 4.03183C0.513142 4.32505 0.990349 4.32505 1.28357 4.03183L3.5 1.8154L5.71643 4.03183Z" fill="currentColor")
+									
+									._list 
+										p._text.-list-title Входит в базовую стоимость
+										label.checkbox-tariffs
+											input(type="checkbox")._input
+
+											span._box 
+												svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+													g(clip-path="url(#clip0_597_620)")
+														path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+													defs
+														clipPath(id="clip0_597_620")
+															rect(width="10" height="10" fill="white")
+											
+											span._text 
+												span Email-уведомления 
+												span + 500 ₽ / мес.
+
+										label.checkbox-tariffs
+											input(type="checkbox")._input
+
+											span._box 
+												svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+													g(clip-path="url(#clip0_597_620)")
+														path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+													defs
+														clipPath(id="clip0_597_620")
+															rect(width="10" height="10" fill="white")
+											
+											span._text 
+												span Push-уведомления
+												span + 500 ₽ / мес.
+
+										p._text.-list-title Дополнительно
+
+										label.checkbox-tariffs
+											input(type="checkbox")._input
+
+											span._box 
+												svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+													g(clip-path="url(#clip0_597_620)")
+														path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+													defs
+														clipPath(id="clip0_597_620")
+															rect(width="10" height="10" fill="white")
+											
+											span._text 
+												span СМС-уведомления
+												span + 500 ₽ / мес.
+							._dropdown 
+									._opener 
+										p._text.-opener Система лояльности
+										svg(width="7" height="5" viewBox="0 0 7 5" fill="none" xmlns="http://www.w3.org/2000/svg")
+											path(d="M5.71643 4.03183C6.00965 4.32505 6.48686 4.32505 6.78008 4.03183C7.07331 3.7386 7.07331 3.2614 6.78008 2.96817L4.03183 0.219918C3.7386 -0.0733059 3.2614 -0.0733059 2.96817 0.219918L0.219918 2.96817C-0.073306 3.2614 -0.073306 3.7386 0.219918 4.03183C0.513142 4.32505 0.990349 4.32505 1.28357 4.03183L3.5 1.8154L5.71643 4.03183Z" fill="currentColor")
+									
+									._list 
+										p._text.-list-title Входит в базовую стоимость
+										label.checkbox-tariffs
+											input(type="checkbox")._input
+
+											span._box 
+												svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+													g(clip-path="url(#clip0_597_620)")
+														path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+													defs
+														clipPath(id="clip0_597_620")
+															rect(width="10" height="10" fill="white")
+											
+											span._text 
+												span Email-уведомления 
+												span + 500 ₽ / мес.
+
+										label.checkbox-tariffs
+											input(type="checkbox")._input
+
+											span._box 
+												svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+													g(clip-path="url(#clip0_597_620)")
+														path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+													defs
+														clipPath(id="clip0_597_620")
+															rect(width="10" height="10" fill="white")
+											
+											span._text 
+												span Push-уведомления
+												span + 500 ₽ / мес.
+
+										p._text.-list-title Дополнительно
+
+										label.checkbox-tariffs
+											input(type="checkbox")._input
+
+											span._box 
+												svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+													g(clip-path="url(#clip0_597_620)")
+														path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+													defs
+														clipPath(id="clip0_597_620")
+															rect(width="10" height="10" fill="white")
+											
+											span._text 
+												span СМС-уведомления
+												span + 500 ₽ / мес.
+							._dropdown 
+									._opener 
+										p._text.-opener Отчёты
+										svg(width="7" height="5" viewBox="0 0 7 5" fill="none" xmlns="http://www.w3.org/2000/svg")
+											path(d="M5.71643 4.03183C6.00965 4.32505 6.48686 4.32505 6.78008 4.03183C7.07331 3.7386 7.07331 3.2614 6.78008 2.96817L4.03183 0.219918C3.7386 -0.0733059 3.2614 -0.0733059 2.96817 0.219918L0.219918 2.96817C-0.073306 3.2614 -0.073306 3.7386 0.219918 4.03183C0.513142 4.32505 0.990349 4.32505 1.28357 4.03183L3.5 1.8154L5.71643 4.03183Z" fill="currentColor")
+									
+									._list 
+										p._text.-list-title Входит в базовую стоимость
+										label.checkbox-tariffs
+											input(type="checkbox")._input
+
+											span._box 
+												svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+													g(clip-path="url(#clip0_597_620)")
+														path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+													defs
+														clipPath(id="clip0_597_620")
+															rect(width="10" height="10" fill="white")
+											
+											span._text 
+												span Email-уведомления 
+												span + 500 ₽ / мес.
+
+										label.checkbox-tariffs
+											input(type="checkbox")._input
+
+											span._box 
+												svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+													g(clip-path="url(#clip0_597_620)")
+														path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+													defs
+														clipPath(id="clip0_597_620")
+															rect(width="10" height="10" fill="white")
+											
+											span._text 
+												span Push-уведомления
+												span + 500 ₽ / мес.
+
+										p._text.-list-title Дополнительно
+
+										label.checkbox-tariffs
+											input(type="checkbox")._input
+
+											span._box 
+												svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+													g(clip-path="url(#clip0_597_620)")
+														path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+													defs
+														clipPath(id="clip0_597_620")
+															rect(width="10" height="10" fill="white")
+											
+											span._text 
+												span СМС-уведомления
+												span + 500 ₽ / мес.
+							
+							._bottom 
+								p._text.-result.-bottom Итого
+								p._text.-price.-bottom 5 500 ₽
+								p._text.-time.-bottom месяц
+
+								button._button Заявка на подключение
+						.tariffs-swiper-slide.swiper-slide
+							p._text.-suptitle Тариф
+							h2._title Копицентр
+							p._text.-subtitle в тариф включено
+							p._text.-on #[img(src="assets/img/check-2.svg", alt="включено")] 1 компания
+							p._text.-on #[img(src="assets/img/check-2.svg", alt="включено")] 5 сотрудников
+							p._text.-on #[img(src="assets/img/check-2.svg", alt="включено")] 1 касса
+							p._text.-price 5 000 ₽
+							p._text.-time месяц
+							p._text.-module Модули
+
+							._dropdown 
+								._opener 
+									p._text.-opener Заявки / Заказы 
+									svg(width="7" height="5" viewBox="0 0 7 5" fill="none" xmlns="http://www.w3.org/2000/svg")
+										path(d="M5.71643 4.03183C6.00965 4.32505 6.48686 4.32505 6.78008 4.03183C7.07331 3.7386 7.07331 3.2614 6.78008 2.96817L4.03183 0.219918C3.7386 -0.0733059 3.2614 -0.0733059 2.96817 0.219918L0.219918 2.96817C-0.073306 3.2614 -0.073306 3.7386 0.219918 4.03183C0.513142 4.32505 0.990349 4.32505 1.28357 4.03183L3.5 1.8154L5.71643 4.03183Z" fill="currentColor")
+
+								
+								._list 
+									p._text.-list-title Входит в базовую стоимость
+									label.checkbox-tariffs
+										input(type="checkbox")._input
+
+										span._box 
+											svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+												g(clip-path="url(#clip0_597_620)")
+													path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+												defs
+													clipPath(id="clip0_597_620")
+														rect(width="10" height="10" fill="white")
+										
+										span._text 
+											span Email-уведомления 
+											span + 500 ₽ / мес.
+
+									label.checkbox-tariffs
+										input(type="checkbox")._input
+
+										span._box 
+											svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+												g(clip-path="url(#clip0_597_620)")
+													path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+												defs
+													clipPath(id="clip0_597_620")
+														rect(width="10" height="10" fill="white")
+										
+										span._text 
+											span Push-уведомления
+											span + 500 ₽ / мес.
+
+									p._text.-list-title Дополнительно
+
+									label.checkbox-tariffs
+										input(type="checkbox")._input
+
+										span._box 
+											svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+												g(clip-path="url(#clip0_597_620)")
+													path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+												defs
+													clipPath(id="clip0_597_620")
+														rect(width="10" height="10" fill="white")
+										
+										span._text 
+											span СМС-уведомления
+											span + 500 ₽ / мес.
+							._dropdown 
+								._opener 
+									p._text.-opener Рабочее место кассира
+									svg(width="7" height="5" viewBox="0 0 7 5" fill="none" xmlns="http://www.w3.org/2000/svg")
+										path(d="M5.71643 4.03183C6.00965 4.32505 6.48686 4.32505 6.78008 4.03183C7.07331 3.7386 7.07331 3.2614 6.78008 2.96817L4.03183 0.219918C3.7386 -0.0733059 3.2614 -0.0733059 2.96817 0.219918L0.219918 2.96817C-0.073306 3.2614 -0.073306 3.7386 0.219918 4.03183C0.513142 4.32505 0.990349 4.32505 1.28357 4.03183L3.5 1.8154L5.71643 4.03183Z" fill="currentColor")
+								
+								._list 
+									p._text.-list-title Входит в базовую стоимость
+									label.checkbox-tariffs
+										input(type="checkbox")._input
+
+										span._box 
+											svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+												g(clip-path="url(#clip0_597_620)")
+													path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+												defs
+													clipPath(id="clip0_597_620")
+														rect(width="10" height="10" fill="white")
+										
+										span._text 
+											span Email-уведомления 
+											span + 500 ₽ / мес.
+
+									label.checkbox-tariffs
+										input(type="checkbox")._input
+
+										span._box 
+											svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+												g(clip-path="url(#clip0_597_620)")
+													path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+												defs
+													clipPath(id="clip0_597_620")
+														rect(width="10" height="10" fill="white")
+										
+										span._text 
+											span Push-уведомления
+											span + 500 ₽ / мес.
+
+									p._text.-list-title Дополнительно
+
+									label.checkbox-tariffs
+										input(type="checkbox")._input
+
+										span._box 
+											svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+												g(clip-path="url(#clip0_597_620)")
+													path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+												defs
+													clipPath(id="clip0_597_620")
+														rect(width="10" height="10" fill="white")
+										
+										span._text 
+											span СМС-уведомления
+											span + 500 ₽ / мес.
+							._dropdown 
+									._opener 
+										p._text.-opener Контрагенты
+										svg(width="7" height="5" viewBox="0 0 7 5" fill="none" xmlns="http://www.w3.org/2000/svg")
+											path(d="M5.71643 4.03183C6.00965 4.32505 6.48686 4.32505 6.78008 4.03183C7.07331 3.7386 7.07331 3.2614 6.78008 2.96817L4.03183 0.219918C3.7386 -0.0733059 3.2614 -0.0733059 2.96817 0.219918L0.219918 2.96817C-0.073306 3.2614 -0.073306 3.7386 0.219918 4.03183C0.513142 4.32505 0.990349 4.32505 1.28357 4.03183L3.5 1.8154L5.71643 4.03183Z" fill="currentColor")
+									
+									._list 
+										p._text.-list-title Входит в базовую стоимость
+										label.checkbox-tariffs
+											input(type="checkbox")._input
+
+											span._box 
+												svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+													g(clip-path="url(#clip0_597_620)")
+														path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+													defs
+														clipPath(id="clip0_597_620")
+															rect(width="10" height="10" fill="white")
+											
+											span._text 
+												span Email-уведомления 
+												span + 500 ₽ / мес.
+
+										label.checkbox-tariffs
+											input(type="checkbox")._input
+
+											span._box 
+												svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+													g(clip-path="url(#clip0_597_620)")
+														path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+													defs
+														clipPath(id="clip0_597_620")
+															rect(width="10" height="10" fill="white")
+											
+											span._text 
+												span Push-уведомления
+												span + 500 ₽ / мес.
+
+										p._text.-list-title Дополнительно
+
+										label.checkbox-tariffs
+											input(type="checkbox")._input
+
+											span._box 
+												svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+													g(clip-path="url(#clip0_597_620)")
+														path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+													defs
+														clipPath(id="clip0_597_620")
+															rect(width="10" height="10" fill="white")
+											
+											span._text 
+												span СМС-уведомления
+												span + 500 ₽ / мес.
+							._dropdown 
+									._opener 
+										p._text.-opener Интеграции
+										svg(width="7" height="5" viewBox="0 0 7 5" fill="none" xmlns="http://www.w3.org/2000/svg")
+											path(d="M5.71643 4.03183C6.00965 4.32505 6.48686 4.32505 6.78008 4.03183C7.07331 3.7386 7.07331 3.2614 6.78008 2.96817L4.03183 0.219918C3.7386 -0.0733059 3.2614 -0.0733059 2.96817 0.219918L0.219918 2.96817C-0.073306 3.2614 -0.073306 3.7386 0.219918 4.03183C0.513142 4.32505 0.990349 4.32505 1.28357 4.03183L3.5 1.8154L5.71643 4.03183Z" fill="currentColor")
+									
+									._list 
+										p._text.-list-title Входит в базовую стоимость
+										label.checkbox-tariffs
+											input(type="checkbox")._input
+
+											span._box 
+												svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+													g(clip-path="url(#clip0_597_620)")
+														path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+													defs
+														clipPath(id="clip0_597_620")
+															rect(width="10" height="10" fill="white")
+											
+											span._text 
+												span Email-уведомления 
+												span + 500 ₽ / мес.
+
+										label.checkbox-tariffs
+											input(type="checkbox")._input
+
+											span._box 
+												svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+													g(clip-path="url(#clip0_597_620)")
+														path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+													defs
+														clipPath(id="clip0_597_620")
+															rect(width="10" height="10" fill="white")
+											
+											span._text 
+												span Push-уведомления
+												span + 500 ₽ / мес.
+
+										p._text.-list-title Дополнительно
+
+										label.checkbox-tariffs
+											input(type="checkbox")._input
+
+											span._box 
+												svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+													g(clip-path="url(#clip0_597_620)")
+														path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+													defs
+														clipPath(id="clip0_597_620")
+															rect(width="10" height="10" fill="white")
+											
+											span._text 
+												span СМС-уведомления
+												span + 500 ₽ / мес.
+							._dropdown 
+									._opener 
+										p._text.-opener Автоматизация
+										svg(width="7" height="5" viewBox="0 0 7 5" fill="none" xmlns="http://www.w3.org/2000/svg")
+											path(d="M5.71643 4.03183C6.00965 4.32505 6.48686 4.32505 6.78008 4.03183C7.07331 3.7386 7.07331 3.2614 6.78008 2.96817L4.03183 0.219918C3.7386 -0.0733059 3.2614 -0.0733059 2.96817 0.219918L0.219918 2.96817C-0.073306 3.2614 -0.073306 3.7386 0.219918 4.03183C0.513142 4.32505 0.990349 4.32505 1.28357 4.03183L3.5 1.8154L5.71643 4.03183Z" fill="currentColor")
+									
+									._list 
+										p._text.-list-title Входит в базовую стоимость
+										label.checkbox-tariffs
+											input(type="checkbox")._input
+
+											span._box 
+												svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+													g(clip-path="url(#clip0_597_620)")
+														path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+													defs
+														clipPath(id="clip0_597_620")
+															rect(width="10" height="10" fill="white")
+											
+											span._text 
+												span Email-уведомления 
+												span + 500 ₽ / мес.
+
+										label.checkbox-tariffs
+											input(type="checkbox")._input
+
+											span._box 
+												svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+													g(clip-path="url(#clip0_597_620)")
+														path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+													defs
+														clipPath(id="clip0_597_620")
+															rect(width="10" height="10" fill="white")
+											
+											span._text 
+												span Push-уведомления
+												span + 500 ₽ / мес.
+
+										p._text.-list-title Дополнительно
+
+										label.checkbox-tariffs
+											input(type="checkbox")._input
+
+											span._box 
+												svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+													g(clip-path="url(#clip0_597_620)")
+														path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+													defs
+														clipPath(id="clip0_597_620")
+															rect(width="10" height="10" fill="white")
+											
+											span._text 
+												span СМС-уведомления
+												span + 500 ₽ / мес.
+							._dropdown 
+									._opener 
+										p._text.-opener Задачи
+										svg(width="7" height="5" viewBox="0 0 7 5" fill="none" xmlns="http://www.w3.org/2000/svg")
+											path(d="M5.71643 4.03183C6.00965 4.32505 6.48686 4.32505 6.78008 4.03183C7.07331 3.7386 7.07331 3.2614 6.78008 2.96817L4.03183 0.219918C3.7386 -0.0733059 3.2614 -0.0733059 2.96817 0.219918L0.219918 2.96817C-0.073306 3.2614 -0.073306 3.7386 0.219918 4.03183C0.513142 4.32505 0.990349 4.32505 1.28357 4.03183L3.5 1.8154L5.71643 4.03183Z" fill="currentColor")
+									
+									._list 
+										p._text.-list-title Входит в базовую стоимость
+										label.checkbox-tariffs
+											input(type="checkbox")._input
+
+											span._box 
+												svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+													g(clip-path="url(#clip0_597_620)")
+														path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+													defs
+														clipPath(id="clip0_597_620")
+															rect(width="10" height="10" fill="white")
+											
+											span._text 
+												span Email-уведомления 
+												span + 500 ₽ / мес.
+
+										label.checkbox-tariffs
+											input(type="checkbox")._input
+
+											span._box 
+												svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+													g(clip-path="url(#clip0_597_620)")
+														path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+													defs
+														clipPath(id="clip0_597_620")
+															rect(width="10" height="10" fill="white")
+											
+											span._text 
+												span Push-уведомления
+												span + 500 ₽ / мес.
+
+										p._text.-list-title Дополнительно
+
+										label.checkbox-tariffs
+											input(type="checkbox")._input
+
+											span._box 
+												svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+													g(clip-path="url(#clip0_597_620)")
+														path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+													defs
+														clipPath(id="clip0_597_620")
+															rect(width="10" height="10" fill="white")
+											
+											span._text 
+												span СМС-уведомления
+												span + 500 ₽ / мес.
+							._dropdown 
+									._opener
+										p._text.-opener Автоматизация
+										svg(width="7" height="5" viewBox="0 0 7 5" fill="none" xmlns="http://www.w3.org/2000/svg")
+											path(d="M5.71643 4.03183C6.00965 4.32505 6.48686 4.32505 6.78008 4.03183C7.07331 3.7386 7.07331 3.2614 6.78008 2.96817L4.03183 0.219918C3.7386 -0.0733059 3.2614 -0.0733059 2.96817 0.219918L0.219918 2.96817C-0.073306 3.2614 -0.073306 3.7386 0.219918 4.03183C0.513142 4.32505 0.990349 4.32505 1.28357 4.03183L3.5 1.8154L5.71643 4.03183Z" fill="currentColor")
+									
+									._list 
+										p._text.-list-title Входит в базовую стоимость
+										label.checkbox-tariffs
+											input(type="checkbox")._input
+
+											span._box 
+												svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+													g(clip-path="url(#clip0_597_620)")
+														path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+													defs
+														clipPath(id="clip0_597_620")
+															rect(width="10" height="10" fill="white")
+											
+											span._text 
+												span Email-уведомления 
+												span + 500 ₽ / мес.
+
+										label.checkbox-tariffs
+											input(type="checkbox")._input
+
+											span._box 
+												svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+													g(clip-path="url(#clip0_597_620)")
+														path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+													defs
+														clipPath(id="clip0_597_620")
+															rect(width="10" height="10" fill="white")
+											
+											span._text 
+												span Push-уведомления
+												span + 500 ₽ / мес.
+
+										p._text.-list-title Дополнительно
+
+										label.checkbox-tariffs
+											input(type="checkbox")._input
+
+											span._box 
+												svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+													g(clip-path="url(#clip0_597_620)")
+														path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+													defs
+														clipPath(id="clip0_597_620")
+															rect(width="10" height="10" fill="white")
+											
+											span._text 
+												span СМС-уведомления
+												span + 500 ₽ / мес.
+							._dropdown 
+								._opener 
+									p._text.-opener Задачи
+									svg(width="7" height="5" viewBox="0 0 7 5" fill="none" xmlns="http://www.w3.org/2000/svg")
+										path(d="M5.71643 4.03183C6.00965 4.32505 6.48686 4.32505 6.78008 4.03183C7.07331 3.7386 7.07331 3.2614 6.78008 2.96817L4.03183 0.219918C3.7386 -0.0733059 3.2614 -0.0733059 2.96817 0.219918L0.219918 2.96817C-0.073306 3.2614 -0.073306 3.7386 0.219918 4.03183C0.513142 4.32505 0.990349 4.32505 1.28357 4.03183L3.5 1.8154L5.71643 4.03183Z" fill="currentColor")
+								
+								._list 
+									p._text.-list-title Входит в базовую стоимость
+									label.checkbox-tariffs
+										input(type="checkbox")._input
+
+										span._box 
+											svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+												g(clip-path="url(#clip0_597_620)")
+													path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+												defs
+													clipPath(id="clip0_597_620")
+														rect(width="10" height="10" fill="white")
+										
+										span._text 
+											span Email-уведомления 
+											span + 500 ₽ / мес.
+
+									label.checkbox-tariffs
+										input(type="checkbox")._input
+
+										span._box 
+											svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+												g(clip-path="url(#clip0_597_620)")
+													path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+												defs
+													clipPath(id="clip0_597_620")
+														rect(width="10" height="10" fill="white")
+										
+										span._text 
+											span Push-уведомления
+											span + 500 ₽ / мес.
+
+									p._text.-list-title Дополнительно
+
+									label.checkbox-tariffs
+										input(type="checkbox")._input
+
+										span._box 
+											svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+												g(clip-path="url(#clip0_597_620)")
+													path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+												defs
+													clipPath(id="clip0_597_620")
+														rect(width="10" height="10" fill="white")
+										
+										span._text 
+											span СМС-уведомления
+											span + 500 ₽ / мес.
+							._dropdown 
+								._opener 
+									p._text.-opener Платежи
+									svg(width="7" height="5" viewBox="0 0 7 5" fill="none" xmlns="http://www.w3.org/2000/svg")
+										path(d="M5.71643 4.03183C6.00965 4.32505 6.48686 4.32505 6.78008 4.03183C7.07331 3.7386 7.07331 3.2614 6.78008 2.96817L4.03183 0.219918C3.7386 -0.0733059 3.2614 -0.0733059 2.96817 0.219918L0.219918 2.96817C-0.073306 3.2614 -0.073306 3.7386 0.219918 4.03183C0.513142 4.32505 0.990349 4.32505 1.28357 4.03183L3.5 1.8154L5.71643 4.03183Z" fill="currentColor")
+								
+								._list 
+									p._text.-list-title Входит в базовую стоимость
+									label.checkbox-tariffs
+										input(type="checkbox")._input
+
+										span._box 
+											svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+												g(clip-path="url(#clip0_597_620)")
+													path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+												defs
+													clipPath(id="clip0_597_620")
+														rect(width="10" height="10" fill="white")
+										
+										span._text 
+											span Email-уведомления 
+											span + 500 ₽ / мес.
+
+									label.checkbox-tariffs
+										input(type="checkbox")._input
+
+										span._box 
+											svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+												g(clip-path="url(#clip0_597_620)")
+													path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+												defs
+													clipPath(id="clip0_597_620")
+														rect(width="10" height="10" fill="white")
+										
+										span._text 
+											span Push-уведомления
+											span + 500 ₽ / мес.
+
+									p._text.-list-title Дополнительно
+
+									label.checkbox-tariffs
+										input(type="checkbox")._input
+
+										span._box 
+											svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+												g(clip-path="url(#clip0_597_620)")
+													path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+												defs
+													clipPath(id="clip0_597_620")
+														rect(width="10" height="10" fill="white")
+										
+										span._text 
+											span СМС-уведомления
+											span + 500 ₽ / мес.
+							._dropdown 
+									._opener 
+										p._text.-opener Логистика
+										svg(width="7" height="5" viewBox="0 0 7 5" fill="none" xmlns="http://www.w3.org/2000/svg")
+											path(d="M5.71643 4.03183C6.00965 4.32505 6.48686 4.32505 6.78008 4.03183C7.07331 3.7386 7.07331 3.2614 6.78008 2.96817L4.03183 0.219918C3.7386 -0.0733059 3.2614 -0.0733059 2.96817 0.219918L0.219918 2.96817C-0.073306 3.2614 -0.073306 3.7386 0.219918 4.03183C0.513142 4.32505 0.990349 4.32505 1.28357 4.03183L3.5 1.8154L5.71643 4.03183Z" fill="currentColor")
+									
+									._list 
+										p._text.-list-title Входит в базовую стоимость
+										label.checkbox-tariffs
+											input(type="checkbox")._input
+
+											span._box 
+												svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+													g(clip-path="url(#clip0_597_620)")
+														path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+													defs
+														clipPath(id="clip0_597_620")
+															rect(width="10" height="10" fill="white")
+											
+											span._text 
+												span Email-уведомления 
+												span + 500 ₽ / мес.
+
+										label.checkbox-tariffs
+											input(type="checkbox")._input
+
+											span._box 
+												svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+													g(clip-path="url(#clip0_597_620)")
+														path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+													defs
+														clipPath(id="clip0_597_620")
+															rect(width="10" height="10" fill="white")
+											
+											span._text 
+												span Push-уведомления
+												span + 500 ₽ / мес.
+
+										p._text.-list-title Дополнительно
+
+										label.checkbox-tariffs
+											input(type="checkbox")._input
+
+											span._box 
+												svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+													g(clip-path="url(#clip0_597_620)")
+														path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+													defs
+														clipPath(id="clip0_597_620")
+															rect(width="10" height="10" fill="white")
+											
+											span._text 
+												span СМС-уведомления
+												span + 500 ₽ / мес.
+							._dropdown 
+									._opener 
+										p._text.-opener Склад
+										svg(width="7" height="5" viewBox="0 0 7 5" fill="none" xmlns="http://www.w3.org/2000/svg")
+											path(d="M5.71643 4.03183C6.00965 4.32505 6.48686 4.32505 6.78008 4.03183C7.07331 3.7386 7.07331 3.2614 6.78008 2.96817L4.03183 0.219918C3.7386 -0.0733059 3.2614 -0.0733059 2.96817 0.219918L0.219918 2.96817C-0.073306 3.2614 -0.073306 3.7386 0.219918 4.03183C0.513142 4.32505 0.990349 4.32505 1.28357 4.03183L3.5 1.8154L5.71643 4.03183Z" fill="currentColor")
+									
+									._list 
+										p._text.-list-title Входит в базовую стоимость
+										label.checkbox-tariffs
+											input(type="checkbox")._input
+
+											span._box 
+												svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+													g(clip-path="url(#clip0_597_620)")
+														path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+													defs
+														clipPath(id="clip0_597_620")
+															rect(width="10" height="10" fill="white")
+											
+											span._text 
+												span Email-уведомления 
+												span + 500 ₽ / мес.
+
+										label.checkbox-tariffs
+											input(type="checkbox")._input
+
+											span._box 
+												svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+													g(clip-path="url(#clip0_597_620)")
+														path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+													defs
+														clipPath(id="clip0_597_620")
+															rect(width="10" height="10" fill="white")
+											
+											span._text 
+												span Push-уведомления
+												span + 500 ₽ / мес.
+
+										p._text.-list-title Дополнительно
+
+										label.checkbox-tariffs
+											input(type="checkbox")._input
+
+											span._box 
+												svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+													g(clip-path="url(#clip0_597_620)")
+														path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+													defs
+														clipPath(id="clip0_597_620")
+															rect(width="10" height="10" fill="white")
+											
+											span._text 
+												span СМС-уведомления
+												span + 500 ₽ / мес.
+							._dropdown 
+									._opener 
+										p._text.-opener Файловое хранилище
+										svg(width="7" height="5" viewBox="0 0 7 5" fill="none" xmlns="http://www.w3.org/2000/svg")
+											path(d="M5.71643 4.03183C6.00965 4.32505 6.48686 4.32505 6.78008 4.03183C7.07331 3.7386 7.07331 3.2614 6.78008 2.96817L4.03183 0.219918C3.7386 -0.0733059 3.2614 -0.0733059 2.96817 0.219918L0.219918 2.96817C-0.073306 3.2614 -0.073306 3.7386 0.219918 4.03183C0.513142 4.32505 0.990349 4.32505 1.28357 4.03183L3.5 1.8154L5.71643 4.03183Z" fill="currentColor")
+									
+									._list 
+										p._text.-list-title Входит в базовую стоимость
+										label.checkbox-tariffs
+											input(type="checkbox")._input
+
+											span._box 
+												svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+													g(clip-path="url(#clip0_597_620)")
+														path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+													defs
+														clipPath(id="clip0_597_620")
+															rect(width="10" height="10" fill="white")
+											
+											span._text 
+												span Email-уведомления 
+												span + 500 ₽ / мес.
+
+										label.checkbox-tariffs
+											input(type="checkbox")._input
+
+											span._box 
+												svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+													g(clip-path="url(#clip0_597_620)")
+														path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+													defs
+														clipPath(id="clip0_597_620")
+															rect(width="10" height="10" fill="white")
+											
+											span._text 
+												span Push-уведомления
+												span + 500 ₽ / мес.
+
+										p._text.-list-title Дополнительно
+
+										label.checkbox-tariffs
+											input(type="checkbox")._input
+
+											span._box 
+												svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+													g(clip-path="url(#clip0_597_620)")
+														path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+													defs
+														clipPath(id="clip0_597_620")
+															rect(width="10" height="10" fill="white")
+											
+											span._text 
+												span СМС-уведомления
+												span + 500 ₽ / мес.
+							._dropdown 
+									._opener 
+										p._text.-opener Система лояльности
+										svg(width="7" height="5" viewBox="0 0 7 5" fill="none" xmlns="http://www.w3.org/2000/svg")
+											path(d="M5.71643 4.03183C6.00965 4.32505 6.48686 4.32505 6.78008 4.03183C7.07331 3.7386 7.07331 3.2614 6.78008 2.96817L4.03183 0.219918C3.7386 -0.0733059 3.2614 -0.0733059 2.96817 0.219918L0.219918 2.96817C-0.073306 3.2614 -0.073306 3.7386 0.219918 4.03183C0.513142 4.32505 0.990349 4.32505 1.28357 4.03183L3.5 1.8154L5.71643 4.03183Z" fill="currentColor")
+									
+									._list 
+										p._text.-list-title Входит в базовую стоимость
+										label.checkbox-tariffs
+											input(type="checkbox")._input
+
+											span._box 
+												svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+													g(clip-path="url(#clip0_597_620)")
+														path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+													defs
+														clipPath(id="clip0_597_620")
+															rect(width="10" height="10" fill="white")
+											
+											span._text 
+												span Email-уведомления 
+												span + 500 ₽ / мес.
+
+										label.checkbox-tariffs
+											input(type="checkbox")._input
+
+											span._box 
+												svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+													g(clip-path="url(#clip0_597_620)")
+														path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+													defs
+														clipPath(id="clip0_597_620")
+															rect(width="10" height="10" fill="white")
+											
+											span._text 
+												span Push-уведомления
+												span + 500 ₽ / мес.
+
+										p._text.-list-title Дополнительно
+
+										label.checkbox-tariffs
+											input(type="checkbox")._input
+
+											span._box 
+												svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+													g(clip-path="url(#clip0_597_620)")
+														path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+													defs
+														clipPath(id="clip0_597_620")
+															rect(width="10" height="10" fill="white")
+											
+											span._text 
+												span СМС-уведомления
+												span + 500 ₽ / мес.
+							._dropdown 
+									._opener 
+										p._text.-opener Отчёты
+										svg(width="7" height="5" viewBox="0 0 7 5" fill="none" xmlns="http://www.w3.org/2000/svg")
+											path(d="M5.71643 4.03183C6.00965 4.32505 6.48686 4.32505 6.78008 4.03183C7.07331 3.7386 7.07331 3.2614 6.78008 2.96817L4.03183 0.219918C3.7386 -0.0733059 3.2614 -0.0733059 2.96817 0.219918L0.219918 2.96817C-0.073306 3.2614 -0.073306 3.7386 0.219918 4.03183C0.513142 4.32505 0.990349 4.32505 1.28357 4.03183L3.5 1.8154L5.71643 4.03183Z" fill="currentColor")
+									
+									._list 
+										p._text.-list-title Входит в базовую стоимость
+										label.checkbox-tariffs
+											input(type="checkbox")._input
+
+											span._box 
+												svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+													g(clip-path="url(#clip0_597_620)")
+														path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+													defs
+														clipPath(id="clip0_597_620")
+															rect(width="10" height="10" fill="white")
+											
+											span._text 
+												span Email-уведомления 
+												span + 500 ₽ / мес.
+
+										label.checkbox-tariffs
+											input(type="checkbox")._input
+
+											span._box 
+												svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+													g(clip-path="url(#clip0_597_620)")
+														path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+													defs
+														clipPath(id="clip0_597_620")
+															rect(width="10" height="10" fill="white")
+											
+											span._text 
+												span Push-уведомления
+												span + 500 ₽ / мес.
+
+										p._text.-list-title Дополнительно
+
+										label.checkbox-tariffs
+											input(type="checkbox")._input
+
+											span._box 
+												svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+													g(clip-path="url(#clip0_597_620)")
+														path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+													defs
+														clipPath(id="clip0_597_620")
+															rect(width="10" height="10" fill="white")
+											
+											span._text 
+												span СМС-уведомления
+												span + 500 ₽ / мес.
+							
+							._bottom 
+								p._text.-result.-bottom Итого
+								p._text.-price.-bottom 5 500 ₽
+								p._text.-time.-bottom месяц
+
+								button._button Заявка на подключение
+						.tariffs-swiper-slide.swiper-slide
+							p._text.-suptitle Тариф
+							h2._title Копицентр
+							p._text.-subtitle в тариф включено
+							p._text.-on #[img(src="assets/img/check-2.svg", alt="включено")] 1 компания
+							p._text.-on #[img(src="assets/img/check-2.svg", alt="включено")] 5 сотрудников
+							p._text.-on #[img(src="assets/img/check-2.svg", alt="включено")] 1 касса
+							p._text.-price 5 000 ₽
+							p._text.-time месяц
+							p._text.-module Модули
+
+							._dropdown 
+								._opener 
+									p._text.-opener Заявки / Заказы 
+									svg(width="7" height="5" viewBox="0 0 7 5" fill="none" xmlns="http://www.w3.org/2000/svg")
+										path(d="M5.71643 4.03183C6.00965 4.32505 6.48686 4.32505 6.78008 4.03183C7.07331 3.7386 7.07331 3.2614 6.78008 2.96817L4.03183 0.219918C3.7386 -0.0733059 3.2614 -0.0733059 2.96817 0.219918L0.219918 2.96817C-0.073306 3.2614 -0.073306 3.7386 0.219918 4.03183C0.513142 4.32505 0.990349 4.32505 1.28357 4.03183L3.5 1.8154L5.71643 4.03183Z" fill="currentColor")
+
+								
+								._list 
+									p._text.-list-title Входит в базовую стоимость
+									label.checkbox-tariffs
+										input(type="checkbox")._input
+
+										span._box 
+											svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+												g(clip-path="url(#clip0_597_620)")
+													path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+												defs
+													clipPath(id="clip0_597_620")
+														rect(width="10" height="10" fill="white")
+										
+										span._text 
+											span Email-уведомления 
+											span + 500 ₽ / мес.
+
+									label.checkbox-tariffs
+										input(type="checkbox")._input
+
+										span._box 
+											svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+												g(clip-path="url(#clip0_597_620)")
+													path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+												defs
+													clipPath(id="clip0_597_620")
+														rect(width="10" height="10" fill="white")
+										
+										span._text 
+											span Push-уведомления
+											span + 500 ₽ / мес.
+
+									p._text.-list-title Дополнительно
+
+									label.checkbox-tariffs
+										input(type="checkbox")._input
+
+										span._box 
+											svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+												g(clip-path="url(#clip0_597_620)")
+													path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+												defs
+													clipPath(id="clip0_597_620")
+														rect(width="10" height="10" fill="white")
+										
+										span._text 
+											span СМС-уведомления
+											span + 500 ₽ / мес.
+							._dropdown 
+								._opener 
+									p._text.-opener Рабочее место кассира
+									svg(width="7" height="5" viewBox="0 0 7 5" fill="none" xmlns="http://www.w3.org/2000/svg")
+										path(d="M5.71643 4.03183C6.00965 4.32505 6.48686 4.32505 6.78008 4.03183C7.07331 3.7386 7.07331 3.2614 6.78008 2.96817L4.03183 0.219918C3.7386 -0.0733059 3.2614 -0.0733059 2.96817 0.219918L0.219918 2.96817C-0.073306 3.2614 -0.073306 3.7386 0.219918 4.03183C0.513142 4.32505 0.990349 4.32505 1.28357 4.03183L3.5 1.8154L5.71643 4.03183Z" fill="currentColor")
+								
+								._list 
+									p._text.-list-title Входит в базовую стоимость
+									label.checkbox-tariffs
+										input(type="checkbox")._input
+
+										span._box 
+											svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+												g(clip-path="url(#clip0_597_620)")
+													path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+												defs
+													clipPath(id="clip0_597_620")
+														rect(width="10" height="10" fill="white")
+										
+										span._text 
+											span Email-уведомления 
+											span + 500 ₽ / мес.
+
+									label.checkbox-tariffs
+										input(type="checkbox")._input
+
+										span._box 
+											svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+												g(clip-path="url(#clip0_597_620)")
+													path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+												defs
+													clipPath(id="clip0_597_620")
+														rect(width="10" height="10" fill="white")
+										
+										span._text 
+											span Push-уведомления
+											span + 500 ₽ / мес.
+
+									p._text.-list-title Дополнительно
+
+									label.checkbox-tariffs
+										input(type="checkbox")._input
+
+										span._box 
+											svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+												g(clip-path="url(#clip0_597_620)")
+													path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+												defs
+													clipPath(id="clip0_597_620")
+														rect(width="10" height="10" fill="white")
+										
+										span._text 
+											span СМС-уведомления
+											span + 500 ₽ / мес.
+							._dropdown 
+									._opener 
+										p._text.-opener Контрагенты
+										svg(width="7" height="5" viewBox="0 0 7 5" fill="none" xmlns="http://www.w3.org/2000/svg")
+											path(d="M5.71643 4.03183C6.00965 4.32505 6.48686 4.32505 6.78008 4.03183C7.07331 3.7386 7.07331 3.2614 6.78008 2.96817L4.03183 0.219918C3.7386 -0.0733059 3.2614 -0.0733059 2.96817 0.219918L0.219918 2.96817C-0.073306 3.2614 -0.073306 3.7386 0.219918 4.03183C0.513142 4.32505 0.990349 4.32505 1.28357 4.03183L3.5 1.8154L5.71643 4.03183Z" fill="currentColor")
+									
+									._list 
+										p._text.-list-title Входит в базовую стоимость
+										label.checkbox-tariffs
+											input(type="checkbox")._input
+
+											span._box 
+												svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+													g(clip-path="url(#clip0_597_620)")
+														path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+													defs
+														clipPath(id="clip0_597_620")
+															rect(width="10" height="10" fill="white")
+											
+											span._text 
+												span Email-уведомления 
+												span + 500 ₽ / мес.
+
+										label.checkbox-tariffs
+											input(type="checkbox")._input
+
+											span._box 
+												svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+													g(clip-path="url(#clip0_597_620)")
+														path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+													defs
+														clipPath(id="clip0_597_620")
+															rect(width="10" height="10" fill="white")
+											
+											span._text 
+												span Push-уведомления
+												span + 500 ₽ / мес.
+
+										p._text.-list-title Дополнительно
+
+										label.checkbox-tariffs
+											input(type="checkbox")._input
+
+											span._box 
+												svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+													g(clip-path="url(#clip0_597_620)")
+														path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+													defs
+														clipPath(id="clip0_597_620")
+															rect(width="10" height="10" fill="white")
+											
+											span._text 
+												span СМС-уведомления
+												span + 500 ₽ / мес.
+							._dropdown 
+									._opener 
+										p._text.-opener Интеграции
+										svg(width="7" height="5" viewBox="0 0 7 5" fill="none" xmlns="http://www.w3.org/2000/svg")
+											path(d="M5.71643 4.03183C6.00965 4.32505 6.48686 4.32505 6.78008 4.03183C7.07331 3.7386 7.07331 3.2614 6.78008 2.96817L4.03183 0.219918C3.7386 -0.0733059 3.2614 -0.0733059 2.96817 0.219918L0.219918 2.96817C-0.073306 3.2614 -0.073306 3.7386 0.219918 4.03183C0.513142 4.32505 0.990349 4.32505 1.28357 4.03183L3.5 1.8154L5.71643 4.03183Z" fill="currentColor")
+									
+									._list 
+										p._text.-list-title Входит в базовую стоимость
+										label.checkbox-tariffs
+											input(type="checkbox")._input
+
+											span._box 
+												svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+													g(clip-path="url(#clip0_597_620)")
+														path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+													defs
+														clipPath(id="clip0_597_620")
+															rect(width="10" height="10" fill="white")
+											
+											span._text 
+												span Email-уведомления 
+												span + 500 ₽ / мес.
+
+										label.checkbox-tariffs
+											input(type="checkbox")._input
+
+											span._box 
+												svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+													g(clip-path="url(#clip0_597_620)")
+														path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+													defs
+														clipPath(id="clip0_597_620")
+															rect(width="10" height="10" fill="white")
+											
+											span._text 
+												span Push-уведомления
+												span + 500 ₽ / мес.
+
+										p._text.-list-title Дополнительно
+
+										label.checkbox-tariffs
+											input(type="checkbox")._input
+
+											span._box 
+												svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+													g(clip-path="url(#clip0_597_620)")
+														path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+													defs
+														clipPath(id="clip0_597_620")
+															rect(width="10" height="10" fill="white")
+											
+											span._text 
+												span СМС-уведомления
+												span + 500 ₽ / мес.
+							._dropdown 
+									._opener 
+										p._text.-opener Автоматизация
+										svg(width="7" height="5" viewBox="0 0 7 5" fill="none" xmlns="http://www.w3.org/2000/svg")
+											path(d="M5.71643 4.03183C6.00965 4.32505 6.48686 4.32505 6.78008 4.03183C7.07331 3.7386 7.07331 3.2614 6.78008 2.96817L4.03183 0.219918C3.7386 -0.0733059 3.2614 -0.0733059 2.96817 0.219918L0.219918 2.96817C-0.073306 3.2614 -0.073306 3.7386 0.219918 4.03183C0.513142 4.32505 0.990349 4.32505 1.28357 4.03183L3.5 1.8154L5.71643 4.03183Z" fill="currentColor")
+									
+									._list 
+										p._text.-list-title Входит в базовую стоимость
+										label.checkbox-tariffs
+											input(type="checkbox")._input
+
+											span._box 
+												svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+													g(clip-path="url(#clip0_597_620)")
+														path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+													defs
+														clipPath(id="clip0_597_620")
+															rect(width="10" height="10" fill="white")
+											
+											span._text 
+												span Email-уведомления 
+												span + 500 ₽ / мес.
+
+										label.checkbox-tariffs
+											input(type="checkbox")._input
+
+											span._box 
+												svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+													g(clip-path="url(#clip0_597_620)")
+														path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+													defs
+														clipPath(id="clip0_597_620")
+															rect(width="10" height="10" fill="white")
+											
+											span._text 
+												span Push-уведомления
+												span + 500 ₽ / мес.
+
+										p._text.-list-title Дополнительно
+
+										label.checkbox-tariffs
+											input(type="checkbox")._input
+
+											span._box 
+												svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+													g(clip-path="url(#clip0_597_620)")
+														path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+													defs
+														clipPath(id="clip0_597_620")
+															rect(width="10" height="10" fill="white")
+											
+											span._text 
+												span СМС-уведомления
+												span + 500 ₽ / мес.
+							._dropdown 
+									._opener 
+										p._text.-opener Задачи
+										svg(width="7" height="5" viewBox="0 0 7 5" fill="none" xmlns="http://www.w3.org/2000/svg")
+											path(d="M5.71643 4.03183C6.00965 4.32505 6.48686 4.32505 6.78008 4.03183C7.07331 3.7386 7.07331 3.2614 6.78008 2.96817L4.03183 0.219918C3.7386 -0.0733059 3.2614 -0.0733059 2.96817 0.219918L0.219918 2.96817C-0.073306 3.2614 -0.073306 3.7386 0.219918 4.03183C0.513142 4.32505 0.990349 4.32505 1.28357 4.03183L3.5 1.8154L5.71643 4.03183Z" fill="currentColor")
+									
+									._list 
+										p._text.-list-title Входит в базовую стоимость
+										label.checkbox-tariffs
+											input(type="checkbox")._input
+
+											span._box 
+												svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+													g(clip-path="url(#clip0_597_620)")
+														path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+													defs
+														clipPath(id="clip0_597_620")
+															rect(width="10" height="10" fill="white")
+											
+											span._text 
+												span Email-уведомления 
+												span + 500 ₽ / мес.
+
+										label.checkbox-tariffs
+											input(type="checkbox")._input
+
+											span._box 
+												svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+													g(clip-path="url(#clip0_597_620)")
+														path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+													defs
+														clipPath(id="clip0_597_620")
+															rect(width="10" height="10" fill="white")
+											
+											span._text 
+												span Push-уведомления
+												span + 500 ₽ / мес.
+
+										p._text.-list-title Дополнительно
+
+										label.checkbox-tariffs
+											input(type="checkbox")._input
+
+											span._box 
+												svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+													g(clip-path="url(#clip0_597_620)")
+														path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+													defs
+														clipPath(id="clip0_597_620")
+															rect(width="10" height="10" fill="white")
+											
+											span._text 
+												span СМС-уведомления
+												span + 500 ₽ / мес.
+							._dropdown 
+									._opener
+										p._text.-opener Автоматизация
+										svg(width="7" height="5" viewBox="0 0 7 5" fill="none" xmlns="http://www.w3.org/2000/svg")
+											path(d="M5.71643 4.03183C6.00965 4.32505 6.48686 4.32505 6.78008 4.03183C7.07331 3.7386 7.07331 3.2614 6.78008 2.96817L4.03183 0.219918C3.7386 -0.0733059 3.2614 -0.0733059 2.96817 0.219918L0.219918 2.96817C-0.073306 3.2614 -0.073306 3.7386 0.219918 4.03183C0.513142 4.32505 0.990349 4.32505 1.28357 4.03183L3.5 1.8154L5.71643 4.03183Z" fill="currentColor")
+									
+									._list 
+										p._text.-list-title Входит в базовую стоимость
+										label.checkbox-tariffs
+											input(type="checkbox")._input
+
+											span._box 
+												svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+													g(clip-path="url(#clip0_597_620)")
+														path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+													defs
+														clipPath(id="clip0_597_620")
+															rect(width="10" height="10" fill="white")
+											
+											span._text 
+												span Email-уведомления 
+												span + 500 ₽ / мес.
+
+										label.checkbox-tariffs
+											input(type="checkbox")._input
+
+											span._box 
+												svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+													g(clip-path="url(#clip0_597_620)")
+														path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+													defs
+														clipPath(id="clip0_597_620")
+															rect(width="10" height="10" fill="white")
+											
+											span._text 
+												span Push-уведомления
+												span + 500 ₽ / мес.
+
+										p._text.-list-title Дополнительно
+
+										label.checkbox-tariffs
+											input(type="checkbox")._input
+
+											span._box 
+												svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+													g(clip-path="url(#clip0_597_620)")
+														path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+													defs
+														clipPath(id="clip0_597_620")
+															rect(width="10" height="10" fill="white")
+											
+											span._text 
+												span СМС-уведомления
+												span + 500 ₽ / мес.
+							._dropdown 
+								._opener 
+									p._text.-opener Задачи
+									svg(width="7" height="5" viewBox="0 0 7 5" fill="none" xmlns="http://www.w3.org/2000/svg")
+										path(d="M5.71643 4.03183C6.00965 4.32505 6.48686 4.32505 6.78008 4.03183C7.07331 3.7386 7.07331 3.2614 6.78008 2.96817L4.03183 0.219918C3.7386 -0.0733059 3.2614 -0.0733059 2.96817 0.219918L0.219918 2.96817C-0.073306 3.2614 -0.073306 3.7386 0.219918 4.03183C0.513142 4.32505 0.990349 4.32505 1.28357 4.03183L3.5 1.8154L5.71643 4.03183Z" fill="currentColor")
+								
+								._list 
+									p._text.-list-title Входит в базовую стоимость
+									label.checkbox-tariffs
+										input(type="checkbox")._input
+
+										span._box 
+											svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+												g(clip-path="url(#clip0_597_620)")
+													path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+												defs
+													clipPath(id="clip0_597_620")
+														rect(width="10" height="10" fill="white")
+										
+										span._text 
+											span Email-уведомления 
+											span + 500 ₽ / мес.
+
+									label.checkbox-tariffs
+										input(type="checkbox")._input
+
+										span._box 
+											svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+												g(clip-path="url(#clip0_597_620)")
+													path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+												defs
+													clipPath(id="clip0_597_620")
+														rect(width="10" height="10" fill="white")
+										
+										span._text 
+											span Push-уведомления
+											span + 500 ₽ / мес.
+
+									p._text.-list-title Дополнительно
+
+									label.checkbox-tariffs
+										input(type="checkbox")._input
+
+										span._box 
+											svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+												g(clip-path="url(#clip0_597_620)")
+													path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+												defs
+													clipPath(id="clip0_597_620")
+														rect(width="10" height="10" fill="white")
+										
+										span._text 
+											span СМС-уведомления
+											span + 500 ₽ / мес.
+							._dropdown 
+								._opener 
+									p._text.-opener Платежи
+									svg(width="7" height="5" viewBox="0 0 7 5" fill="none" xmlns="http://www.w3.org/2000/svg")
+										path(d="M5.71643 4.03183C6.00965 4.32505 6.48686 4.32505 6.78008 4.03183C7.07331 3.7386 7.07331 3.2614 6.78008 2.96817L4.03183 0.219918C3.7386 -0.0733059 3.2614 -0.0733059 2.96817 0.219918L0.219918 2.96817C-0.073306 3.2614 -0.073306 3.7386 0.219918 4.03183C0.513142 4.32505 0.990349 4.32505 1.28357 4.03183L3.5 1.8154L5.71643 4.03183Z" fill="currentColor")
+								
+								._list 
+									p._text.-list-title Входит в базовую стоимость
+									label.checkbox-tariffs
+										input(type="checkbox")._input
+
+										span._box 
+											svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+												g(clip-path="url(#clip0_597_620)")
+													path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+												defs
+													clipPath(id="clip0_597_620")
+														rect(width="10" height="10" fill="white")
+										
+										span._text 
+											span Email-уведомления 
+											span + 500 ₽ / мес.
+
+									label.checkbox-tariffs
+										input(type="checkbox")._input
+
+										span._box 
+											svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+												g(clip-path="url(#clip0_597_620)")
+													path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+												defs
+													clipPath(id="clip0_597_620")
+														rect(width="10" height="10" fill="white")
+										
+										span._text 
+											span Push-уведомления
+											span + 500 ₽ / мес.
+
+									p._text.-list-title Дополнительно
+
+									label.checkbox-tariffs
+										input(type="checkbox")._input
+
+										span._box 
+											svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+												g(clip-path="url(#clip0_597_620)")
+													path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+												defs
+													clipPath(id="clip0_597_620")
+														rect(width="10" height="10" fill="white")
+										
+										span._text 
+											span СМС-уведомления
+											span + 500 ₽ / мес.
+							._dropdown 
+									._opener 
+										p._text.-opener Логистика
+										svg(width="7" height="5" viewBox="0 0 7 5" fill="none" xmlns="http://www.w3.org/2000/svg")
+											path(d="M5.71643 4.03183C6.00965 4.32505 6.48686 4.32505 6.78008 4.03183C7.07331 3.7386 7.07331 3.2614 6.78008 2.96817L4.03183 0.219918C3.7386 -0.0733059 3.2614 -0.0733059 2.96817 0.219918L0.219918 2.96817C-0.073306 3.2614 -0.073306 3.7386 0.219918 4.03183C0.513142 4.32505 0.990349 4.32505 1.28357 4.03183L3.5 1.8154L5.71643 4.03183Z" fill="currentColor")
+									
+									._list 
+										p._text.-list-title Входит в базовую стоимость
+										label.checkbox-tariffs
+											input(type="checkbox")._input
+
+											span._box 
+												svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+													g(clip-path="url(#clip0_597_620)")
+														path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+													defs
+														clipPath(id="clip0_597_620")
+															rect(width="10" height="10" fill="white")
+											
+											span._text 
+												span Email-уведомления 
+												span + 500 ₽ / мес.
+
+										label.checkbox-tariffs
+											input(type="checkbox")._input
+
+											span._box 
+												svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+													g(clip-path="url(#clip0_597_620)")
+														path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+													defs
+														clipPath(id="clip0_597_620")
+															rect(width="10" height="10" fill="white")
+											
+											span._text 
+												span Push-уведомления
+												span + 500 ₽ / мес.
+
+										p._text.-list-title Дополнительно
+
+										label.checkbox-tariffs
+											input(type="checkbox")._input
+
+											span._box 
+												svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+													g(clip-path="url(#clip0_597_620)")
+														path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+													defs
+														clipPath(id="clip0_597_620")
+															rect(width="10" height="10" fill="white")
+											
+											span._text 
+												span СМС-уведомления
+												span + 500 ₽ / мес.
+							._dropdown 
+									._opener 
+										p._text.-opener Склад
+										svg(width="7" height="5" viewBox="0 0 7 5" fill="none" xmlns="http://www.w3.org/2000/svg")
+											path(d="M5.71643 4.03183C6.00965 4.32505 6.48686 4.32505 6.78008 4.03183C7.07331 3.7386 7.07331 3.2614 6.78008 2.96817L4.03183 0.219918C3.7386 -0.0733059 3.2614 -0.0733059 2.96817 0.219918L0.219918 2.96817C-0.073306 3.2614 -0.073306 3.7386 0.219918 4.03183C0.513142 4.32505 0.990349 4.32505 1.28357 4.03183L3.5 1.8154L5.71643 4.03183Z" fill="currentColor")
+									
+									._list 
+										p._text.-list-title Входит в базовую стоимость
+										label.checkbox-tariffs
+											input(type="checkbox")._input
+
+											span._box 
+												svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+													g(clip-path="url(#clip0_597_620)")
+														path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+													defs
+														clipPath(id="clip0_597_620")
+															rect(width="10" height="10" fill="white")
+											
+											span._text 
+												span Email-уведомления 
+												span + 500 ₽ / мес.
+
+										label.checkbox-tariffs
+											input(type="checkbox")._input
+
+											span._box 
+												svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+													g(clip-path="url(#clip0_597_620)")
+														path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+													defs
+														clipPath(id="clip0_597_620")
+															rect(width="10" height="10" fill="white")
+											
+											span._text 
+												span Push-уведомления
+												span + 500 ₽ / мес.
+
+										p._text.-list-title Дополнительно
+
+										label.checkbox-tariffs
+											input(type="checkbox")._input
+
+											span._box 
+												svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+													g(clip-path="url(#clip0_597_620)")
+														path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+													defs
+														clipPath(id="clip0_597_620")
+															rect(width="10" height="10" fill="white")
+											
+											span._text 
+												span СМС-уведомления
+												span + 500 ₽ / мес.
+							._dropdown 
+									._opener 
+										p._text.-opener Файловое хранилище
+										svg(width="7" height="5" viewBox="0 0 7 5" fill="none" xmlns="http://www.w3.org/2000/svg")
+											path(d="M5.71643 4.03183C6.00965 4.32505 6.48686 4.32505 6.78008 4.03183C7.07331 3.7386 7.07331 3.2614 6.78008 2.96817L4.03183 0.219918C3.7386 -0.0733059 3.2614 -0.0733059 2.96817 0.219918L0.219918 2.96817C-0.073306 3.2614 -0.073306 3.7386 0.219918 4.03183C0.513142 4.32505 0.990349 4.32505 1.28357 4.03183L3.5 1.8154L5.71643 4.03183Z" fill="currentColor")
+									
+									._list 
+										p._text.-list-title Входит в базовую стоимость
+										label.checkbox-tariffs
+											input(type="checkbox")._input
+
+											span._box 
+												svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+													g(clip-path="url(#clip0_597_620)")
+														path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+													defs
+														clipPath(id="clip0_597_620")
+															rect(width="10" height="10" fill="white")
+											
+											span._text 
+												span Email-уведомления 
+												span + 500 ₽ / мес.
+
+										label.checkbox-tariffs
+											input(type="checkbox")._input
+
+											span._box 
+												svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+													g(clip-path="url(#clip0_597_620)")
+														path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+													defs
+														clipPath(id="clip0_597_620")
+															rect(width="10" height="10" fill="white")
+											
+											span._text 
+												span Push-уведомления
+												span + 500 ₽ / мес.
+
+										p._text.-list-title Дополнительно
+
+										label.checkbox-tariffs
+											input(type="checkbox")._input
+
+											span._box 
+												svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+													g(clip-path="url(#clip0_597_620)")
+														path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+													defs
+														clipPath(id="clip0_597_620")
+															rect(width="10" height="10" fill="white")
+											
+											span._text 
+												span СМС-уведомления
+												span + 500 ₽ / мес.
+							._dropdown 
+									._opener 
+										p._text.-opener Система лояльности
+										svg(width="7" height="5" viewBox="0 0 7 5" fill="none" xmlns="http://www.w3.org/2000/svg")
+											path(d="M5.71643 4.03183C6.00965 4.32505 6.48686 4.32505 6.78008 4.03183C7.07331 3.7386 7.07331 3.2614 6.78008 2.96817L4.03183 0.219918C3.7386 -0.0733059 3.2614 -0.0733059 2.96817 0.219918L0.219918 2.96817C-0.073306 3.2614 -0.073306 3.7386 0.219918 4.03183C0.513142 4.32505 0.990349 4.32505 1.28357 4.03183L3.5 1.8154L5.71643 4.03183Z" fill="currentColor")
+									
+									._list 
+										p._text.-list-title Входит в базовую стоимость
+										label.checkbox-tariffs
+											input(type="checkbox")._input
+
+											span._box 
+												svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+													g(clip-path="url(#clip0_597_620)")
+														path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+													defs
+														clipPath(id="clip0_597_620")
+															rect(width="10" height="10" fill="white")
+											
+											span._text 
+												span Email-уведомления 
+												span + 500 ₽ / мес.
+
+										label.checkbox-tariffs
+											input(type="checkbox")._input
+
+											span._box 
+												svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+													g(clip-path="url(#clip0_597_620)")
+														path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+													defs
+														clipPath(id="clip0_597_620")
+															rect(width="10" height="10" fill="white")
+											
+											span._text 
+												span Push-уведомления
+												span + 500 ₽ / мес.
+
+										p._text.-list-title Дополнительно
+
+										label.checkbox-tariffs
+											input(type="checkbox")._input
+
+											span._box 
+												svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+													g(clip-path="url(#clip0_597_620)")
+														path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+													defs
+														clipPath(id="clip0_597_620")
+															rect(width="10" height="10" fill="white")
+											
+											span._text 
+												span СМС-уведомления
+												span + 500 ₽ / мес.
+							._dropdown 
+									._opener 
+										p._text.-opener Отчёты
+										svg(width="7" height="5" viewBox="0 0 7 5" fill="none" xmlns="http://www.w3.org/2000/svg")
+											path(d="M5.71643 4.03183C6.00965 4.32505 6.48686 4.32505 6.78008 4.03183C7.07331 3.7386 7.07331 3.2614 6.78008 2.96817L4.03183 0.219918C3.7386 -0.0733059 3.2614 -0.0733059 2.96817 0.219918L0.219918 2.96817C-0.073306 3.2614 -0.073306 3.7386 0.219918 4.03183C0.513142 4.32505 0.990349 4.32505 1.28357 4.03183L3.5 1.8154L5.71643 4.03183Z" fill="currentColor")
+									
+									._list 
+										p._text.-list-title Входит в базовую стоимость
+										label.checkbox-tariffs
+											input(type="checkbox")._input
+
+											span._box 
+												svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+													g(clip-path="url(#clip0_597_620)")
+														path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+													defs
+														clipPath(id="clip0_597_620")
+															rect(width="10" height="10" fill="white")
+											
+											span._text 
+												span Email-уведомления 
+												span + 500 ₽ / мес.
+
+										label.checkbox-tariffs
+											input(type="checkbox")._input
+
+											span._box 
+												svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+													g(clip-path="url(#clip0_597_620)")
+														path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+													defs
+														clipPath(id="clip0_597_620")
+															rect(width="10" height="10" fill="white")
+											
+											span._text 
+												span Push-уведомления
+												span + 500 ₽ / мес.
+
+										p._text.-list-title Дополнительно
+
+										label.checkbox-tariffs
+											input(type="checkbox")._input
+
+											span._box 
+												svg(width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+													g(clip-path="url(#clip0_597_620)")
+														path(d="M9.70709 3.07016L4.43168 8.34522C4.04102 8.73594 3.40733 8.73594 3.01631 8.34522L0.293099 5.62181C-0.0976998 5.23108 -0.0976998 4.59731 0.293099 4.20651C0.683972 3.81564 1.31762 3.81564 1.70832 4.20636L3.7242 6.22227L8.29165 1.65479C8.68252 1.26392 9.31622 1.26421 9.70694 1.65479C10.0977 2.04559 10.0977 2.67914 9.70709 3.07016Z" fill="currentColor")
+													defs
+														clipPath(id="clip0_597_620")
+															rect(width="10" height="10" fill="white")
+											
+											span._text 
+												span СМС-уведомления
+												span + 500 ₽ / мес.
+							
+							._bottom 
+								p._text.-result.-bottom Итого
+								p._text.-price.-bottom 5 500 ₽
+								p._text.-time.-bottom месяц
+
+								button._button Заявка на подключение
+
+	include assets/includes/footer.pug

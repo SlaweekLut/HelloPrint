@@ -46,3 +46,37 @@ const popups = () => {
 }
 
 popups()
+
+const dropdown = () => {
+	const dropdowns = document.querySelectorAll('.tariffs-swiper-slide__dropdown')
+	dropdowns.forEach(dropdown => {
+		const opener = dropdown.querySelector('.tariffs-swiper-slide__opener') 
+		opener.addEventListener('click', () => {
+			opener.classList.toggle('active')
+		})
+	})
+
+	const modules = document.querySelectorAll('.tariffs-swiper-slide__text--module')
+	modules.forEach(module => {
+		module.addEventListener('click', () => {
+			module.classList.toggle('active')
+		})
+	})
+}
+
+dropdown()
+
+const swiper = () => {
+	if(window.innerWidth > 568) {
+		const tariffs = new Swiper('.tariffs-swiper', {
+			slidesPerView: 3,
+			breakpoints: {
+				1023.98: {
+					slidesPerView: 4
+				}
+			}
+		})
+	}
+}
+
+swiper()

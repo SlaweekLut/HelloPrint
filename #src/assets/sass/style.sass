@@ -22,8 +22,10 @@ h2
 	padding: 0px 20px
 	&--header
 		margin: 30px auto 36px
+
 	&--info
 		margin-bottom: 113px
+
 	&--integration
 		padding: 56px 20px 71px
 
@@ -221,9 +223,8 @@ h2
 
 			&:hover, &:focus
 				.header-nav__dropdown-list
-					transform: scale(1)
+					opacity: 1
 					width: 250px
-					height: 76px
 
 	&--desktop
 		display: flex
@@ -237,27 +238,27 @@ h2
 		flex-direction: column
 		top: 30px
 		background-color: $Color-White
-		padding: 12px 20px
 		border: 1px solid $Color-PaleBlue
 		z-index: 3
 		border-radius: 13px
 		transition: .5s
-		height: 0
 		width: 0
 		overflow: hidden
 		box-sizing: border-box
-		transform: scale(0)
+		opacity: 0
+		padding: 12px 20px
+
 		&:hover
-			transform: scale(1)
+			opacity: 1
 			width: 100px
-			height: 76px
 
 	@include adaptiveWidth($Container-M)
 		&--desktop
 			display: none
 		&--mobile.active
 			display: flex
-
+		&__dropdown-list
+			border: 0
 /** Баннер **/
 
 .hero
@@ -925,6 +926,7 @@ h2
 
 	@include adaptiveWidth(450px)
 		border-radius: 0
+
 .request-form
 	position: relative
 	top: 0
@@ -1081,6 +1083,8 @@ h2
 				margin-bottom: 0px !important
 				&:focus
 					.header__dropdown
+						opacity: 1
+						border-radius: 0
 						height: 44px
 
 		&__button
@@ -1194,3 +1198,274 @@ h2
 
 		&__title
 			margin-bottom: 0
+
+/** Тарифы **/
+
+.tariffs
+	&__title
+		font-family: $Font-Greenwich
+		text-align: center
+		font-weight: 700
+		margin: 0
+		@include fluid-type($Container-M, $Container-L, 26px, 33px)
+		@include fluid-type($Container-S, $Container-M, 20px, 26px)
+
+	&__subtitle
+		font-family: $Font-Greenwich
+		font-weight: 400
+		text-align: center
+		@include fluid-type($Container-M, $Container-L, 18px, 22px)
+		@include fluid-type($Container-S, $Container-M, 14px, 18px)
+
+.tariffs-swiper
+	margin: 50px 0 60px
+	padding-top: 15px !important
+	@include adaptiveWidth($Container-S)
+		margin: 21px 0px 16px
+		padding-top: 0
+
+.tariffs-wrapper
+	@include adaptiveWidth($Container-S)
+		flex-direction: column
+
+.tariffs-swiper-slide
+	max-width: 287px
+	padding: 28px 0px 22px
+	border-radius: 16px
+	border: 1px solid $Color-PaleBlue
+	background-color: $Color-White
+	margin-right: 16px
+	position: relative
+	box-sizing: border-box
+	&:last-child
+		margin-right: 0
+
+	&__title
+		font-family: $Font-Greenwich
+		font-size: 22px
+
+	&__text
+		font-family: $Font-Greenwich
+
+		&--suptitle
+			text-align: center
+			font-size: 12px
+
+		&--subtitle
+			text-align: center
+			color: $Color-PaleBlue
+			font-size: 12px
+			margin: 12px 0px 18px
+
+		&--on
+			width: 145px
+			margin: 0 auto
+			line-height: 160%
+			img
+				margin-right: 13px
+
+		&--price
+			text-align: center
+			margin-top: 12px
+			font-size: 24px
+
+		&--time
+			text-align: center
+			color: $Color-PaleBlue
+			font-size: 12px
+
+		&--module
+			font-size: 12px
+			font-weight: 600
+			margin: 20px 23px 10px
+
+		&--opener
+			font-size: 14px
+			font-weight: 600
+			line-height: 150%
+
+		&--list-title
+			font-size: 16px
+			font-weight: 600
+			margin: 22px 0 18px
+			&:first-child
+				margin-top: 0
+
+		&--bottom
+			text-align: left
+			margin: 0
+
+		&--result
+			font-size: 14px
+			font-weight: 600
+
+	&__button
+		height: 60px
+		width: 100%
+		border-radius: 10px
+		margin-top: 13px
+		outline: none
+		border: 0
+		background-color: $Color-Purple
+		color: $Color-White
+		font-size: 16px
+		font-weight: bold
+
+	&__bottom
+		padding: 18px 22px 0
+
+	&__dropdown
+		width: 100%
+		box-sizing: border-box
+
+	&__opener
+		box-sizing: border-box
+		cursor: pointer
+		padding: 15px 20px 14px 22px
+		height: 50px
+		width: 100%
+		display: flex
+		align-items: center
+		justify-content: space-between
+		border-top: 1px solid $Color-PaleBlue
+		border-bottom: 1px solid $Color-PaleBlue
+
+		svg
+			width: 10px
+			height: 10px
+			transform: rotate(180deg)
+
+		&.active
+			color: $Color-Blue
+			svg
+				transform: rotate(0)
+				color: $Color-Blue
+
+		&.active + .tariffs-swiper-slide__list
+			max-height: 500px
+			padding: 20px 15px 17px 22px
+			transition: max-height 1s, padding 0s
+
+	&__list
+		transition: max-height 0s, padding 0s
+		background-color: $Color-LightPaleBlue
+		overflow: hidden
+		box-sizing: border-box
+		max-height: 0px
+
+	&--best
+		border-color: $Color-Blue
+
+	&__best
+		position: absolute
+		width: 133px
+		height: 30px
+		background-color: $Color-Blue
+		color: $Color-White
+		font-size: 12px
+		font-weight: 600
+		top: -15px
+		left: 50%
+		transform: translate(-50%)
+		display: flex
+		align-items: center
+		justify-content: center
+		border-radius: 7px
+		img
+			margin-right: 7px
+
+	@include adaptiveWidth($Container-S)
+		max-width: 100%
+		margin-right: 0
+		margin-top: 12px
+
+		&:first-child
+			margin-top: 0
+
+		&--best
+			margin-top: 25px
+
+		&__text
+			&--module
+				font-size: 16px
+				height: 50px
+				display: flex
+				align-items: center
+				justify-content: center
+				width: calc(100% - 50px)
+				color: $Color-Blue
+				background-color: $Color-PaleBlue
+				border-radius: 10px
+				margin: 16px 25px 12px
+				position: relative
+				&::after
+					content: ''
+					display: block
+					position: absolute
+					height: 1px
+					border-bottom: 1px dotted $Color-Blue
+					bottom: 13px
+					width: 63px
+
+				&.active ~ .tariffs-swiper-slide
+					&__bottom
+						margin-top: 12px
+						.tariffs-swiper-slide__text--bottom
+							display: block
+
+					&__dropdown
+						display: block
+
+			&--bottom
+				display: none
+
+		&__dropdown
+			display: none
+
+		&__bottom
+			padding-top: 0
+
+.checkbox-tariffs
+	display: flex
+	align-items: center
+	margin-bottom: 10px
+	cursor: pointer
+	&__input
+		opacity: 0
+		position: absolute
+		width: 0
+		height: 0
+		appearance: none
+
+	&__box
+		min-width: 21px
+		min-height: 21px
+		border-radius: 7px
+		border: 1px solid $Color-PaleBlue
+		background: $Color-White
+		display: flex
+		justify-content: center
+		align-items: center
+		box-sizing: border-box
+		margin-right: 11px
+		svg
+			width: 9px
+			height: 9px
+			color: $Color-White
+
+	&__text
+		font-size: 12px
+		width: 100%
+		display: flex
+		justify-content: space-between
+		align-items: center
+		span:last-child
+			color: $Color-PaleGray
+
+	&__input:checked + &__box
+		background-color: $Color-Blue
+		border-color: $Color-Blue
+
+	&__input:focus + &__box
+		box-shadow: 0 0 6px rgba($Color-Blue, 0.2)
+		border-color: $Color-Blue
