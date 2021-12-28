@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Hello Print</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/helpers/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/helpers/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/helpers/favicon-16x16.png">
+    <link rel="manifest" href="assets/helpers/site.webmanifest">
+    <link rel="mask-icon" href="assets/helpers/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#2d89ef">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+  </head>
+</html>
+<body>
+  <div class="request"> 
+    <form class="request-form" action="URL" method="POST">
+      <h2 class="request-form__title">Отправить заявку</h2>
+      <button class="request-form__close" type="button"> <img src="assets/img/close.svg" alt="Закрыть"></button>
+      <input class="request-form__input" type="text" placeholder="Ваше имя">
+      <input class="request-form__input" type="text" placeholder="Телефон">
+      <input class="request-form__input" type="text" placeholder="E-mail">
+      <input class="request-form__input" type="text" placeholder="Название компании">
+      <input class="request-form__input" type="text" placeholder="Город">
+      <p class="request-form__text">
+        Нажимая кнопку «Отправить», я даю свое согласие на обработку моих персональных данных, в соответствии
+        с Федеральным законом от 27.07.2006 года №152-ФЗ
+        «О персональных данных», на условиях и для целей, определенных в Согласии на обработку
+        персональных данных *
+      </p>
+      <button class="request-form__button">Отправить</button>
+    </form>
+  </div>
+  <div class="nav-mobile">
+    <nav class="header header--mobile">
+      <button class="header__close" type="button"> <img src="assets/img/close.svg" alt="Закрыть"></button>
+      <div class="header__contact">
+        <p class="header__text header__text--number">+ 7 (495) 12 54 18</p>
+        <p class="header__text header__text--mail">sales@enjoylab.ru</p>
+      </div>
+      <button class="c-button header__button header__button--request">Оставить заявку</button><a class="header__item" href="#">Тарифы</a>
+      <div class="header__item header__item--dropdown-mobile" href="#" tabindex="0">Клиенты <img src="assets/img/dropdown-arrow.svg" alt="Выпадающий список">
+        <div class="header__dropdown header-nav__dropdown-list header__dropdown--mobile"><a class="header__item" href="#">Руководство пользователя</a><a class="header__item" href="#">Видеотур</a></div>
+      </div><a class="header__item" href="#">Техническая поддержка</a><a class="header__item" href="#">Контакты</a>
+    </nav>
+  </div>
+  <header class="container container--header"> 
+    <div class="header"><img class="header__logo" src="assets/img/logo.svg" alt="Логотип">
+      <nav class="header-nav header-nav--desktop"> <a class="header-nav__item" href="#">Тарифы</a>
+        <div class="header-nav__item header-nav__item--dropdown" href="#" tabindex="0">Клиенты
+          <div class="header-nav__dropdown-list"><a class="header-nav__item" href="#">Руководство пользователя</a><a class="header-nav__item" href="#">Видеотур</a></div>
+        </div><a class="header-nav__item" href="#">Техническая поддержка</a><a class="header-nav__item" href="#">Контакты</a>
+      </nav>
+      <div class="header__buttons"> 
+        <button class="c-button header__button header__button--request">Оставить заявку</button>
+        <button class="c-button header__button header__button--search"> 
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M8.25 3.25C5.48858 3.25 3.25 5.48858 3.25 8.25C3.25 11.0114 5.48858 13.25 8.25 13.25C11.0114 13.25 13.25 11.0114 13.25 8.25C13.25 5.48858 11.0114 3.25 8.25 3.25ZM1.25 8.25C1.25 4.38401 4.38401 1.25 8.25 1.25C12.116 1.25 15.25 4.38401 15.25 8.25C15.25 12.116 12.116 15.25 8.25 15.25C4.38401 15.25 1.25 12.116 1.25 8.25Z" fill="currentColor"></path>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.7804 11.7804C12.1709 11.3899 12.8041 11.3899 13.1946 11.7804L16.4571 15.0429C16.8476 15.4334 16.8476 16.0666 16.4571 16.4571C16.0666 16.8476 15.4334 16.8476 15.0429 16.4571L11.7804 13.1946C11.3899 12.8041 11.3899 12.1709 11.7804 11.7804Z" fill="currentColor"></path>
+          </svg>
+        </button>
+      </div>
+      <div class="header__contact">
+        <p class="header__text header__text--number">+ 7 (495) 12 54 18</p>
+        <p class="header__text header__text--mail">sales@enjoylab.ru</p>
+      </div>
+      <button class="c-button header__button header__button--phone"> 
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M14.8012 10.6171C14.28 9.63191 12.4703 8.56365 12.3906 8.51694C12.158 8.38457 11.9154 8.3145 11.6883 8.3145C11.3506 8.3145 11.0742 8.46918 10.9068 8.75052C10.6421 9.06716 10.3138 9.43726 10.2341 9.49462C9.61742 9.91299 9.13468 9.8655 8.60055 9.33137L5.61949 6.35005C5.08874 5.8193 5.03995 5.33059 5.45547 4.7173C5.5136 4.6371 5.8837 4.30853 6.20034 4.04354C6.40226 3.92337 6.54085 3.74481 6.60159 3.52576C6.6823 3.2343 6.62287 2.89145 6.43237 2.55743C6.38747 2.4806 5.31869 0.670585 4.334 0.149692C4.15025 0.0523651 3.94314 0.000976562 3.73551 0.000976562C3.39344 0.000976562 3.07161 0.134379 2.82972 0.376009L2.17101 1.03446C1.12923 2.07598 0.752117 3.25662 1.04955 4.54341C1.29767 5.61582 2.02074 6.75701 3.19904 7.93505L7.01555 11.7516C8.50685 13.2429 9.9286 13.9992 11.2413 13.9992C11.2413 13.9992 11.2413 13.9992 11.2416 13.9992C12.2071 13.9992 13.1072 13.5888 13.9161 12.7798L14.5746 12.1214C14.9748 11.7215 15.0656 11.1167 14.8012 10.6171Z" fill="currentColor"></path>
+        </svg>
+      </button>
+      <button class="c-button header__button header__button--menu"> 
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="2" y="4" width="16" height="2" rx="1" fill="currentColor"></rect>
+          <rect x="2" y="9" width="16" height="2" rx="1" fill="currentColor"></rect>
+          <rect x="2" y="14" width="16" height="2" rx="1" fill="currentColor"></rect>
+        </svg>
+      </button>
+    </div>
+  </header>
+  <main class="main main--light">
+    <div class="container">
+      <nav class="line-nav"><a class="line-nav__link" href="#">Главная</a><a class="line-nav__link" href="#">Видеотур по hello print</a><a class="line-nav__link" href="#">Контрагенты</a></nav>
+    </div>
+    <div class="container container--video">
+      <div class="category">
+        <div class="category-item"> 
+          <h2 class="category-item__title">Контрагенты</h2>
+          <p class="category-item__date">8 июля 2021 в 01:00</p>
+          <div class="video-player"> <img src="assets/img/video.png" alt="Видео"><img src="assets/img/play.svg" alt="Воспроизвести"></div>
+          <div class="category-item__row"> <a class="category-item__link" href="#">Подробнее</a>
+            <div class="category-item__rating">
+              <button> 
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5.025 1.5H1.5V8.25H3L5.025 1.5ZM15 11.25H10.5V14.25C10.5 15.4927 9.49275 16.5 8.25 16.5H7.5V13.5L5.325 10.7812C4.791 10.1137 4.5 9.28425 4.5 8.43V7.5L6.075 2.25H12.3277C13.7047 2.25 14.904 3.1875 15.2377 4.5225L16.4542 9.38625C16.6905 10.3328 15.975 11.25 15 11.25Z" fill="currentColor"></path>
+                </svg>
+              </button><span>1</span>
+              <button>
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5.025 16.5H1.5V9.75H3L5.025 16.5ZM15 6.75H10.5V3.75C10.5 2.50725 9.49275 1.5 8.25 1.5H7.5V4.5L5.325 7.21875C4.791 7.88625 4.5 8.71575 4.5 9.57V10.5L6.075 15.75H12.3277C13.7047 15.75 14.904 14.8125 15.2377 13.4775L16.4542 8.61375C16.6905 7.66725 15.975 6.75 15 6.75Z" fill="currentColor"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="category-item"> 
+          <h2 class="category-item__title">Контрагенты</h2>
+          <p class="category-item__date">8 июля 2021 в 01:00</p>
+          <div class="video-player"> <img src="assets/img/video.png" alt="Видео"><img src="assets/img/play.svg" alt="Воспроизвести"></div>
+          <div class="category-item__row"> <a class="category-item__link" href="#">Подробнее</a>
+            <div class="category-item__rating">
+              <button> 
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5.025 1.5H1.5V8.25H3L5.025 1.5ZM15 11.25H10.5V14.25C10.5 15.4927 9.49275 16.5 8.25 16.5H7.5V13.5L5.325 10.7812C4.791 10.1137 4.5 9.28425 4.5 8.43V7.5L6.075 2.25H12.3277C13.7047 2.25 14.904 3.1875 15.2377 4.5225L16.4542 9.38625C16.6905 10.3328 15.975 11.25 15 11.25Z" fill="currentColor"></path>
+                </svg>
+              </button><span>1</span>
+              <button>
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5.025 16.5H1.5V9.75H3L5.025 16.5ZM15 6.75H10.5V3.75C10.5 2.50725 9.49275 1.5 8.25 1.5H7.5V4.5L5.325 7.21875C4.791 7.88625 4.5 8.71575 4.5 9.57V10.5L6.075 15.75H12.3277C13.7047 15.75 14.904 14.8125 15.2377 13.4775L16.4542 8.61375C16.6905 7.66725 15.975 6.75 15 6.75Z" fill="currentColor"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="category-item"> 
+          <h2 class="category-item__title">Контрагенты</h2>
+          <p class="category-item__date">8 июля 2021 в 01:00</p>
+          <div class="video-player"> <img src="assets/img/video.png" alt="Видео"><img src="assets/img/play.svg" alt="Воспроизвести"></div>
+          <div class="category-item__row"> <a class="category-item__link" href="#">Подробнее</a>
+            <div class="category-item__rating">
+              <button> 
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5.025 1.5H1.5V8.25H3L5.025 1.5ZM15 11.25H10.5V14.25C10.5 15.4927 9.49275 16.5 8.25 16.5H7.5V13.5L5.325 10.7812C4.791 10.1137 4.5 9.28425 4.5 8.43V7.5L6.075 2.25H12.3277C13.7047 2.25 14.904 3.1875 15.2377 4.5225L16.4542 9.38625C16.6905 10.3328 15.975 11.25 15 11.25Z" fill="currentColor"></path>
+                </svg>
+              </button><span>1</span>
+              <button>
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5.025 16.5H1.5V9.75H3L5.025 16.5ZM15 6.75H10.5V3.75C10.5 2.50725 9.49275 1.5 8.25 1.5H7.5V4.5L5.325 7.21875C4.791 7.88625 4.5 8.71575 4.5 9.57V10.5L6.075 15.75H12.3277C13.7047 15.75 14.904 14.8125 15.2377 13.4775L16.4542 8.61375C16.6905 7.66725 15.975 6.75 15 6.75Z" fill="currentColor"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <form class="sidebar-subscribe">
+        <div class="sidebar-subscribe__header">
+          <p>Подписаться на наши новости </p><img src="assets/img/subscribe.svg" alt="Уведомления">
+        </div>
+        <p class="sidebar-subscribe__subtitle">оформите подписку и будьте всегда в курсе самых свежих новостей</p>
+        <label class="sidebar-subscribe__label">
+          <input class="sidebar-subscribe__input" type="text" placeholder="Ваш e-mail">
+          <svg class="sidebar-subscribe__label-img" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M3 3.75C2.58921 3.75 2.25 4.08921 2.25 4.5V13.5C2.25 13.9108 2.58921 14.25 3 14.25H15C15.4108 14.25 15.75 13.9108 15.75 13.5V4.5C15.75 4.08921 15.4108 3.75 15 3.75H3ZM0.75 4.5C0.75 3.26079 1.76079 2.25 3 2.25H15C16.2392 2.25 17.25 3.26079 17.25 4.5V13.5C17.25 14.7392 16.2392 15.75 15 15.75H3C1.76079 15.75 0.75 14.7392 0.75 13.5V4.5Z" fill="currentColor"></path>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.885579 4.06997C1.12312 3.73063 1.59076 3.6481 1.9301 3.88564L9 8.83457L16.0699 3.88564C16.4092 3.6481 16.8769 3.73063 17.1144 4.06997C17.352 4.4093 17.2694 4.87695 16.9301 5.11449L9.4301 10.3645C9.17186 10.5453 8.82815 10.5453 8.56991 10.3645L1.06991 5.11449C0.73057 4.87695 0.648044 4.4093 0.885579 4.06997Z" fill="currentColor"></path>
+          </svg>
+        </label>
+        <button class="sidebar-subscribe__button">Подписаться на новости</button>
+      </form>
+    </div>
+  </main>
+  <footer class="container container--footer"> 
+    <div class="footer"> 
+      <div class="footer__top-part">
+        <div class="footer__column"> <img class="footer__logo" src="assets/img/logo.svg" alt="Логотип">
+          <p class="footer__text footer__text--address">г. Москва, ул. Автозаводская, 25</p>
+          <p class="footer__text footer__text--number">+ 7 (495) 12 54 18</p>
+          <p class="footer__text footer__text--mail">sales@enjoylab.ru</p>
+        </div>
+        <div class="footer__column">
+          <h3 class="footer__title">Разделы</h3><a class="footer__link" href="#">Тарифы</a><a class="footer__link" href="#">Справка</a><a class="footer__link" href="#">Контакты</a><a class="footer__link" href="#">Соглашение</a><a class="footer__link" href="#">Договор-оферта</a>
+        </div>
+        <div class="footer__column">
+          <h3 class="footer__title">Клиентам</h3><a class="footer__link" href="#">Справка </a><a class="footer__link" href="#">Видеотур </a>
+        </div>
+        <div class="footer__column">
+          <form class="form" action="URL" method="GET">
+            <label class="form__label">
+              <input class="form__input" type="text" placeholder="Ваш e-mail">
+              <svg class="form__label-img" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M3 3.75C2.58921 3.75 2.25 4.08921 2.25 4.5V13.5C2.25 13.9108 2.58921 14.25 3 14.25H15C15.4108 14.25 15.75 13.9108 15.75 13.5V4.5C15.75 4.08921 15.4108 3.75 15 3.75H3ZM0.75 4.5C0.75 3.26079 1.76079 2.25 3 2.25H15C16.2392 2.25 17.25 3.26079 17.25 4.5V13.5C17.25 14.7392 16.2392 15.75 15 15.75H3C1.76079 15.75 0.75 14.7392 0.75 13.5V4.5Z" fill="currentColor"></path>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.885579 4.06997C1.12312 3.73063 1.59076 3.6481 1.9301 3.88564L9 8.83457L16.0699 3.88564C16.4092 3.6481 16.8769 3.73063 17.1144 4.06997C17.352 4.4093 17.2694 4.87695 16.9301 5.11449L9.4301 10.3645C9.17186 10.5453 8.82815 10.5453 8.56991 10.3645L1.06991 5.11449C0.73057 4.87695 0.648044 4.4093 0.885579 4.06997Z" fill="currentColor"></path>
+              </svg>
+            </label>
+            <button class="form__button">Подписаться на новости</button>
+            <label class="footer-checkbox">
+              <input class="footer-checkbox__input" type="checkbox"><span class="footer-checkbox__box"> <img class="footer-checkbox__check" src="assets/img/check.svg" alt="Галочка"></span><span class="footer-checkbox__text">Настоящим даю согласие на обработку персональных данных</span>
+            </label>
+          </form>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <footer class="footer">
+    <div class="footer__bottom-part">
+      <div class="container">
+        <p class="footer__text footer__text--bottom">© 2019 - 2021 helloprint.ru</p>
+        <p class="footer__text footer__text--bottom">Продукт компании vea.ru</p>
+      </div>
+    </div>
+  </footer>
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <script src="assets/scripts/script.js"> </script>
+</body>

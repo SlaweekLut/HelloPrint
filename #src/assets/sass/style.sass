@@ -29,11 +29,23 @@ h2
 	&--integration
 		padding: 56px 20px 71px
 
+	&--video
+		display: grid
+		grid-template-columns: auto 345px
+		gap: 20px
+		margin-bottom: 62px
+
 	@include adaptiveWidth($Container-M)
 		max-width: calc($Container-M + 32px)
 		padding: 0px 16px
 		&--integration
 			padding: 28px 16px 50px
+		&--video
+			grid-template-columns: auto 295px
+
+	@include adaptiveWidth(750px)
+		&--video
+			grid-template-columns: 1fr
 	@include adaptiveWidth($Container-S)
 		max-width: calc($Container-S + 32px)
 		&--integration
@@ -1629,3 +1641,197 @@ h2
 			margin-bottom: 17px
 		&__row
 			flex-direction: column-reverse
+
+/** Видеотур **/
+
+.sidebar-subscribe
+	box-sizing: border-box
+	padding: 30px 30px 42px 27px
+	background-color: $Color-Purple
+	border-radius: 20px
+	max-height: 320px
+
+	&__header
+		display: flex
+		justify-content: space-between
+		p
+			font-family: $Font-Greenwich
+			color: $Color-White
+			font-weight: 700
+			font-size: 24px
+			line-height: 130%
+			max-width: 200px
+			@include fluid-type($Container-M, $Container-L, 18px, 24px)
+
+	&__subtitle
+		font-family: $Font-Greenwich
+		font-size: 14px
+		color: $Color-White
+		margin: 10px 0px 18px
+
+	&__input
+		box-sizing: border-box
+		height: 54px
+		width: 100%
+		padding: 0px 65px 0px 27px
+		border-radius: 10px
+		border: 1px solid $Color-PaleBlue
+		font-weight: 500
+		font-size: 16px
+		@include fluid-type($Container-S, $Container-M, 12px, 16px)
+		&::placeholder
+			color: $Color-PaleBlue
+
+		&:focus
+			border-color: $Color-Blue
+			box-shadow: 0 0 6px rgba($Color-Blue, 0.36)
+
+	&__label
+		display: block
+		box-sizing: border-box
+		max-height: 54px
+		height: 54px
+		width: 100%
+		position: relative
+
+	&__label-img
+		box-sizing: border-box
+		position: absolute
+		top: 17px
+		right: 25px
+		color: $Color-PaleBlue
+
+	&__button
+		width: 100%
+		height: 54px
+		border-radius: 10px
+		background: linear-gradient(transparent 50%, $Color-White 50%)
+		background-size: 100% 200%
+		border: 1px solid $Color-White
+		margin-top: 10px
+		font-size: 18px
+		font-weight: 700
+		color: $Color-White
+		overflow: hidden
+		position: relative
+		transition: .3s
+		&:hover
+			color: $Color-Purple
+			background-position: 0 100%
+
+.video
+	&__search
+		position: relative
+		width: 100%
+		svg
+			position: absolute
+			min-width: 18px
+			min-height: 18px
+			color: $Color-PaleBlue
+			top: 0
+			left: 22px
+
+	&__input
+		box-sizing: border-box
+		width: 100%
+		height: 50px
+		background-color: transparent
+		border: 1px solid $Color-PaleBlue
+		border-radius: 10px
+		padding: 0px 54px
+		&::placeholder
+			color: $Color-PaleBlue
+			font-size: 18px
+			font-weight: 500
+
+.video-item
+	padding: 25px 40px
+	margin-top: 17px
+	background-color: $Color-White
+	border: 1px solid $Color-PaleBlue
+	border-radius: 10px
+	&:first-child
+		margin-top: 28px
+
+	&__title
+		font-family: $Font-Greenwich
+		font-size: 22px
+		margin-bottom: 22px
+		color: $Color-Blue
+
+	&__subtitle
+		font-family: $Font-Greenwich
+		font-weight: 700
+
+	&__text
+		font-family: $Font-Greenwich
+		color: $Color-PaleGray
+
+/** Видеоплеер **/
+
+.category-item
+	margin-bottom: 43px
+	&:last-child
+		margin-bottom: 0
+	&__title
+		text-align: left
+		color: $Color-Blue
+
+	&__date
+		font-size: 14px
+		color: $Color-PaleGray
+		margin: 6px 0px 20px
+
+	&__row
+		display: flex
+		justify-content: space-between
+		margin-top: 30px
+
+	&__link
+		display: flex
+		align-items: center
+		justify-content: center
+		font-size: 16px
+		font-weight: 700
+		box-sizing: border-box
+		max-width: 144px
+		width: 100%
+		height: 50px
+		border-radius: 15px
+		border: 1px solid $Color-Blue
+		color: $Color-Blue
+	&__rating
+		max-width: 100px
+		width: 100%
+		box-sizing: border-box
+		height: 50px
+		border: 1px solid $Color-Blue
+		border-radius: 15px
+		padding: 0px 14px
+		display: flex
+		align-items: center
+		justify-content: space-between
+		button
+			background: transparent
+			border: 0
+			color: $Color-PaleBlue
+			&:focus
+				color: $Color-Blue
+
+		span
+			font-size: 24px
+			font-weight: 500
+.video-player
+	position: relative
+
+	img:first-child
+		width: 100%
+		border-radius: 20px
+	img:last-child
+		width: 20%
+		height: 20%
+		position: absolute
+		top: 50%
+		left: 50%
+		transform-origin: center
+		transform: translateY(-50%) translateX(-50%)
