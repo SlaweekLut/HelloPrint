@@ -469,29 +469,34 @@ h2
 /** Преймущества под баннером	**/	
 
 .pre-features
-	display: flex
+	display: grid
 	justify-content: space-between
 	margin: 30px 0px 90px
+	grid-template-columns: repeat(4, 160px)
 	&__item
+		width: 100%
 		text-align: center
-
+		svg
+			width: 100%
 	&__text
 		font-weight: 500
-		@include fluid-type($Container-S, $Container-L, 14px , 18px )
+		@include fluid-type($Container-M, $Container-L, 14px , 18px )
+		@include fluid-type($Container-S, $Container-M, 14px , 14px )
 
 	&__animation
-		margin: 0 auto
-		width: 104px
+		margin: 0 auto 40px
+		width: 100%
 		height: 104px
 		background-color: #fff
 
 	@include adaptiveWidth($Container-M)
+		grid-template-columns: repeat(4, 124px)
 		margin: 22px 0px 55px
 		&__animation
 			width: 86px
 			height: 86px
+
 	@include adaptiveWidth($Container-S)
-		display: grid
 		grid-template-columns: 1fr 1fr
 		&__animation
 			width: 74px
@@ -745,10 +750,11 @@ h2
 		@include fluid-type($Container-S, $Container-L, 14px , 18px )
 
 	&__animation
-		margin: 0 auto
-		width: 104px
-		height: 104px
-		background-color: palegreen
+		width: 150px
+		height: 150px
+		svg
+			width: 100%
+			height: 100%
 
 	@include adaptiveWidth($Container-M)
 		grid-template-columns: repeat(3, 1fr)
@@ -2095,3 +2101,326 @@ h2
 
 		&__img
 			max-height: 249px
+
+/** Анимации **/
+
+.loyality-animation
+	transform-origin: center center
+	animation: loyality-animation 15.1s linear forwards infinite
+
+@keyframes loyality-animation
+	0%
+		transform: rotate(0deg)
+	100%
+		transform: rotate(360deg)
+
+.logistical-animation
+	transform-origin: center center
+	animation: logistical-animation 2.1s ease-out forwards infinite
+
+@keyframes logistical-animation
+	0%
+		transform: translateY(-17px)
+	50%
+		transform: translateY(0)
+	100%
+		transform: translateY(-17px)
+
+.api-animation
+	&--1
+		transform-origin: 63px 89px
+		animation: api-anim 15.4s ease-out infinite
+	&--2
+		transform-origin: 99px 52px
+		animation: api-anim 15.4s ease-out infinite
+
+@keyframes api-anim
+	0%
+		transform: rotate(0deg)
+	100%
+		transform: rotate(360deg)
+
+.analytics-animation
+	&--1
+		animation: analytics-animation-1 1.4s ease-out forwards infinite
+	&--2
+		animation: analytics-animation-2 1.4s ease-out forwards infinite
+	&--3
+		animation: analytics-animation-3 1.4s ease-out forwards infinite
+
+@keyframes analytics-animation-1
+	0%
+		height: 51px
+		transform: translateY(0px)
+	50%
+		height: 77px
+		transform: translateY(-26px)
+	100%
+		height: 51px
+		transform: translateY(0px)
+
+@keyframes analytics-animation-2
+	0%
+		height: 75px
+		transform: translateY(0px)
+	50%
+		height: 29px
+		transform: translateY(46px)
+	100%
+		height: 75px
+		transform: translateY(0px)
+
+@keyframes analytics-animation-3
+	0%
+		height: 26px
+		transform: translateY(0px)
+	50%
+		height: 58px
+		transform: translateY(-32px)
+	100%
+		height: 26px
+		transform: translateY(0px)
+
+.cost-animation
+	&--1
+		transform-origin: center center
+		animation: cost-animation-1 1.4s ease-out forwards infinite
+	&--2
+		transform-origin: center center
+		animation: cost-animation-2 1.4s ease-out forwards infinite
+	&--3
+		transform-origin: center center
+		animation: cost-animation-3 1.4s ease-out forwards infinite
+
+@keyframes cost-animation-1
+	0%
+		opacity: 1
+		transform: translateX(0px) scale(1)
+	50%
+		opacity: 0
+		transform: translateX(-75px) scale(2)
+	100%
+		opacity: 1
+		transform: translateX(0px) scale(1)
+
+@keyframes cost-animation-2
+	0%
+		opacity: 1
+		transform: translateY(0px) scale(1)
+	50%
+		opacity: 0
+		transform: translateY(-75px) scale(2)
+	100%
+		opacity: 1
+		transform: translateY(0px) scale(1)
+
+@keyframes cost-animation-3
+	0%
+		opacity: 1
+		transform: translateX(0px) scale(1)
+	50%
+		opacity: 0
+		transform: translateX(75px) scale(2)
+	100%
+		opacity: 1
+		transform: translateX(0px) scale(1)
+
+.crm-animation
+	&--r
+		animation: crm-animation-r 1.4s ease-out normal infinite
+
+	&--blue-d
+		animation: crm-animation-d 1.4s ease-out normal infinite
+
+	&--blue-e
+		animation: crm-animation-e 1.4s ease-out normal infinite
+
+@keyframes crm-animation-r
+	0%
+		transform: translateY(0px)
+	25%
+		transform: translateY(41px)
+	100%
+		transform: translateY(41px)
+
+@keyframes crm-animation-d
+	0%
+		transform: translateY(0px)
+	25%
+		transform: translateY(17px)
+	100%
+		transform: translateY(17px)
+
+@keyframes crm-animation-e
+	0%
+		transform: translateY(0px)
+	25%
+		transform: translateY(60px)
+	100%
+		transform: translateY(60px)
+
+.notification-animation
+	&--1
+		animation: notification-animation-1 1.5s ease-out normal infinite
+	&--2
+		transform-origin: center center
+		animation: notification-animation-2 1.5s ease-out normal infinite
+
+@keyframes notification-animation-1
+	0%
+		transform: translateX(0px) translateY(0)
+	20%
+		transform: translateX(28px) translateY(-8px)
+	40%
+		transform: translateX(0px) translateY(0)
+	60%
+		transform: translateX(-28px) translateY(-8px)
+	80%
+		transform: translateX(0px) translateY(0)
+	100%
+		transform: translateX(0px) translateY(0)
+
+@keyframes notification-animation-2
+	0%
+		transform: rotate(0)
+	20%
+		transform: rotate(-45deg)
+	40%
+		transform: rotate(0)
+	60%
+		transform: rotate(45deg)
+	80%
+		transform: rotate(0)
+	100%
+		transform: rotate(0)
+
+.settings-animation
+	&--1
+		animation: settings-animation-1 5s ease-out normal infinite
+	&--2
+		animation: settings-animation-2 5s ease-out normal infinite
+
+@keyframes settings-animation-1
+	0%
+		transform: translateY(0px)
+	50%
+		transform: translateY(-27px)
+	100%
+		transform: translateY(0px)
+
+@keyframes settings-animation-2
+	0%
+		transform: translateY(0px)
+	50%
+		transform: translateY(25px)
+	100%
+		transform: translateY(0px)
+
+.safety-animation
+	&--1
+		animation: safety-animation-1 6s ease-out normal infinite
+	&--2
+		animation: safety-animation-2 6s ease-out normal infinite
+	&--3
+		transform-origin: center center
+		animation: safety-animation-3 6s ease-out normal infinite
+
+@keyframes safety-animation-1
+	0%
+		transform: translateY(0px) translateX(0px)
+	25%
+		transform: translateY(0px) translateX(0px)
+	50%
+		transform: translateY(-24px) translateX(2px)
+	75%
+		transform: translateY(10px) translateX(-50px)
+	100%
+		transform: translateY(0px) translateX(0px)
+
+@keyframes safety-animation-2
+	0%
+		transform: translateY(0px) translateX(0px)
+	25%
+		transform: translateY(0px) translateX(0px)
+	50%
+		transform: translateY(31px) translateX(7px)
+	75%
+		transform: translateY(-14px) translateX(51px)
+	100%
+		transform: translateY(0px) translateX(0px)
+
+@keyframes safety-animation-3
+	0%
+		transform: rotate(0deg)
+	25%
+		transform: rotate(15deg)
+	50%
+		transform: rotate(-30deg)
+	75%
+		transform: rotate(0deg)
+	100%
+		transform: rotate(0deg)
+
+.introduction-animation
+	&--1
+		transform-origin: 75px 70px
+		animation: introduction-animation-1 6s cubic-bezier(.75,-0.25,.25,1.25) normal infinite
+
+@keyframes introduction-animation-1
+	0%
+		transform: rotate(0)
+	25%
+		transform: rotate(60deg)
+	50%
+		transform: rotate(210deg)
+	75%
+		transform: rotate(300deg)
+	100%
+		transform: rotate(360deg)
+
+.system-animation
+	&--1
+		transform-origin: 73.5px 55.5px
+		animation: system-animation-1 4.8s cubic-bezier(.6,0,.4,1) normal infinite
+	&--2
+		transform-origin: 52.5px 92.5px
+		animation: system-animation-2 4.8s cubic-bezier(.6,0,.4,1) normal infinite
+	&--3
+		transform-origin: 97.5px 93.5px
+		animation: system-animation-3 4.8s cubic-bezier(.6,0,.4,1) normal infinite
+
+@keyframes system-animation-1
+	0%
+		transform: scale(1) translateX(0) translateY(0)
+	25%
+		transform: scale(0.62) translateX(30px) translateY(12px)
+	50%
+		transform: scale(1) translateX(30px) translateY(35px)
+	75%
+		transform: scale(1.14) translateX(-14px) translateY(40px)
+	100%
+		transform: scale(1) translateX(0) translateY(0)
+
+@keyframes system-animation-2
+	0%
+		transform: scale(1) translateX(0) translateY(0)
+	25%
+		transform: scale(0.81) translateX(-1px) translateY(-22px)
+	50%
+		transform: scale(0.62) translateX(60px) translateY(-60px)
+	75%
+		transform: scale(1) translateX(35px) translateY(-7px)
+	100%
+		transform: scale(1) translateX(0) translateY(0)
+
+@keyframes system-animation-3
+	0%
+		transform: scale(1) translateX(0) translateY(0)
+	25%
+		transform: scale(1.14) translateX(0) translateY(0)
+	50%
+		transform: scale(1.14) translateX(-35px) translateY(-5px)
+	75%
+		transform: scale(0.81) translateX(-45px) translateY(-45px)
+	100%
+		transform: scale(1) translateX(0) translateY(0)
