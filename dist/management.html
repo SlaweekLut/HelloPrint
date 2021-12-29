@@ -57,12 +57,15 @@
       </nav>
       <div class="header__buttons"> 
         <button class="c-button header__button header__button--request">Оставить заявку</button>
-        <button class="c-button header__button header__button--search"> 
-          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M8.25 3.25C5.48858 3.25 3.25 5.48858 3.25 8.25C3.25 11.0114 5.48858 13.25 8.25 13.25C11.0114 13.25 13.25 11.0114 13.25 8.25C13.25 5.48858 11.0114 3.25 8.25 3.25ZM1.25 8.25C1.25 4.38401 4.38401 1.25 8.25 1.25C12.116 1.25 15.25 4.38401 15.25 8.25C15.25 12.116 12.116 15.25 8.25 15.25C4.38401 15.25 1.25 12.116 1.25 8.25Z" fill="currentColor"></path>
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.7804 11.7804C12.1709 11.3899 12.8041 11.3899 13.1946 11.7804L16.4571 15.0429C16.8476 15.4334 16.8476 16.0666 16.4571 16.4571C16.0666 16.8476 15.4334 16.8476 15.0429 16.4571L11.7804 13.1946C11.3899 12.8041 11.3899 12.1709 11.7804 11.7804Z" fill="currentColor"></path>
-          </svg>
-        </button>
+        <div class="header__search"> 
+          <input class="header__search-input" placeholder="Введите запрос">
+          <button class="c-button header__button header__button--search"> 
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M8.25 3.25C5.48858 3.25 3.25 5.48858 3.25 8.25C3.25 11.0114 5.48858 13.25 8.25 13.25C11.0114 13.25 13.25 11.0114 13.25 8.25C13.25 5.48858 11.0114 3.25 8.25 3.25ZM1.25 8.25C1.25 4.38401 4.38401 1.25 8.25 1.25C12.116 1.25 15.25 4.38401 15.25 8.25C15.25 12.116 12.116 15.25 8.25 15.25C4.38401 15.25 1.25 12.116 1.25 8.25Z" fill="currentColor"></path>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M11.7804 11.7804C12.1709 11.3899 12.8041 11.3899 13.1946 11.7804L16.4571 15.0429C16.8476 15.4334 16.8476 16.0666 16.4571 16.4571C16.0666 16.8476 15.4334 16.8476 15.0429 16.4571L11.7804 13.1946C11.3899 12.8041 11.3899 12.1709 11.7804 11.7804Z" fill="currentColor"></path>
+            </svg>
+          </button>
+        </div>
       </div>
       <div class="header__contact">
         <p class="header__text header__text--number">+ 7 (495) 12 54 18</p>
@@ -83,48 +86,58 @@
     </div>
   </header>
   <main class="main main--light">
-    <div class="container">
-      <nav class="line-nav"><a class="line-nav__link" href="#">Главная</a><a class="line-nav__link" href="#">Видеотур по hello print</a></nav>
-    </div>
-    <div class="container container--video">
-      <div class="video"> 
-        <label class="video__search">
-          <input class="video__input" type="text" placeholder="Поиск статьи">
-          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M8.25 3.25C5.48858 3.25 3.25 5.48858 3.25 8.25C3.25 11.0114 5.48858 13.25 8.25 13.25C11.0114 13.25 13.25 11.0114 13.25 8.25C13.25 5.48858 11.0114 3.25 8.25 3.25ZM1.25 8.25C1.25 4.38401 4.38401 1.25 8.25 1.25C12.116 1.25 15.25 4.38401 15.25 8.25C15.25 12.116 12.116 15.25 8.25 15.25C4.38401 15.25 1.25 12.116 1.25 8.25Z" fill="currentColor"></path>
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.7804 11.7804C12.1709 11.3899 12.8041 11.3899 13.1946 11.7804L16.4571 15.0429C16.8476 15.4334 16.8476 16.0666 16.4571 16.4571C16.0666 16.8476 15.4334 16.8476 15.0429 16.4571L11.7804 13.1946C11.3899 12.8041 11.3899 12.1709 11.7804 11.7804Z" fill="currentColor"></path>
-          </svg>
-        </label>
-        <div class="video-item"> 
-          <h3 class="video-item__title">Counterparties</h3>
-          <p class="video-item__subtitle">Контрагенты</p>
-          <p class="video-item__text">5 статей в этой категории</p>
-        </div>
-        <div class="video-item"> 
-          <h3 class="video-item__title">Контрагенты</h3>
-          <p class="video-item__subtitle">Контрагенты</p>
-          <p class="video-item__text">5 статей в этой категории</p>
-        </div>
-        <div class="video-item"> 
-          <h3 class="video-item__title">Контрагенты</h3>
-          <p class="video-item__subtitle">Контрагенты</p>
-          <p class="video-item__text">5 статей в этой категории</p>
+    <div class="c-wrapper c-wrapper--management-banner"> 
+      <div class="container container--management-banner">
+        <div class="management-banner"> 
+          <h1 class="management-banner__title">Руководство пользователя облачной системы hello print</h1>
         </div>
       </div>
-      <form class="sidebar-subscribe">
-        <div class="sidebar-subscribe__header">
-          <p>Подписаться на наши новости </p><img src="assets/img/subscribe.svg" alt="Уведомления">
+      <div class="management-banner__row"> 
+        <div class="container"> 
+          <p class="management-banner__text">Подробное описание интерфейса и возможностей системы</p>
+          <p class="management-banner__text">Ответы на самые часто задаваемые вопросы по работе в Hello Print</p>
+          <p class="management-banner__text">Пошаговые инструкции выполнения сложных операций в системе</p>
         </div>
-        <p class="sidebar-subscribe__subtitle">оформите подписку и будьте всегда в курсе самых свежих новостей</p>
-        <label class="sidebar-subscribe__label">
-          <input class="sidebar-subscribe__input" type="text" placeholder="Ваш e-mail">
-          <svg class="sidebar-subscribe__label-img" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M3 3.75C2.58921 3.75 2.25 4.08921 2.25 4.5V13.5C2.25 13.9108 2.58921 14.25 3 14.25H15C15.4108 14.25 15.75 13.9108 15.75 13.5V4.5C15.75 4.08921 15.4108 3.75 15 3.75H3ZM0.75 4.5C0.75 3.26079 1.76079 2.25 3 2.25H15C16.2392 2.25 17.25 3.26079 17.25 4.5V13.5C17.25 14.7392 16.2392 15.75 15 15.75H3C1.76079 15.75 0.75 14.7392 0.75 13.5V4.5Z" fill="currentColor"></path>
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.885579 4.06997C1.12312 3.73063 1.59076 3.6481 1.9301 3.88564L9 8.83457L16.0699 3.88564C16.4092 3.6481 16.8769 3.73063 17.1144 4.06997C17.352 4.4093 17.2694 4.87695 16.9301 5.11449L9.4301 10.3645C9.17186 10.5453 8.82815 10.5453 8.56991 10.3645L1.06991 5.11449C0.73057 4.87695 0.648044 4.4093 0.885579 4.06997Z" fill="currentColor"></path>
-          </svg>
-        </label>
-        <button class="sidebar-subscribe__button">Подписаться на новости</button>
-      </form>
+      </div>
+    </div>
+    <div class="container">
+      <div class="management">
+        <h1 class="management__title">Руководство пользователя системы hello print</h1>
+        <div class="management__column"><img class="management__img" src="https://picsum.photos/600/600">
+          <div class="management__text management__text--title management__text--img">Руководство пользователя</div>
+          <div class="management__text management__text--img">Описание и пошаговая инструкция по работе с функционалом системы</div>
+        </div>
+        <div class="management__column">
+          <h2 class="management__title management__title--h2">Пользуйтесь нашим руководством</h2>
+          <div class="management__text management__text--text18">
+            Мы подготовили подробное описание, которое поможет
+            в освоении системы Hello Print. Скорее всего, вы сможете
+            самостоятельно найти ответ на свой вопрос, заглянув в документацию. <br><br>
+            Если не найдете нужный ответ, напишите нам
+            в онлайн-чат на сайте. Мы всегда рады помочь!
+            
+          </div>
+          <div class="management__text management__text--title management__text--documentation">Документация включает в себя</div>
+          <div class="management__documentation"> 
+            <div class="management__documentation-row"> 
+              <div class="management__text management__text--medium">Руководство</div>
+              <div class="management__text management__text--text18 management__text--text-documentation">подробное описание интерфейса системы</div>
+            </div>
+            <div class="management__documentation-row"> 
+              <div class="management__text management__text--medium">F.A.Q.</div>
+              <div class="management__text management__text--text18 management__text--text-documentation">список наиболее часто задаваемых вопросов по работе системы</div>
+            </div>
+            <div class="management__documentation-row"> 
+              <div class="management__text management__text--medium">Инструкции</div>
+              <div class="management__text management__text--text18 management__text--text-documentation">инструкции по выполнению сложных операций</div>
+            </div>
+            <div class="management__documentation-row"> 
+              <div class="management__text management__text--medium">Обновления</div>
+              <div class="management__text management__text--text18 management__text--text-documentation">список обновлений системы с краткими комментариями</div>
+            </div>
+          </div><a class="management__button">Посмотреть руководство</a>
+        </div>
+      </div>
     </div>
   </main>
   <footer class="container container--footer"> 

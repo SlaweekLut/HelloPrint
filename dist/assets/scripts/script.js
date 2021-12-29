@@ -17,19 +17,27 @@ const popups = () => {
 		constructor(popup, open, close) {
 			this.popup = popup
 			this.open = [...open]
-			this.close = [...close]
 
-			this.open.forEach(element => {
-				element.addEventListener('click', () => {
-					this.popup.classList.add('active')
+			if(close === undefined) {
+				this.open.forEach(element => {
+					element.addEventListener('click', () => {
+						this.popup.classList.toggle('active')
+					})
 				})
-			});
-
-			this.close.forEach(element => {
-				element.addEventListener('click', () => {
-					this.popup.classList.remove('active')
-				})
-			});
+			} else {
+				this.close = [...close]
+				this.open.forEach(element => {
+					element.addEventListener('click', () => {
+						this.popup.classList.add('active')
+					})
+				});
+	
+				this.close.forEach(element => {
+					element.addEventListener('click', () => {
+						this.popup.classList.remove('active')
+					})
+				});
+			}
 		}
 	}
 
@@ -43,6 +51,9 @@ const popups = () => {
 	const closeMenu = document.querySelectorAll('.header__close')
 	const menuMobile = new popupCreate(popupMenu, [...openMenu], [...closeMenu, ...openRequest])
 
+	const search = document.querySelector('.header__search')
+	const searchOpen = document.querySelectorAll('.header__button--search')
+	const searchPopup = new popupCreate(search, searchOpen)
 }
 
 popups()
