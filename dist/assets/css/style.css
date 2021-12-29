@@ -1934,6 +1934,10 @@ h2 {
 
 /** Контакты **/
 
+.contact {
+  margin-bottom: 106px;
+}
+
 .contact__title {
   font-family: Greenwich, "PT Sans";
   text-align: center;
@@ -4353,6 +4357,10 @@ h2 {
     max-width: 100%;
   }
 
+  .contact {
+    margin-bottom: 55px;
+  }
+
   .contact__block {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -4739,6 +4747,10 @@ h2 {
 
   .tariffs-swiper-slide__bottom {
     padding-top: 0;
+  }
+
+  .contact {
+    margin-bottom: 16px;
   }
 
   .contact__links {
