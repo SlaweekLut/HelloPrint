@@ -429,6 +429,22 @@ h2 {
 .header-nav__item--dropdown {
   position: relative;
   cursor: default;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.header-nav__item--dropdown img {
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
 }
 
 .header-nav__item--dropdown::after {
@@ -439,6 +455,13 @@ h2 {
   left: 0;
   right: 0;
   bottom: -20px;
+}
+
+.header-nav__item--dropdown:hover img,
+.header-nav__item--dropdown:focus img {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 .header-nav__item--dropdown:hover .header-nav__dropdown-list,
@@ -672,6 +695,7 @@ h2 {
 }
 
 .info__title--h3 {
+  display: none;
   margin-bottom: 44px;
   font-weight: 600;
 }
@@ -682,6 +706,10 @@ h2 {
 
 .info__title--h3 {
   font-size: 12px;
+}
+
+.info__title--h3.active {
+  display: block;
 }
 
 .info__buttons {
@@ -724,11 +752,15 @@ h2 {
 }
 
 .info__content {
+  display: none;
+  gap: 64px;
+  height: 392px;
+}
+
+.info__content.active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 64px;
-  height: 392px;
 }
 
 .info__img {
@@ -1036,6 +1068,36 @@ h2 {
   font-size: 12px;
 }
 
+.footer__socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 100px;
+  margin-top: 16px;
+}
+
+.footer__social-item {
+  width: 24px;
+}
+
+.footer__social-item svg {
+  color: #252525;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.footer__social-item:hover svg {
+  color: #0085FF;
+}
+
 .form {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -1182,7 +1244,7 @@ h2 {
 /** Заявка **/
 
 .request {
-  position: absolute;
+  position: fixed;
   right: 0;
   top: 0;
   z-index: 20;

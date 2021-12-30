@@ -275,6 +275,13 @@ h2
 		&--dropdown
 			position: relative
 			cursor: default
+			display: flex
+			align-items: center
+			gap: 5px
+			img
+				transition: .2s
+				transform: rotate(90deg)
+
 			&::after
 				content: ''
 				display: inline-block
@@ -285,6 +292,8 @@ h2
 				bottom: -20px
 
 			&:hover, &:focus
+				img
+					transform: rotate(180deg)
 				.header-nav__dropdown-list
 					opacity: 1
 					width: 250px
@@ -519,10 +528,13 @@ h2
 		font-family: $Font-Greenwich
 		color: $Color-Black25
 		&--h3
+			display: none
 			margin-bottom: 44px
 			font-weight: 600
 			@include fluid-type($Container-M, $Container-L, 18px, 24px)
 			@include fluid-type($Container-S, $Container-M, 12px, 18px)
+			&.active
+				display: block
 
 	&__buttons
 		display: flex
@@ -546,9 +558,11 @@ h2
 			color: $Color-White
 
 	&__content
-		display: flex
+		display: none
 		gap: 64px
 		height: 392px
+		&.active
+			display: flex
 
 	&__img
 		max-width: 588px
@@ -837,6 +851,23 @@ h2
 			color: $Color-PaleGray
 			@include fluid-type($Container-M, $Container-L, 12px, 14px)
 
+	&__socials
+		display: flex
+		align-items: center
+		justify-content: space-between
+		width: 100%
+		max-width: 100px
+		margin-top: 16px
+
+	&__social-item
+		width: 24px
+		svg
+			color: $Color-Black25
+			transition: .2s
+		&:hover
+			svg
+				color: $Color-Blue
+
 	@include adaptiveWidth($Container-M)
 		&__top-part
 			grid-template-columns: repeat(3, 1fr)
@@ -992,7 +1023,7 @@ h2
 /** Заявка **/
 
 .request
-	position: absolute
+	position: fixed
 	right: 0
 	top: 0
 	z-index: 20
